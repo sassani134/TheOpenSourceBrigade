@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "Ranged_1H_Aiming": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_1H_Aiming.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_1H_Aiming.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://34rge4gdbsgk",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "Ranged_1H_Reload": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_1H_Reload.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_1H_Reload.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cf4tcfo14rmo8",
 "settings/loop_mode": 0,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "Ranged_1H_Shoot": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_1H_Shoot.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_1H_Shoot.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bvineyqypm0ck",
 "settings/loop_mode": 0,
@@ -6209,7 +6209,7 @@ _subresources={
 },
 "Ranged_1H_Shooting": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_1H_Shooting.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_1H_Shooting.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cab21uj2164x0",
 "settings/loop_mode": 0,
@@ -8265,7 +8265,7 @@ _subresources={
 },
 "Ranged_2H_Aiming": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_2H_Aiming.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_2H_Aiming.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://p7tarktnmwp7",
 "settings/loop_mode": 0,
@@ -10321,7 +10321,7 @@ _subresources={
 },
 "Ranged_2H_Reload": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_2H_Reload.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_2H_Reload.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bag6tfxscd0ab",
 "settings/loop_mode": 0,
@@ -12377,7 +12377,7 @@ _subresources={
 },
 "Ranged_2H_Shoot": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_2H_Shoot.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_2H_Shoot.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://rk58iwouqcmc",
 "settings/loop_mode": 0,
@@ -14433,7 +14433,7 @@ _subresources={
 },
 "Ranged_2H_Shooting": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_2H_Shooting.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_2H_Shooting.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c87rv0n1n0w8x",
 "settings/loop_mode": 0,
@@ -16489,7 +16489,7 @@ _subresources={
 },
 "Ranged_Bow_Aiming_Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Bow_Aiming_Idle.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Bow_Aiming_Idle.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://rkptvadc0cp8",
 "settings/loop_mode": 0,
@@ -18545,7 +18545,7 @@ _subresources={
 },
 "Ranged_Bow_Draw": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Bow_Draw.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Bow_Draw.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dtburibxknnyk",
 "settings/loop_mode": 0,
@@ -20601,7 +20601,7 @@ _subresources={
 },
 "Ranged_Bow_Draw_Up": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Bow_Draw_Up.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Bow_Draw_Up.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://wenm5tqsfvkj",
 "settings/loop_mode": 0,
@@ -22657,7 +22657,7 @@ _subresources={
 },
 "Ranged_Bow_Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Bow_Idle.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Bow_Idle.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c4o38wexetoam",
 "settings/loop_mode": 0,
@@ -24713,7 +24713,7 @@ _subresources={
 },
 "Ranged_Bow_Release": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Bow_Release.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Bow_Release.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://di8g6omnchav",
 "settings/loop_mode": 0,
@@ -26769,7 +26769,7 @@ _subresources={
 },
 "Ranged_Bow_Release_Up": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Bow_Release_Up.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Bow_Release_Up.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c2vh7gf33s6qf",
 "settings/loop_mode": 0,
@@ -28825,7 +28825,7 @@ _subresources={
 },
 "Ranged_Magic_Raise": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Magic_Raise.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Magic_Raise.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://ddumux5iesbwo",
 "settings/loop_mode": 0,
@@ -30881,7 +30881,7 @@ _subresources={
 },
 "Ranged_Magic_Shoot": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Magic_Shoot.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Magic_Shoot.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bfe6kk61u3hd7",
 "settings/loop_mode": 0,
@@ -32937,7 +32937,7 @@ _subresources={
 },
 "Ranged_Magic_Spellcasting": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Magic_Spellcasting.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Magic_Spellcasting.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://6f1pldk0ddrw",
 "settings/loop_mode": 0,
@@ -34993,7 +34993,7 @@ _subresources={
 },
 "Ranged_Magic_Spellcasting_Long": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Magic_Spellcasting_Long.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Magic_Spellcasting_Long.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://8cfhp8764nnh",
 "settings/loop_mode": 0,
@@ -37049,7 +37049,7 @@ _subresources={
 },
 "Ranged_Magic_Summon": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Ranged_Magic_Summon.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Ranged_Magic_Summon.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bksgfligxf6ps",
 "settings/loop_mode": 0,
@@ -39105,7 +39105,7 @@ _subresources={
 },
 "T-Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/T-Pose.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/T-Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c7piby26q3w1d",
 "settings/loop_mode": 0,

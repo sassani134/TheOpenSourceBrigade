@@ -45,7 +45,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Rig_Medium_General_Mannequin_ArmLeft.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Rig_Medium_General_Mannequin_ArmLeft.res",
 "save_to_file/path": "uid://cqqhx5budlviq"
 },
 "Rig_Medium_General_Mannequin_ArmRight": {
@@ -54,7 +54,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Rig_Medium_General_Mannequin_ArmRight.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Rig_Medium_General_Mannequin_ArmRight.res",
 "save_to_file/path": "uid://btmht6e2b1pt4"
 },
 "Rig_Medium_General_Mannequin_Body": {
@@ -63,7 +63,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Rig_Medium_General_Mannequin_Body.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Rig_Medium_General_Mannequin_Body.res",
 "save_to_file/path": "uid://bgtgef1ejviy1"
 },
 "Rig_Medium_General_Mannequin_Head": {
@@ -72,7 +72,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Rig_Medium_General_Mannequin_Head.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Rig_Medium_General_Mannequin_Head.res",
 "save_to_file/path": "uid://chmusy1mdtui4"
 },
 "Rig_Medium_General_Mannequin_LegLeft": {
@@ -81,7 +81,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Rig_Medium_General_Mannequin_LegLeft.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Rig_Medium_General_Mannequin_LegLeft.res",
 "save_to_file/path": "uid://c750d1o5xb6vm"
 },
 "Rig_Medium_General_Mannequin_LegRight": {
@@ -90,7 +90,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Rig_Medium_General_Mannequin_LegRight.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Rig_Medium_General_Mannequin_LegRight.res",
 "save_to_file/path": "uid://c2ao835365cns"
 }
 }

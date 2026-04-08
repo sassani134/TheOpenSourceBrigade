@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "Cheering": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Cheering.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Cheering.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bs6x8pbs5worb",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "Lie_Down": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Lie_Down.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Lie_Down.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://hb6445e8j22d",
 "settings/loop_mode": 0,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "Lie_Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Lie_Idle.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Lie_Idle.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://doaa5i337aj1h",
 "settings/loop_mode": 0,
@@ -6209,7 +6209,7 @@ _subresources={
 },
 "Lie_StandUp": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Lie_StandUp.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Lie_StandUp.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://rnovdskpnxrc",
 "settings/loop_mode": 0,
@@ -8265,7 +8265,7 @@ _subresources={
 },
 "Push_Ups": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Push_Ups.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Push_Ups.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://p3okheg14f4i",
 "settings/loop_mode": 0,
@@ -10321,7 +10321,7 @@ _subresources={
 },
 "Sit_Chair_Down": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Sit_Chair_Down.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Sit_Chair_Down.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://n60o6447eu15",
 "settings/loop_mode": 0,
@@ -12377,7 +12377,7 @@ _subresources={
 },
 "Sit_Chair_Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Sit_Chair_Idle.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Sit_Chair_Idle.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://olv8bbfmt536",
 "settings/loop_mode": 0,
@@ -14433,7 +14433,7 @@ _subresources={
 },
 "Sit_Chair_StandUp": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Sit_Chair_StandUp.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Sit_Chair_StandUp.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cw7y20sefarh5",
 "settings/loop_mode": 0,
@@ -16489,7 +16489,7 @@ _subresources={
 },
 "Sit_Floor_Down": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Sit_Floor_Down.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Sit_Floor_Down.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://d22umefpq6xky",
 "settings/loop_mode": 0,
@@ -18545,7 +18545,7 @@ _subresources={
 },
 "Sit_Floor_Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Sit_Floor_Idle.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Sit_Floor_Idle.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://duhncyhn6a0ry",
 "settings/loop_mode": 0,
@@ -20601,7 +20601,7 @@ _subresources={
 },
 "Sit_Floor_StandUp": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Sit_Floor_StandUp.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Sit_Floor_StandUp.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://2m4hfflmxms",
 "settings/loop_mode": 0,
@@ -22657,7 +22657,7 @@ _subresources={
 },
 "Sit_Ups": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Sit_Ups.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Sit_Ups.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dbdh3tvc2klt0",
 "settings/loop_mode": 0,
@@ -24713,7 +24713,7 @@ _subresources={
 },
 "T-Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/T-Pose.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/T-Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c7piby26q3w1d",
 "settings/loop_mode": 0,
@@ -26769,7 +26769,7 @@ _subresources={
 },
 "Waving": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Waving.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Waving.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://ca3ox8lmjdyio",
 "settings/loop_mode": 0,

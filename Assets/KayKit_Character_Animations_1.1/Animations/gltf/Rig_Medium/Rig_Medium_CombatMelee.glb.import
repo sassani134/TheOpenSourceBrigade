@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "Melee_1H_Attack_Chop": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_1H_Attack_Chop.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_1H_Attack_Chop.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://d2dvxswbocku0",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "Melee_1H_Attack_Jump_Chop": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_1H_Attack_Jump_Chop.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_1H_Attack_Jump_Chop.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bw3fauvrt1ysr",
 "settings/loop_mode": 0,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "Melee_1H_Attack_Slice_Diagonal": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_1H_Attack_Slice_Diagonal.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_1H_Attack_Slice_Diagonal.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dx83dcnn862mh",
 "settings/loop_mode": 0,
@@ -6209,7 +6209,7 @@ _subresources={
 },
 "Melee_1H_Attack_Slice_Horizontal": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_1H_Attack_Slice_Horizontal.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_1H_Attack_Slice_Horizontal.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c4f1gnukhmuy2",
 "settings/loop_mode": 0,
@@ -8265,7 +8265,7 @@ _subresources={
 },
 "Melee_1H_Attack_Stab": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_1H_Attack_Stab.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_1H_Attack_Stab.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dyii7fi5pbkn6",
 "settings/loop_mode": 0,
@@ -10321,7 +10321,7 @@ _subresources={
 },
 "Melee_2H_Attack_Chop": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_2H_Attack_Chop.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_2H_Attack_Chop.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cu7lsibwajr4b",
 "settings/loop_mode": 0,
@@ -12377,7 +12377,7 @@ _subresources={
 },
 "Melee_2H_Attack_Slice": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_2H_Attack_Slice.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_2H_Attack_Slice.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://e85tg2r8ke7b",
 "settings/loop_mode": 0,
@@ -14433,7 +14433,7 @@ _subresources={
 },
 "Melee_2H_Attack_Spin": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_2H_Attack_Spin.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_2H_Attack_Spin.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://byi844b8xtpqs",
 "settings/loop_mode": 0,
@@ -16489,7 +16489,7 @@ _subresources={
 },
 "Melee_2H_Attack_Spinning": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_2H_Attack_Spinning.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_2H_Attack_Spinning.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://b4m5wnwhg4n60",
 "settings/loop_mode": 0,
@@ -18545,7 +18545,7 @@ _subresources={
 },
 "Melee_2H_Attack_Stab": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_2H_Attack_Stab.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_2H_Attack_Stab.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://roj5jjpet6ud",
 "settings/loop_mode": 0,
@@ -20601,7 +20601,7 @@ _subresources={
 },
 "Melee_2H_Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_2H_Idle.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_2H_Idle.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://07llkejwt78o",
 "settings/loop_mode": 0,
@@ -22657,7 +22657,7 @@ _subresources={
 },
 "Melee_Block": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_Block.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_Block.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c0vtg4e06bws8",
 "settings/loop_mode": 0,
@@ -24713,7 +24713,7 @@ _subresources={
 },
 "Melee_Block_Attack": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_Block_Attack.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_Block_Attack.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://ctaemnadxfhrs",
 "settings/loop_mode": 0,
@@ -26769,7 +26769,7 @@ _subresources={
 },
 "Melee_Block_Hit": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_Block_Hit.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_Block_Hit.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dcjp7od471lsi",
 "settings/loop_mode": 0,
@@ -28825,7 +28825,7 @@ _subresources={
 },
 "Melee_Blocking": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_Blocking.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_Blocking.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dw178mku17gps",
 "settings/loop_mode": 0,
@@ -30881,7 +30881,7 @@ _subresources={
 },
 "Melee_Dualwield_Attack_Chop": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_Dualwield_Attack_Chop.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_Dualwield_Attack_Chop.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cj3wwatbpl4m1",
 "settings/loop_mode": 0,
@@ -32937,7 +32937,7 @@ _subresources={
 },
 "Melee_Dualwield_Attack_Slice": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_Dualwield_Attack_Slice.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_Dualwield_Attack_Slice.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bojmf0d5uhpg6",
 "settings/loop_mode": 0,
@@ -34993,7 +34993,7 @@ _subresources={
 },
 "Melee_Dualwield_Attack_Stab": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_Dualwield_Attack_Stab.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_Dualwield_Attack_Stab.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bwpbo3v7fpije",
 "settings/loop_mode": 0,
@@ -37049,7 +37049,7 @@ _subresources={
 },
 "Melee_Unarmed_Attack_Kick": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_Unarmed_Attack_Kick.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_Unarmed_Attack_Kick.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bioxjm52x3xvt",
 "settings/loop_mode": 0,
@@ -39105,7 +39105,7 @@ _subresources={
 },
 "Melee_Unarmed_Attack_Punch_A": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_Unarmed_Attack_Punch_A.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_Unarmed_Attack_Punch_A.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://s2o7mw3b5h8m",
 "settings/loop_mode": 0,
@@ -41161,7 +41161,7 @@ _subresources={
 },
 "Melee_Unarmed_Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Melee_Unarmed_Idle.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Melee_Unarmed_Idle.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://1sg7o1ytvcsg",
 "settings/loop_mode": 0,
@@ -43217,7 +43217,7 @@ _subresources={
 },
 "T-Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/T-Pose.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/T-Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c7piby26q3w1d",
 "settings/loop_mode": 0,

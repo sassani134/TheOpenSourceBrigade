@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "Chop": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Chop.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Chop.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c3m7amuw6hwuk",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "Chopping": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Chopping.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Chopping.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cj80i4fvpytlp",
 "settings/loop_mode": 0,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "Dig": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Dig.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Dig.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://d2335qp8fg74y",
 "settings/loop_mode": 0,
@@ -6209,7 +6209,7 @@ _subresources={
 },
 "Digging": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Digging.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Digging.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cirnwmg1hqpx7",
 "settings/loop_mode": 0,
@@ -8265,7 +8265,7 @@ _subresources={
 },
 "Fishing_Bite": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Fishing_Bite.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Fishing_Bite.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bcbd5ng0d6rbn",
 "settings/loop_mode": 0,
@@ -10321,7 +10321,7 @@ _subresources={
 },
 "Fishing_Cast": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Fishing_Cast.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Fishing_Cast.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://4owxaouuuyke",
 "settings/loop_mode": 0,
@@ -12377,7 +12377,7 @@ _subresources={
 },
 "Fishing_Catch": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Fishing_Catch.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Fishing_Catch.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bp5fd2420iimc",
 "settings/loop_mode": 0,
@@ -14433,7 +14433,7 @@ _subresources={
 },
 "Fishing_Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Fishing_Idle.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Fishing_Idle.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cvoshshjvwduc",
 "settings/loop_mode": 0,
@@ -16489,7 +16489,7 @@ _subresources={
 },
 "Fishing_Reeling": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Fishing_Reeling.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Fishing_Reeling.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://jaofvwqesr2n",
 "settings/loop_mode": 0,
@@ -18545,7 +18545,7 @@ _subresources={
 },
 "Fishing_Struggling": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Fishing_Struggling.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Fishing_Struggling.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://u5vbotx51md6",
 "settings/loop_mode": 0,
@@ -20601,7 +20601,7 @@ _subresources={
 },
 "Fishing_Tug": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Fishing_Tug.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Fishing_Tug.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dwxu8qs4dvctp",
 "settings/loop_mode": 0,
@@ -22657,7 +22657,7 @@ _subresources={
 },
 "Hammer": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Hammer.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Hammer.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bo64t8wh1rtf6",
 "settings/loop_mode": 0,
@@ -24713,7 +24713,7 @@ _subresources={
 },
 "Hammering": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Hammering.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Hammering.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://d2i2g2k517sng",
 "settings/loop_mode": 0,
@@ -26769,7 +26769,7 @@ _subresources={
 },
 "Holding_A": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Holding_A.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Holding_A.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dwcaikwa50wec",
 "settings/loop_mode": 0,
@@ -28825,7 +28825,7 @@ _subresources={
 },
 "Holding_B": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Holding_B.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Holding_B.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://e270rgcho03y",
 "settings/loop_mode": 0,
@@ -30881,7 +30881,7 @@ _subresources={
 },
 "Holding_C": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Holding_C.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Holding_C.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c3n6nro4y76aq",
 "settings/loop_mode": 0,
@@ -32937,7 +32937,7 @@ _subresources={
 },
 "Lockpick": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Lockpick.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Lockpick.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bkpcnff3txeak",
 "settings/loop_mode": 0,
@@ -34993,7 +34993,7 @@ _subresources={
 },
 "Lockpicking": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Lockpicking.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Lockpicking.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cmshqpmg8ht24",
 "settings/loop_mode": 0,
@@ -37049,7 +37049,7 @@ _subresources={
 },
 "Pickaxe": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Pickaxe.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Pickaxe.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cyhr0n3h1p4ks",
 "settings/loop_mode": 0,
@@ -39105,7 +39105,7 @@ _subresources={
 },
 "Pickaxing": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Pickaxing.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Pickaxing.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cjvqmmvey8nu7",
 "settings/loop_mode": 0,
@@ -41161,7 +41161,7 @@ _subresources={
 },
 "Saw": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Saw.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Saw.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://brf8qg4s00oby",
 "settings/loop_mode": 0,
@@ -43217,7 +43217,7 @@ _subresources={
 },
 "Sawing": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Sawing.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Sawing.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://b02pur6m4uskj",
 "settings/loop_mode": 0,
@@ -45273,7 +45273,7 @@ _subresources={
 },
 "T-Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/T-Pose.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/T-Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c7piby26q3w1d",
 "settings/loop_mode": 0,
@@ -47329,7 +47329,7 @@ _subresources={
 },
 "Work_A": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Work_A.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Work_A.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://ct3unt0xsrv4i",
 "settings/loop_mode": 0,
@@ -49385,7 +49385,7 @@ _subresources={
 },
 "Work_B": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Work_B.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Work_B.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://llyrgmumvlpf",
 "settings/loop_mode": 0,
@@ -51441,7 +51441,7 @@ _subresources={
 },
 "Work_C": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Work_C.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Work_C.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cjo7nhr3lvx8y",
 "settings/loop_mode": 0,
@@ -53497,7 +53497,7 @@ _subresources={
 },
 "Working_A": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Working_A.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Working_A.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cjvc1fj0q7xi6",
 "settings/loop_mode": 0,
@@ -55553,7 +55553,7 @@ _subresources={
 },
 "Working_B": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Working_B.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Working_B.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c7mhwtpo3bh57",
 "settings/loop_mode": 0,
@@ -57609,7 +57609,7 @@ _subresources={
 },
 "Working_C": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Working_C.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Working_C.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bkke5c0imnokc",
 "settings/loop_mode": 0,

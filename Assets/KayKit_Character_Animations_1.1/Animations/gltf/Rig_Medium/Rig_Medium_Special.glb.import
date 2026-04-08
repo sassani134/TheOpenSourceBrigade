@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "EXPERIMENTAL_Medium_Transform": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/EXPERIMENTAL_Medium_Transform.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/EXPERIMENTAL_Medium_Transform.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bj1q6nkx7mssj",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "Skeletons_Awaken_Floor": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Awaken_Floor.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Awaken_Floor.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://4ptvgfw3umto",
 "settings/loop_mode": 0,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "Skeletons_Awaken_Floor_Long": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Awaken_Floor_Long.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Awaken_Floor_Long.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://hkof0bqvqchy",
 "settings/loop_mode": 0,
@@ -6209,7 +6209,7 @@ _subresources={
 },
 "Skeletons_Awaken_Standing": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Awaken_Standing.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Awaken_Standing.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://f52os7bdg12j",
 "settings/loop_mode": 0,
@@ -8265,7 +8265,7 @@ _subresources={
 },
 "Skeletons_Death": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Death.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Death.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://b2k7vf3e510jt",
 "settings/loop_mode": 0,
@@ -10321,7 +10321,7 @@ _subresources={
 },
 "Skeletons_Death_Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Death_Pose.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Death_Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dac2peyq6wbhv",
 "settings/loop_mode": 0,
@@ -12377,7 +12377,7 @@ _subresources={
 },
 "Skeletons_Death_Resurrect": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Death_Resurrect.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Death_Resurrect.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://d3uubweutdb80",
 "settings/loop_mode": 0,
@@ -14433,7 +14433,7 @@ _subresources={
 },
 "Skeletons_Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Idle.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Idle.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bs7q0t62ij8jk",
 "settings/loop_mode": 0,
@@ -16489,7 +16489,7 @@ _subresources={
 },
 "Skeletons_Inactive_Floor_Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Inactive_Floor_Pose.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Inactive_Floor_Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://7kg44jwe81ok",
 "settings/loop_mode": 0,
@@ -18545,7 +18545,7 @@ _subresources={
 },
 "Skeletons_Inactive_Standing_Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Inactive_Standing_Pose.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Inactive_Standing_Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://docpfc571q4l7",
 "settings/loop_mode": 0,
@@ -20601,7 +20601,7 @@ _subresources={
 },
 "Skeletons_Spawn_Ground": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Spawn_Ground.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Spawn_Ground.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cfpxwqldo6wgm",
 "settings/loop_mode": 0,
@@ -22657,7 +22657,7 @@ _subresources={
 },
 "Skeletons_Taunt": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Taunt.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Taunt.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bsufo7bmnhnhn",
 "settings/loop_mode": 0,
@@ -24713,7 +24713,7 @@ _subresources={
 },
 "Skeletons_Taunt_Longer": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Taunt_Longer.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Taunt_Longer.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cegse4xc2bmhm",
 "settings/loop_mode": 0,
@@ -26769,7 +26769,7 @@ _subresources={
 },
 "Skeletons_Walking": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/Skeletons_Walking.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/Skeletons_Walking.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dgh4pgmf5ilck",
 "settings/loop_mode": 0,
@@ -28825,7 +28825,7 @@ _subresources={
 },
 "T-Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Resources/Animations/T-Pose.res",
+"save_to_file/fallback_path": "res://Resources/Animations/kaykitRigMedium/T-Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c7piby26q3w1d",
 "settings/loop_mode": 0,
