@@ -6,5 +6,7 @@
 - [Scott Buckley](https://www.scottbuckley.com.au/)
 - [Blender](https://www.blender.org/)
 - [gdquest](https://www.gdquest.com/)
+- [GUT](https://gut.readthedocs.io/en/v9.6.0/#)
 
 ## Tuts
+- [Using KayKit Characters In Godot (Quick version)](https://youtu.be/sp_1WnJUDXM)
