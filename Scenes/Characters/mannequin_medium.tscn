@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bgtdidw7dqgwq"]
+
+[ext_resource type="PackedScene" uid="uid://dlp5d13ijk8l3" path="res://Assets/KayKit_Character_Animations_1.1/Mannequin Character/characters/Mannequin_Medium.glb" id="1_hj5qr"]
+
+[node name="Mannequin_Medium" unique_id=1001606557 instance=ExtResource("1_hj5qr")]
