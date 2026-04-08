@@ -2,9 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://bt813e262m5ss" path="res://Assets/kenney_platformer-kit/Models/GLB format/character-oodi.glb" id="1_q47py"]
 
-[node name="character-oodi2" unique_id=1661665960 instance=ExtResource("1_q47py")]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q47py"]
 
-[node name="Skeleton3D" parent="character-oodi" parent_id_path=PackedInt32Array(79201367) index="0" unique_id=546081798]
+[node name="character-oodi2" unique_id=1433741119 instance=ExtResource("1_q47py")]
+
+[node name="Skeleton3D" parent="character-oodi" parent_id_path=PackedInt32Array(22066773) index="0" unique_id=448966320]
 bones/0/position = Vector3(0, 0, 0)
 bones/4/rotation = Quaternion(0, 0, -0.38268346, 0.9238795)
 bones/5/rotation = Quaternion(0, 0, 0.3826835, 0.92387956)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="2" unique_id=757103480]
+shape = SubResource("CapsuleShape3D_q47py")
