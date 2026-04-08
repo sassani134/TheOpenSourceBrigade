@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cbranijnsgmqb"]
+
+[ext_resource type="PackedScene" uid="uid://c2df23iqmxway" path="res://Assets/kenney_platformer-kit/Models/GLB format/character-oopi.glb" id="1_bs3px"]
+
+[node name="character-oopi2" unique_id=1350405322 instance=ExtResource("1_bs3px")]
+
+[node name="Skeleton3D" parent="character-oopi" parent_id_path=PackedInt32Array(1567767238) index="0" unique_id=964479640]
+bones/0/position = Vector3(0, 0, 0)
+bones/4/rotation = Quaternion(0, 0, -0.38268346, 0.9238795)
+bones/5/rotation = Quaternion(0, 0, 0.3826835, 0.92387956)
