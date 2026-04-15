@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjvo8w2ptm7fc"
 path.s3tc="res://.godot/imported/eyes_normal_map.png-aa2fbb49ab07a718c569ba9181c7dfac.s3tc.ctex"
+path.etc2="res://.godot/imported/eyes_normal_map.png-aa2fbb49ab07a718c569ba9181c7dfac.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/godot-4-3D-Characters/addons/gdquest_sophia/model/textures/eyes_normal_map.png"
-dest_files=["res://.godot/imported/eyes_normal_map.png-aa2fbb49ab07a718c569ba9181c7dfac.s3tc.ctex"]
+dest_files=["res://.godot/imported/eyes_normal_map.png-aa2fbb49ab07a718c569ba9181c7dfac.s3tc.ctex", "res://.godot/imported/eyes_normal_map.png-aa2fbb49ab07a718c569ba9181c7dfac.etc2.ctex"]
 
 [params]
 
