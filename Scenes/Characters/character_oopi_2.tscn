@@ -2,14 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://c2df23iqmxway" path="res://Assets/kenney_platformer-kit/Models/GLB format/character-oopi.glb" id="1_bs3px"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bs3px"]
-
 [node name="character-oopi2" unique_id=2010324252 instance=ExtResource("1_bs3px")]
 
 [node name="Skeleton3D" parent="character-oopi" parent_id_path=PackedInt32Array(502607760) index="0" unique_id=1501611940]
 bones/0/position = Vector3(0, 0, 0)
 bones/4/rotation = Quaternion(0, 0, -0.38268346, 0.9238795)
 bones/5/rotation = Quaternion(0, 0, 0.3826835, 0.92387956)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="2" unique_id=705720808]
-shape = SubResource("CapsuleShape3D_bs3px")

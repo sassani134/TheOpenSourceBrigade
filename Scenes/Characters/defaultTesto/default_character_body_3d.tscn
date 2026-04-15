@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://bihqm06rmmw3o"]
+
+[ext_resource type="Script" uid="uid://8t80pdiqib0d" path="res://Scripts/defaultPlayer3D.gd" id="1_0ptk3"]
+[ext_resource type="Texture2D" uid="uid://c7gp1sm8ds8e1" path="res://Assets/kenney_input-prompt/Nintendo Gamecube/Double/gamecube_button_color_a.png" id="3_h7f2l"]
+[ext_resource type="Texture2D" uid="uid://chai1vjdcg3ru" path="res://Assets/kenney_input-prompt/Nintendo Gamecube/Double/gamecube_button_color_a_outline.png" id="4_rl4fk"]
+[ext_resource type="Texture2D" uid="uid://b6gw2w3q06ait" path="res://Assets/kenney_input-prompt/Nintendo Gamecube/Double/gamecube_button_color_b.png" id="5_ichi1"]
+[ext_resource type="Texture2D" uid="uid://brm7q737tq2yb" path="res://Assets/kenney_input-prompt/Nintendo Gamecube/Double/gamecube_button_color_b_outline.png" id="6_i8ih1"]
+[ext_resource type="Texture2D" uid="uid://vqf6ubmijcny" path="res://Assets/screenshotDolphin.jpg" id="7_tlsht"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0ptk3"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_s65rw"]
+
+[node name="DefaultCharacterBody3D" type="CharacterBody3D" unique_id=1381712553]
+script = ExtResource("1_0ptk3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1423001583]
+shape = SubResource("CapsuleShape3D_0ptk3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=718528119]
+mesh = SubResource("CapsuleMesh_s65rw")
+
+[node name="thirdPersonCamera" type="Node3D" parent="." unique_id=963381638]
+
+[node name="SpringArm3D" type="SpringArm3D" parent="thirdPersonCamera" unique_id=877778139]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.631212)
+
+[node name="Camera3D" type="Camera3D" parent="thirdPersonCamera/SpringArm3D" unique_id=1464939159]
+
+[node name="Decal" type="Decal" parent="." unique_id=1258940031]
+visible = false
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=2046524380]
+visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2058667874]
+
+[node name="UIControllerMobile" type="CanvasLayer" parent="." unique_id=350943606]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="UIControllerMobile" unique_id=66886305]
+position = Vector2(981, 415)
+texture_normal = ExtResource("3_h7f2l")
+texture_pressed = ExtResource("4_rl4fk")
+action = "right_button"
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="UIControllerMobile" unique_id=1046041415]
+position = Vector2(881, 335)
+texture_normal = ExtResource("5_ichi1")
+texture_pressed = ExtResource("6_i8ih1")
+action = "left_button"
+
+[node name="ScreenshotDolphin" type="Sprite2D" parent="UIControllerMobile" unique_id=834749887]
+modulate = Color(1, 1, 1, 0.03529412)
+position = Vector2(572.99994, 324)
+scale = Vector2(0.5989583, 0.59074074)
+texture = ExtResource("7_tlsht")
+metadata/_edit_lock_ = true
+
+[node name="Timers" type="Node3D" parent="." unique_id=4505854]
+
+[node name="MultiJumpTimer" type="Timer" parent="Timers" unique_id=563430013]
+
+[connection signal="timeout" from="Timers/MultiJumpTimer" to="." method="_on_multi_jump_timer_timeout"]

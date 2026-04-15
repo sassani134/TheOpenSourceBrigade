@@ -1,0 +1,162 @@
+[gd_scene format=3 uid="uid://ds01oexoon8mo"]
+
+[ext_resource type="Script" uid="uid://bv8o0k6ogbt60" path="res://Scenes/Characters/defaultTesto/player_3d_default_00.gd" id="1_ksol8"]
+[ext_resource type="Texture2D" uid="uid://drqdljwfl5bma" path="res://Assets/kenney_prototype_textures/purple/texture_01.png" id="3_rw7wh"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_cfu60"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yi7di"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ksol8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g2wwf"]
+albedo_texture = ExtResource("3_rw7wh")
+
+[node name="Player3DDefault00" type="CharacterBody3D" unique_id=462633578]
+script = ExtResource("1_ksol8")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=485343339]
+mesh = SubResource("CapsuleMesh_cfu60")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1495499750]
+shape = SubResource("CapsuleShape3D_yi7di")
+
+[node name="cameraPivot" type="Node3D" parent="." unique_id=996978554]
+unique_name_in_owner = true
+
+[node name="SpringArm3D" type="SpringArm3D" parent="cameraPivot" unique_id=1998400093]
+unique_name_in_owner = true
+shape = SubResource("SphereShape3D_ksol8")
+spring_length = 8.0
+
+[node name="Camera3D" type="Camera3D" parent="cameraPivot/SpringArm3D" unique_id=306639044]
+unique_name_in_owner = true
+
+[node name="Raycasts" type="Node3D" parent="." unique_id=1976868351]
+
+[node name="FloorRaycast" type="RayCast3D" parent="Raycasts" unique_id=140358784]
+target_position = Vector3(0, -2, 0)
+
+[node name="FrontRaycast" type="RayCast3D" parent="Raycasts" unique_id=257041609]
+target_position = Vector3(0, 0, -2)
+
+[node name="Timers" type="Node3D" parent="." unique_id=189790557]
+
+[node name="coyoteTimer" type="Timer" parent="Timers" unique_id=455584176]
+
+[node name="tripleJumpTimer" type="Timer" parent="Timers" unique_id=1910240557]
+
+[node name="FlashTimer" type="Timer" parent="Timers" unique_id=896308507]
+
+[node name="AudioRoot" type="Node3D" parent="." unique_id=410885602]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="AudioRoot" unique_id=315326706]
+
+[node name="Particules" type="Node3D" parent="." unique_id=1992562926]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="Particules" unique_id=83047036]
+
+[node name="DebugHUD" type="CanvasLayer" parent="." unique_id=2122713872]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="DebugHUD" unique_id=1634163471]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainerLabel" type="VBoxContainer" parent="DebugHUD/HBoxContainer" unique_id=152801414]
+layout_mode = 2
+
+[node name="VelocityLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=1637955782]
+layout_mode = 2
+text = "Velocity :"
+
+[node name="3pleJumpLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=1416336882]
+layout_mode = 2
+text = "3ple Jump Count :"
+
+[node name="3pleJumpTimeLeftLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=1852507234]
+layout_mode = 2
+text = "3pleJumpTime :"
+
+[node name="coyoteTimeLeftLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=27833196]
+layout_mode = 2
+text = "coyoteTimeLeftL :"
+
+[node name="NBJumpsInAirAlloWedLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=33340403]
+layout_mode = 2
+text = "Nb jumps in air allowed :"
+
+[node name="JumpBufferLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=1579523815]
+layout_mode = 2
+text = "Jump buffer :"
+
+[node name="BlinkTimerLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=464251357]
+layout_mode = 2
+text = "Blink Timer :"
+
+[node name="InputDirectionLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=1318374198]
+layout_mode = 2
+text = "Input DIr :"
+
+[node name="DirectionLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=1453026810]
+layout_mode = 2
+text = "Direction :"
+
+[node name="frameLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=143765962]
+layout_mode = 2
+text = "frames  :"
+
+[node name="VBoxContainerData" type="VBoxContainer" parent="DebugHUD/HBoxContainer" unique_id=123427731]
+layout_mode = 2
+
+[node name="VelocityData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=1448032909]
+layout_mode = 2
+text = "....."
+
+[node name="3pleJumpData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=788993741]
+layout_mode = 2
+text = "....."
+
+[node name="3pleJumpTimeLeftData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=1567180993]
+layout_mode = 2
+text = "....."
+
+[node name="coyoteTimeLeftData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=655020256]
+layout_mode = 2
+text = "....."
+
+[node name="NBJumpsInAirAlloWedData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=1345785116]
+layout_mode = 2
+text = "....."
+
+[node name="JumpBufferData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=756072722]
+layout_mode = 2
+text = "....."
+
+[node name="BlinkTimerData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=1878154956]
+layout_mode = 2
+text = "....."
+
+[node name="InputDirectionData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=1655605519]
+layout_mode = 2
+text = "....."
+
+[node name="DirectionData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=241024388]
+layout_mode = 2
+text = "....."
+
+[node name="FrameData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=730275401]
+layout_mode = 2
+text = "....."
+
+[node name="MobileHUD" type="CanvasLayer" parent="." unique_id=1648827573]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="MobileHUD" unique_id=1183986247]
+
+[node name="Decal" type="Decal" parent="." unique_id=2135178013]
+
+[node name="debugHead" type="CSGSphere3D" parent="." unique_id=1517570601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, -0.2)
+material_override = SubResource("StandardMaterial3D_g2wwf")
+
+[connection signal="timeout" from="Timers/coyoteTimer" to="." method="_on_coyote_timer_timeout"]
+[connection signal="timeout" from="Timers/tripleJumpTimer" to="." method="_on_triple_jump_timer_timeout"]
