@@ -43,10 +43,13 @@ target_position = Vector3(0, 0, -2)
 [node name="Timers" type="Node3D" parent="." unique_id=189790557]
 
 [node name="coyoteTimer" type="Timer" parent="Timers" unique_id=455584176]
+one_shot = true
 
 [node name="tripleJumpTimer" type="Timer" parent="Timers" unique_id=1910240557]
+one_shot = true
 
 [node name="FlashTimer" type="Timer" parent="Timers" unique_id=896308507]
+one_shot = true
 
 [node name="AudioRoot" type="Node3D" parent="." unique_id=410885602]
 
@@ -79,7 +82,7 @@ text = "3pleJumpTime :"
 
 [node name="coyoteTimeLeftLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=27833196]
 layout_mode = 2
-text = "coyoteTimeLeftL :"
+text = "coyote Time Left :"
 
 [node name="NBJumpsInAirAlloWedLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=33340403]
 layout_mode = 2
@@ -104,6 +107,10 @@ text = "Direction :"
 [node name="frameLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=143765962]
 layout_mode = 2
 text = "frames  :"
+
+[node name="hasJumpedLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=626306190]
+layout_mode = 2
+text = "has jumped  :"
 
 [node name="VBoxContainerData" type="VBoxContainer" parent="DebugHUD/HBoxContainer" unique_id=123427731]
 layout_mode = 2
@@ -148,6 +155,10 @@ text = "....."
 layout_mode = 2
 text = "....."
 
+[node name="hasJumpedData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=796740604]
+layout_mode = 2
+text = "....."
+
 [node name="MobileHUD" type="CanvasLayer" parent="." unique_id=1648827573]
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="MobileHUD" unique_id=1183986247]
@@ -158,5 +169,6 @@ text = "....."
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, -0.2)
 material_override = SubResource("StandardMaterial3D_g2wwf")
 
+[connection signal="hit_ground" from="." to="." method="_on_hit_ground"]
 [connection signal="timeout" from="Timers/coyoteTimer" to="." method="_on_coyote_timer_timeout"]
 [connection signal="timeout" from="Timers/tripleJumpTimer" to="." method="_on_triple_jump_timer_timeout"]

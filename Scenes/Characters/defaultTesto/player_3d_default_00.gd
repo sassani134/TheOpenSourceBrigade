@@ -3,6 +3,8 @@ extends CharacterBody3D
 # https://docs.godotengine.org/en/stable/tutorials/physics/using_character_body_2d.html
 # https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html
 
+signal hit_ground()
+
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
@@ -14,10 +16,16 @@ const JUMP_VELOCITY = 4.5
 @onready var triple_jump_timer: Timer = $Timers/tripleJumpTimer
 @onready var flash_timer: Timer = $Timers/FlashTimer
 
-var was_on_air : bool = false
-var do_dash : bool
-var can_dash : bool
-var jump_count : int
+
+var is_mobile: bool
+var is_key_mouse: bool
+var is_gamepad: bool
+
+var has_jumped: bool = false
+var was_on_air: bool = false
+var do_dash: bool
+var can_dash: bool = true
+var jump_count: int = 0
 
 func _ready() -> void:
 	pass
@@ -27,17 +35,35 @@ func _input(_event: InputEvent) -> void:
 	pass
 
 func _physics_process(delta: float) -> void:
-	
 	if is_on_floor():
 		pass
 	
-	# Add the gravity.
+	
 	if not is_on_floor():
-		velocity += get_gravity() * delta
-
+		velocity += get_gravity() * delta # Add the gravity.
+		if triple_jump_timer.is_stopped() == false:
+			triple_jump_timer.stop()
+	if not is_on_floor() and not has_jumped and coyote_timer.is_stopped():
+		coyote_timer.start()
+		
 	# Handle jump.
 	if Input.is_action_just_pressed("right_button") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+		has_jumped = true
+		if jump_count > 2:
+			jump_count = 1
+		else:
+			jump_count += 1
+		velocity.y = JUMP_VELOCITY * jump_count
+	# Handle coyote jump
+	if Input.is_action_just_pressed("right_button") and not coyote_timer.is_stopped() and not is_on_floor():
+		has_jumped = true
+		coyote_timer.stop()
+		if jump_count > 2:
+			jump_count = 1
+		else:
+			jump_count += 1
+		velocity.y = JUMP_VELOCITY * jump_count
+		
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -54,6 +80,10 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+	if has_jumped and is_on_floor():
+		hit_ground.emit()
+		has_jumped = false
 	# velocity.x +ou- = 5 positive quand joystick a droite
 	# velocity.z +ou- = 5 positive stick bas
 	# Direction and input dir are the same
@@ -64,21 +94,24 @@ func _physics_process(delta: float) -> void:
 
 func _process(_delta: float) -> void:
 	$DebugHUD/HBoxContainer/VBoxContainerData/VelocityData.text = str(velocity)
-	$"DebugHUD/HBoxContainer/VBoxContainerData/3pleJumpData".text = str("N/A")
-	$"DebugHUD/HBoxContainer/VBoxContainerData/3pleJumpTimeLeftData".text = str(triple_jump_timer.wait_time)
-	$DebugHUD/HBoxContainer/VBoxContainerData/coyoteTimeLeftData.text = str(coyote_timer.wait_time)
+	$"DebugHUD/HBoxContainer/VBoxContainerData/3pleJumpData".set_text((str(jump_count)))
+	$"DebugHUD/HBoxContainer/VBoxContainerData/3pleJumpTimeLeftData".text = str(triple_jump_timer.time_left)
+	$DebugHUD/HBoxContainer/VBoxContainerData/coyoteTimeLeftData.text = str(coyote_timer.time_left)
 	$DebugHUD/HBoxContainer/VBoxContainerData/NBJumpsInAirAlloWedData.text = str("N/A")
 	$DebugHUD/HBoxContainer/VBoxContainerData/JumpBufferData.text = str("N/A")
 	$DebugHUD/HBoxContainer/VBoxContainerData/BlinkTimerData.text = str(flash_timer.wait_time)
 	$DebugHUD/HBoxContainer/VBoxContainerData/FrameData.set_text(str(Engine.get_frames_per_second()))
+	$DebugHUD/HBoxContainer/VBoxContainerData/hasJumpedData.set_text((str(has_jumped)))
 	#camera_manette
-
 
 func _on_coyote_timer_timeout() -> void:
 	print("on_coyote_timer_timeout")
-	pass # Replace with function body.
-
 
 func _on_triple_jump_timer_timeout() -> void:
 	print("on_triple_jump_timer_timeout")
-	pass # Replace with function body.
+	jump_count = 0
+
+
+func _on_hit_ground() -> void:
+	print("on_hit_ground")
+	triple_jump_timer.start()
