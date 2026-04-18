@@ -1,19 +1,19 @@
-[gd_scene format=3 uid="uid://ds01oexoon8mo"]
+[gd_scene format=3 uid="uid://by45in3iajg6y"]
 
-[ext_resource type="Script" uid="uid://bv8o0k6ogbt60" path="res://Scenes/Characters/defaultTesto/player_3d_default_00.gd" id="1_ksol8"]
-[ext_resource type="Texture2D" uid="uid://drqdljwfl5bma" path="res://Assets/kenney_prototype_textures/purple/texture_01.png" id="3_rw7wh"]
+[ext_resource type="Script" uid="uid://buauv8mriwubp" path="res://Scenes/Characters/defaultTesto/player_3d_default_01.gd" id="1_3fsr7"]
+[ext_resource type="Texture2D" uid="uid://drqdljwfl5bma" path="res://Assets/kenney_prototype_textures/purple/texture_01.png" id="2_ae6m8"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cfu60"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g2wwf"]
-albedo_texture = ExtResource("3_rw7wh")
+albedo_texture = ExtResource("2_ae6m8")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yi7di"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_ksol8"]
 
-[node name="Player3DDefault00" type="CharacterBody3D" unique_id=462633578]
-script = ExtResource("1_ksol8")
+[node name="Player3DDefault01" type="CharacterBody3D" unique_id=462633578]
+script = ExtResource("1_3fsr7")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=485343339]
 mesh = SubResource("CapsuleMesh_cfu60")
@@ -184,7 +184,3 @@ text = "....."
 [node name="TouchScreenButton" type="TouchScreenButton" parent="MobileHUD" unique_id=1183986247]
 
 [node name="Decal" type="Decal" parent="." unique_id=2135178013]
-
-[connection signal="hit_ground" from="." to="." method="_on_hit_ground"]
-[connection signal="timeout" from="Timers/coyoteTimer" to="." method="_on_coyote_timer_timeout"]
-[connection signal="timeout" from="Timers/tripleJumpTimer" to="." method="_on_triple_jump_timer_timeout"]

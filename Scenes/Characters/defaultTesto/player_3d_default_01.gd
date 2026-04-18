@@ -2,8 +2,9 @@ extends CharacterBody3D
 
 signal hit_ground()
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+@export var speed: float = 5.0
+@export var jump_velocity: float = 4.5
+
 
 @onready var camera_pivot: Node3D = %cameraPivot
 @onready var spring_arm: SpringArm3D = %SpringArm3D
@@ -25,52 +26,19 @@ var can_dash: bool = true
 var jump_count: int = 0
 var crounch: bool = false
 
-
 func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	# Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	# Signals
+	coyote_timer.timeout.connect(_on_coyote_timer_timeout)
+	triple_jump_timer.timeout.connect(_on_triple_jump_timer_timeout)
+	hit_ground.connect(_on_hit_ground)
 
 func _input(event: InputEvent) -> void:
 	# exit game
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
-
-	#toggle mouse mode # Debug
-	if Input.is_action_just_pressed("mouse_mode"):
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-
-	# Mouse Input Camera
-	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		_cam_input += event.screen_relative * mouse_sensitivity
-
-
+	
 func _physics_process(delta: float) -> void:
-	# Joystick Input Camera
-	var stick_x = Input.get_axis("cam_stick_left", "cam_stick_right")
-	var stick_y = Input.get_axis("cam_stick_up", "cam_stick_down")
-
-	# Deadzone
-	if abs(stick_x) < controller_deadzone:
-		stick_x = 0.0
-	if abs(stick_y) < controller_deadzone:
-		stick_y = 0.0
-	
-	_cam_input += Vector2(stick_x, stick_y) * controller_sensitivity * delta
-
-	if _cam_input != Vector2.ZERO:
-		camera_pivot.rotation.y -= _cam_input.x * delta
-		camera_pivot.rotation.x -= _cam_input.y * delta
-
-	camera_pivot.rotation.x = clamp(camera_pivot.rotation.x, deg_to_rad(-70), deg_to_rad(25))
-
-	_cam_input = Vector2.ZERO
-	
-	# $MeshInstance3D.look_at(self.global_position + direction)
-	# $MeshInstance3D.rotation.y = input_dir.angle()
-
-		
 	if not is_on_floor():
 		velocity += get_gravity() * delta # Add the gravity.
 		if triple_jump_timer.is_stopped() == false:
@@ -85,7 +53,7 @@ func _physics_process(delta: float) -> void:
 			jump_count = 1
 		else:
 			jump_count += 1
-		velocity.y = JUMP_VELOCITY * jump_count
+		velocity.y = jump_velocity * jump_count
 
 	# Handle coyote jump
 	if Input.is_action_just_pressed("right_button") and not coyote_timer.is_stopped() and not is_on_floor():
@@ -95,50 +63,30 @@ func _physics_process(delta: float) -> void:
 			jump_count = 1
 		else:
 			jump_count += 1
-		velocity.y = JUMP_VELOCITY * jump_count
-		
+		velocity.y = jump_velocity * jump_count
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("move_stick_left", "move_stick_right", "move_stick_up", "move_stick_down")
-	# var direction := (camera_pivot.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	# var direction := Vector3(input_dir.x, 0, input_dir.y)
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	$"DebugHUD/HBoxContainer/VBoxContainerData/InputDirectionData".text = str(input_dir)
+	$"DebugHUD/HBoxContainer/VBoxContainerData/DirectionData".text = str(direction)
+
 	# $MeshInstance3D.look_at(self.global_position + direction)
-	if input_dir != Vector2.ZERO:
-		# var direction := Vector3(input_dir.x, 0, input_dir.y) # OLD
-		# var direction := (camera_pivot.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-		$"DebugHUD/HBoxContainer/VBoxContainerData/InputDirectionData".text = str(input_dir)
-		$"DebugHUD/HBoxContainer/VBoxContainerData/DirectionData".text = str(direction)
-		var target_angle = atan2(-direction.x, -direction.z)
-		# $MeshInstance3D.look_at(self.global_position + direction)
-		$MeshInstance3D.rotation.y = lerp($MeshInstance3D.rotation.y, target_angle, rotation_speed * delta)
-		
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
-		
-		# Rotation corrigée du personnage (seulement quand il bouge)
-		# var target_position = position + direction
-		# var new_transform = global_transform.looking_at(target_position, Vector3.UP)
-		# # Interpolation fluide de la rotation
-		# global_transform.basis = global_transform.basis.slerp(new_transform.basis, rotation_speed * delta)
+	# $MeshInstance3D.rotation.y = input_dir.angle()
+	
 
+	if direction:
+		velocity.x = direction.x * speed
+		velocity.z = direction.z * speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
-		
-	move_and_slide()
+		velocity.x = move_toward(velocity.x, 0, speed)
+		velocity.z = move_toward(velocity.z, 0, speed)
 
+	move_and_slide()
 	if has_jumped and is_on_floor():
 		hit_ground.emit()
 		has_jumped = false
-	
-	# velocity.x +ou- = 5 positive quand joystick a droite
-	# velocity.z +ou- = 5 positive stick bas
-	# Direction and input dir are the same
-	# + ou - 1 (0.9....) x+=joystickdroite z+=joystickBas
-	# velocity.y chaque frame en l'aire la gravite y est multiplié peut etre clamp sa
-	# if is_on_floor(): and ground_pound and velocity.y = -x : screen shake
 
 func _process(_delta: float) -> void:
 	$DebugHUD/HBoxContainer/VBoxContainerData/VelocityData.text = str(velocity)
@@ -152,6 +100,7 @@ func _process(_delta: float) -> void:
 	$DebugHUD/HBoxContainer/VBoxContainerData/hasJumpedData.set_text((str(has_jumped)))
 	$DebugHUD/HBoxContainer/VBoxContainerData/cameraDirectionData.set_text((str(camera.global_rotation)))
 	$DebugHUD/HBoxContainer/VBoxContainerData/CharachterDirectionData.set_text((str(self.global_rotation)))
+
 
 func _on_coyote_timer_timeout() -> void:
 	print("on_coyote_timer_timeout")
