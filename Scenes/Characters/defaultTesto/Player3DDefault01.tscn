@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://buauv8mriwubp" path="res://Scenes/Characters/defaultTesto/player_3d_default_01.gd" id="1_3fsr7"]
 [ext_resource type="Texture2D" uid="uid://drqdljwfl5bma" path="res://Assets/kenney_prototype_textures/purple/texture_01.png" id="2_ae6m8"]
+[ext_resource type="Script" uid="uid://c3ru1qlvhcev2" path="res://Scenes/Characters/defaultTesto/Camera3DDefault01.gd" id="3_ae6m8"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cfu60"]
 
@@ -19,7 +20,7 @@ script = ExtResource("1_3fsr7")
 mesh = SubResource("CapsuleMesh_cfu60")
 
 [node name="debugHead" type="CSGSphere3D" parent="MeshInstance3D" unique_id=1517570601]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, -0.2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0.2)
 material_override = SubResource("StandardMaterial3D_g2wwf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1495499750]
@@ -27,6 +28,7 @@ shape = SubResource("CapsuleShape3D_yi7di")
 
 [node name="cameraPivot" type="Node3D" parent="." unique_id=996978554]
 unique_name_in_owner = true
+script = ExtResource("3_ae6m8")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="cameraPivot" unique_id=1998400093]
 unique_name_in_owner = true
@@ -124,6 +126,14 @@ text = "Camera Direction  :"
 layout_mode = 2
 text = "Charachter Direction  :"
 
+[node name="MeshRotationYLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=857675926]
+layout_mode = 2
+text = "Mesh Rotation Y  :"
+
+[node name="cameraRotationYLabel" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerLabel" unique_id=1509539771]
+layout_mode = 2
+text = "Camera Rotation Y  :"
+
 [node name="VBoxContainerData" type="VBoxContainer" parent="DebugHUD/HBoxContainer" unique_id=123427731]
 layout_mode = 2
 
@@ -176,6 +186,14 @@ layout_mode = 2
 text = "....."
 
 [node name="CharachterDirectionData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=1704387136]
+layout_mode = 2
+text = "....."
+
+[node name="MeshRotationYData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=1344473793]
+layout_mode = 2
+text = "....."
+
+[node name="CameraRotationYData" type="Label" parent="DebugHUD/HBoxContainer/VBoxContainerData" unique_id=866290526]
 layout_mode = 2
 text = "....."
 

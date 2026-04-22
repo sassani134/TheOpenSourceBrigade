@@ -15,6 +15,9 @@ var _cam_input: Vector2 = Vector2.ZERO
 @export var controller_sensitivity := 80.0 # Sensibilité manette (à ajuster)
 @export var controller_deadzone := 0.1 # Zone morte du stick
 
+@onready var front_raycast: RayCast3D = $Raycasts/FrontRaycast
+@onready var floor_raycast: RayCast3D = $Raycasts/FloorRaycast
+
 @onready var coyote_timer: Timer = $Timers/coyoteTimer
 @onready var triple_jump_timer: Timer = $Timers/tripleJumpTimer
 @onready var flash_timer: Timer = $Timers/FlashTimer
@@ -77,6 +80,9 @@ func _physics_process(delta: float) -> void:
 	
 
 	if direction:
+		var targetAngle = atan2(direction.x, direction.z) - rotation.y
+		$MeshInstance3D.rotation.y = lerp_angle($MeshInstance3D.rotation.y, targetAngle, rotation_speed * delta)
+
 		velocity.x = direction.x * speed
 		velocity.z = direction.z * speed
 	else:
@@ -100,8 +106,10 @@ func _process(_delta: float) -> void:
 	$DebugHUD/HBoxContainer/VBoxContainerData/hasJumpedData.set_text((str(has_jumped)))
 	$DebugHUD/HBoxContainer/VBoxContainerData/cameraDirectionData.set_text((str(camera.global_rotation)))
 	$DebugHUD/HBoxContainer/VBoxContainerData/CharachterDirectionData.set_text((str(self.global_rotation)))
-
-
+	$DebugHUD/HBoxContainer/VBoxContainerData/MeshRotationYData.set_text((str($MeshInstance3D.rotation)))
+	$DebugHUD/HBoxContainer/VBoxContainerData/CameraRotationYData.set_text((str(camera.rotation)))
+	
+# Signals functions
 func _on_coyote_timer_timeout() -> void:
 	print("on_coyote_timer_timeout")
 
@@ -112,3 +120,5 @@ func _on_triple_jump_timer_timeout() -> void:
 func _on_hit_ground() -> void:
 	print("on_hit_ground")
 	triple_jump_timer.start()
+
+# getter setter
