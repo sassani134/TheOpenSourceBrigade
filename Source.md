@@ -15,6 +15,9 @@
 - [Incompetech](https://incompetech.com/music/royalty-free/music.html)
 - [OpenGameArt](https://opengameart.org/)
 - [itch.io](https://itch.io/game-assets/free)
+- [16bitdev](https://www.youtube.com/@16bitdev)
+- [GDQuest](https://www.gdquest.com/)
+
 ### 3D
 ### 2D
 ### Sounds
@@ -22,3 +25,4 @@
 
 ## Tuts
 - [Using KayKit Characters In Godot (Quick version)](https://youtu.be/sp_1WnJUDXM)
+-[Make a Smooth 3D Character Controller in Godot 4](https://youtu.be/JlgZtOFMdfc)

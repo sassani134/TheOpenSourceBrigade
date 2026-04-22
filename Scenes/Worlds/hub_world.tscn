@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://6xhv8q3xlna"]
+
+[ext_resource type="Texture2D" uid="uid://5to841nc4sh6" path="res://Assets/kenney_prototype_textures/dark/texture_08.png" id="1_3wtt8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i5j3u"]
+albedo_texture = ExtResource("1_3wtt8")
+
+[node name="HubWorld" type="Node3D" unique_id=512242856]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=300381912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+material_override = SubResource("StandardMaterial3D_i5j3u")
+use_collision = true
+size = Vector3(10, 1, 10)
