@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bes1a63rvd6wg"]
+
+[ext_resource type="Script" uid="uid://dqx7cmb4rygio" path="res://Scripts/GameController.gd" id="1_fyej0"]
+[ext_resource type="PackedScene" uid="uid://trrvu02okt44" path="res://Scenes/UI/SplashScene.tscn" id="2_liseb"]
+
+[node name="GameController" type="Node" unique_id=314243519]
+script = ExtResource("1_fyej0")
+
+[node name="World3D" type="Node3D" parent="." unique_id=1179575774]
+
+[node name="World2D" type="Node2D" parent="." unique_id=342793139]
+
+[node name="GUI" type="Control" parent="." unique_id=454366439]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SplashScene" parent="GUI" unique_id=1198370969 instance=ExtResource("2_liseb")]
+layout_mode = 1

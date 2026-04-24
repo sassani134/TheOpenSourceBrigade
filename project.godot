@@ -16,6 +16,10 @@ run/main_scene="uid://dqnuasx54cj6l"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://eqcw3h3egnmc"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gut/plugin.cfg", "res://addons/virtual_joystick/plugin.cfg")
