@@ -12,31 +12,31 @@ extends Control
 var splash_screens: Array
 
 func get_screens() -> void:
-    splash_screens = splash_screen_container.get_children()
-    for screen in splash_screens:
-        screen.modulate.a = 0.0
+	splash_screens = splash_screen_container.get_children()
+	for screen in splash_screens:
+		screen.modulate.a = 0.0
 
 func fade() -> void:
-    for screen in splash_screens:
-        var tween = self.create_tween()
-        # if video or scripted scenes 2D/3D
-        if screen is VideoStreamPlayer:
-            print("play video")
-            screen.play()
-        tween.tween_interval(in_time)
-        tween.property(screen, "modulate:a", 1.0, fade_in_time)
-        tween.tween_interval(pause_time)
-        tween.property(screen, "modulate:a", 0.0, fade_out_time)
-        tween.tween_interval(out_time)
-        await tween.finished
-    get_tree().change_scene_to_packed(load_scene) # i think i need to change this line for globals
+	for screen in splash_screens:
+		var tween = self.create_tween()
+		# if video or scripted scenes 2D/3D
+		if screen is VideoStreamPlayer:
+			print("play video")
+			screen.play()
+		tween.tween_interval(in_time)
+		tween.property(screen, "modulate:a", 1.0, fade_in_time)
+		tween.tween_interval(pause_time)
+		tween.property(screen, "modulate:a", 0.0, fade_out_time)
+		tween.tween_interval(out_time)
+		await tween.finished
+	get_tree().change_scene_to_packed(load_scene) # i think i need to change this line for globals
 
 func _ready() -> void:
-    get_screens()
-    fade()
+	get_screens()
+	fade()
 
 # Change it so it stop tween and change screen
 func _unhandled_input(event: InputEvent) -> void:
-    if event.is_pressed():
-        get_tree().change_scene_to_packed(load_scene)
-        #Global.game_controller.change_gui_scene("...")
+	if event.is_pressed():
+		get_tree().change_scene_to_packed(load_scene)
+		#Global.game_controller.change_gui_scene("...")

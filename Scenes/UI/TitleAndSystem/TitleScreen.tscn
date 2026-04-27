@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://d2oq6fjrfhukp"]
+
+[ext_resource type="Texture2D" uid="uid://mh0xh4lclgl2" path="res://icon.svg" id="1_8uuw6"]
+
+[node name="TitleScreen" type="Control" unique_id=165171884]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=455887918]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=663085579]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer" unique_id=1570801851]
+layout_mode = 2
+texture = ExtResource("1_8uuw6")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=561862672]
+layout_mode = 2
+text = "Press Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer" unique_id=236883260]
+layout_mode = 2
+text = "CC 2026 Espace Chantourne"

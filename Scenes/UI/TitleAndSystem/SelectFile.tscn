@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bw1ow0e2ydxvs"]
+
+[ext_resource type="Texture2D" uid="uid://mh0xh4lclgl2" path="res://icon.svg" id="1_ow6ir"]
+
+[node name="SelectFile" type="Control" unique_id=1328124698]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1766267668]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1038490612]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=397204949]
+layout_mode = 2
+text = "SELECT_FILE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemList" type="ItemList" parent="CenterContainer/VBoxContainer" unique_id=1491934086]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer/ItemList" unique_id=1359796678]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ow6ir")
