@@ -17,6 +17,7 @@
 - [itch.io](https://itch.io/game-assets/free)
 - [16bitdev](https://www.youtube.com/@16bitdev)
 - [GDQuest](https://www.gdquest.com/)
+- [Game UI Database](https://www.gameuidatabase.com/index.php)
 
 ### 3D
 ### 2D
