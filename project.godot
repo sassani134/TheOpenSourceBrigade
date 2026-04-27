@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*uid://eqcw3h3egnmc"
+SettingsManager="*uid://goib52vqjckx"
 
 [editor_plugins]
 
