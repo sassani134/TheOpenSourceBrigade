@@ -27,11 +27,50 @@ text = "SELECT_FILE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ItemList" type="ItemList" parent="CenterContainer/VBoxContainer" unique_id=1491934086]
+[node name="GridContainer" type="GridContainer" parent="CenterContainer/VBoxContainer" unique_id=2049237073]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=455509581]
+layout_mode = 2
+text = "FILE_A
+NEW"
+icon = ExtResource("1_ow6ir")
+
+[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=2123947410]
+layout_mode = 2
+text = "FILE_B
+NEW"
+icon = ExtResource("1_ow6ir")
+
+[node name="Button3" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=875995978]
+layout_mode = 2
+text = "FILE_C
+NEW"
+icon = ExtResource("1_ow6ir")
+
+[node name="Button4" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1940834125]
+layout_mode = 2
+text = "FILE_D
+NEW"
+icon = ExtResource("1_ow6ir")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1334824892]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer/ItemList" unique_id=1359796678]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("1_ow6ir")
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1546074158]
+layout_mode = 2
+text = "SCORE"
+
+[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1072405503]
+layout_mode = 2
+text = "COPY"
+
+[node name="Button3" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=354861311]
+layout_mode = 2
+text = "ERASE"
+
+[node name="Button4" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1381735825]
+layout_mode = 2
+text = "OPTION"
