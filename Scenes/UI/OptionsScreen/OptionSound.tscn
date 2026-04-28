@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://tfcmbreuwmns"]
+
+[node name="OptionSound" type="Control" unique_id=389073825]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1832232624]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer" unique_id=1634398203]
+layout_mode = 2
+theme_override_constants/h_separation = 16
+columns = 4
+
+[node name="Label" type="Label" parent="CenterContainer/GridContainer" unique_id=1748206453]
+layout_mode = 2
+text = "MASTER"
+
+[node name="HSlider" type="HSlider" parent="CenterContainer/GridContainer" unique_id=814150872]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 100.0
+tick_count = 1
+ticks_position = 3
+
+[node name="Label2" type="Label" parent="CenterContainer/GridContainer" unique_id=574389989]
+layout_mode = 2
+text = "100%"
+
+[node name="Button" type="Button" parent="CenterContainer/GridContainer" unique_id=1540579188]
+layout_mode = 2
+text = "Test "
+
+[node name="Label3" type="Label" parent="CenterContainer/GridContainer" unique_id=1484588475]
+layout_mode = 2
+text = "MUSIC"
+
+[node name="HSlider2" type="HSlider" parent="CenterContainer/GridContainer" unique_id=1179906513]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 75.0
+tick_count = 1
+ticks_position = 3
+
+[node name="Label4" type="Label" parent="CenterContainer/GridContainer" unique_id=1489866133]
+layout_mode = 2
+text = "75%"
+
+[node name="Button2" type="Button" parent="CenterContainer/GridContainer" unique_id=1315624188]
+layout_mode = 2
+text = "Test "
+
+[node name="Label5" type="Label" parent="CenterContainer/GridContainer" unique_id=922451052]
+layout_mode = 2
+text = "SFX"
+
+[node name="HSlider3" type="HSlider" parent="CenterContainer/GridContainer" unique_id=1420970336]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 50.0
+tick_count = 1
+ticks_position = 3
+
+[node name="Label6" type="Label" parent="CenterContainer/GridContainer" unique_id=1595506118]
+layout_mode = 2
+text = "50%"
+
+[node name="Button3" type="Button" parent="CenterContainer/GridContainer" unique_id=956049035]
+layout_mode = 2
+text = "Test "
+
+[node name="Label7" type="Label" parent="CenterContainer/GridContainer" unique_id=872955168]
+layout_mode = 2
+text = "VOICE"
+
+[node name="HSlider4" type="HSlider" parent="CenterContainer/GridContainer" unique_id=97787178]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 25.0
+tick_count = 1
+ticks_position = 3
+
+[node name="Label8" type="Label" parent="CenterContainer/GridContainer" unique_id=490301207]
+layout_mode = 2
+text = "25%"
+
+[node name="Button4" type="Button" parent="CenterContainer/GridContainer" unique_id=1006433711]
+layout_mode = 2
+text = "Test "

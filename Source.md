@@ -18,6 +18,7 @@
 - [16bitdev](https://www.youtube.com/@16bitdev)
 - [GDQuest](https://www.gdquest.com/)
 - [Game UI Database](https://www.gameuidatabase.com/index.php)
+- [Keyboard sizes](https://commons.wikimedia.org/wiki/File:Keyboard_sizes.svg?uselang=en#Licensing)
 
 ### 3D
 ### 2D

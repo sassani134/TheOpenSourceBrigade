@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://uwuiaa6sy4pc"]
+
+[node name="OptionLanguage" type="Control" unique_id=636137504]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1106932468]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer" unique_id=262558185]
+layout_mode = 2
+columns = 2
+
+[node name="Button" type="Button" parent="CenterContainer/GridContainer" unique_id=638112829]
+layout_mode = 2
+text = "ENGLISH"
+
+[node name="Button2" type="Button" parent="CenterContainer/GridContainer" unique_id=459703065]
+layout_mode = 2
+text = "FRANCAIS"

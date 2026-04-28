@@ -1,0 +1,1094 @@
+[gd_scene format=3 uid="uid://cmxo1ljwvp6m"]
+
+[ext_resource type="Texture2D" uid="uid://cg122vdpsipuk" path="res://Assets/Keyboard_sizes.svg" id="1_rx06v"]
+
+[node name="OptionControlMobile" type="Control" unique_id=426581106]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRectKeyBoard" type="TextureRect" parent="." unique_id=857351514]
+visible = false
+modulate = Color(1, 1, 1, 0.20784314)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -166.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_rx06v")
+
+[node name="TextureRectKeyBoard2" type="TextureRect" parent="." unique_id=743577420]
+visible = false
+modulate = Color(1, 1, 1, 0.20784314)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_rx06v")
+
+[node name="Sprite2DKeyBoard" type="Sprite2D" parent="." unique_id=1591182912]
+visible = false
+position = Vector2(567, 1193)
+scale = Vector2(2, 2)
+texture = ExtResource("1_rx06v")
+
+[node name="ControlUnordered" type="Control" parent="." unique_id=1475696873]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FButtons" type="Control" parent="ControlUnordered" unique_id=892127162]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="ControlUnordered/FButtons" unique_id=1553693860]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 168.0
+offset_right = 54.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+text = "ESC"
+
+[node name="Button2" type="Button" parent="ControlUnordered/FButtons" unique_id=1259122139]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 168.0
+offset_right = 148.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+text = "F1"
+
+[node name="Button3" type="Button" parent="ControlUnordered/FButtons" unique_id=93599970]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 168.0
+offset_right = 196.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+text = "F2"
+
+[node name="Button4" type="Button" parent="ControlUnordered/FButtons" unique_id=567515145]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 167.0
+offset_right = 244.0
+offset_bottom = 203.0
+theme_override_font_sizes/font_size = 8
+text = "F3"
+
+[node name="Button5" type="Button" parent="ControlUnordered/FButtons" unique_id=145244640]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 167.0
+offset_right = 290.0
+offset_bottom = 203.0
+theme_override_font_sizes/font_size = 8
+text = "F4"
+
+[node name="Button6" type="Button" parent="ControlUnordered/FButtons" unique_id=1900098860]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 167.0
+offset_right = 363.0
+offset_bottom = 203.0
+theme_override_font_sizes/font_size = 8
+text = "F5"
+
+[node name="Button7" type="Button" parent="ControlUnordered/FButtons" unique_id=1803858224]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 168.0
+offset_right = 408.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+text = "F6"
+
+[node name="Button8" type="Button" parent="ControlUnordered/FButtons" unique_id=389433232]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 169.0
+offset_right = 457.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 8
+text = "F7"
+
+[node name="Button9" type="Button" parent="ControlUnordered/FButtons" unique_id=1169350029]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 168.0
+offset_right = 503.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+text = "F8"
+
+[node name="Button10" type="Button" parent="ControlUnordered/FButtons" unique_id=1538436213]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 167.0
+offset_right = 573.0
+offset_bottom = 203.0
+theme_override_font_sizes/font_size = 8
+text = "F9"
+
+[node name="Button11" type="Button" parent="ControlUnordered/FButtons" unique_id=1943861844]
+layout_mode = 0
+offset_left = 579.0
+offset_top = 168.0
+offset_right = 621.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+text = "F10"
+
+[node name="Button12" type="Button" parent="ControlUnordered/FButtons" unique_id=375266167]
+layout_mode = 0
+offset_left = 626.0
+offset_top = 169.0
+offset_right = 668.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 8
+text = "F11"
+
+[node name="Button13" type="Button" parent="ControlUnordered/FButtons" unique_id=1256421157]
+layout_mode = 0
+offset_left = 674.0
+offset_top = 169.0
+offset_right = 716.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 8
+text = "F12"
+
+[node name="NumberButtons" type="Control" parent="ControlUnordered" unique_id=963071871]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="ControlUnordered/NumberButtons" unique_id=128876273]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 217.0
+offset_right = 54.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button2" type="Button" parent="ControlUnordered/NumberButtons" unique_id=711108597]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 217.0
+offset_right = 101.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+text = "1"
+
+[node name="Button3" type="Button" parent="ControlUnordered/NumberButtons" unique_id=330508374]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 218.0
+offset_right = 148.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "2"
+
+[node name="Button4" type="Button" parent="ControlUnordered/NumberButtons" unique_id=1339295263]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 218.0
+offset_right = 196.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "3"
+
+[node name="Button5" type="Button" parent="ControlUnordered/NumberButtons" unique_id=766948057]
+layout_mode = 0
+offset_left = 201.0
+offset_top = 218.0
+offset_right = 243.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "4"
+
+[node name="Button6" type="Button" parent="ControlUnordered/NumberButtons" unique_id=743404060]
+layout_mode = 0
+offset_left = 249.0
+offset_top = 218.0
+offset_right = 291.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "5"
+
+[node name="Button7" type="Button" parent="ControlUnordered/NumberButtons" unique_id=1037171191]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 217.0
+offset_right = 337.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+text = "6"
+
+[node name="Button8" type="Button" parent="ControlUnordered/NumberButtons" unique_id=167857844]
+layout_mode = 0
+offset_left = 343.0
+offset_top = 218.0
+offset_right = 385.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "7"
+
+[node name="Button9" type="Button" parent="ControlUnordered/NumberButtons" unique_id=1664807911]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 218.0
+offset_right = 433.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "8"
+
+[node name="Button10" type="Button" parent="ControlUnordered/NumberButtons" unique_id=1302161717]
+layout_mode = 0
+offset_left = 437.0
+offset_top = 218.0
+offset_right = 479.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "9"
+
+[node name="Button11" type="Button" parent="ControlUnordered/NumberButtons" unique_id=1271366580]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 218.0
+offset_right = 527.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "0"
+
+[node name="Button12" type="Button" parent="ControlUnordered/NumberButtons" unique_id=1343794702]
+layout_mode = 0
+offset_left = 533.0
+offset_top = 217.0
+offset_right = 575.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button13" type="Button" parent="ControlUnordered/NumberButtons" unique_id=1346723478]
+layout_mode = 0
+offset_left = 579.0
+offset_top = 218.0
+offset_right = 621.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button14" type="Button" parent="ControlUnordered/NumberButtons" unique_id=1638132582]
+layout_mode = 0
+offset_left = 626.0
+offset_top = 218.0
+offset_right = 715.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "Backspace"
+
+[node name="AlphabetButtons" type="Control" parent="ControlUnordered" unique_id=819019685]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1583035822]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 257.0
+offset_right = 53.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Tab"
+
+[node name="Button2" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=686207703]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 258.0
+offset_right = 124.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button3" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=178733006]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 257.0
+offset_right = 171.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button4" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1895891119]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 257.0
+offset_right = 220.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button5" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1472516599]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 258.0
+offset_right = 266.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button6" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=215619265]
+layout_mode = 0
+offset_left = 271.0
+offset_top = 257.0
+offset_right = 313.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button7" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=644838207]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 258.0
+offset_right = 362.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button8" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1098719555]
+layout_mode = 0
+offset_left = 367.0
+offset_top = 257.0
+offset_right = 409.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button9" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=746554615]
+layout_mode = 0
+offset_left = 414.0
+offset_top = 257.0
+offset_right = 456.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button10" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=591683538]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 257.0
+offset_right = 503.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button11" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1190162924]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 258.0
+offset_right = 551.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button12" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=641672929]
+layout_mode = 0
+offset_left = 556.0
+offset_top = 257.0
+offset_right = 598.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button13" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1421102385]
+layout_mode = 0
+offset_left = 604.0
+offset_top = 257.0
+offset_right = 646.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button14" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=294995479]
+layout_mode = 0
+offset_left = 652.0
+offset_top = 258.0
+offset_right = 717.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button15" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1880903875]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 298.0
+offset_right = 53.0
+offset_bottom = 334.0
+theme_override_font_sizes/font_size = 8
+text = "Cap"
+
+[node name="Button16" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1002049142]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 298.0
+offset_right = 135.0
+offset_bottom = 334.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button17" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=649519856]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 297.0
+offset_right = 185.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button18" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1155647533]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 297.0
+offset_right = 231.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button19" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1132458467]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 297.0
+offset_right = 278.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button20" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=133795670]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 297.0
+offset_right = 325.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button21" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1922846916]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 297.0
+offset_right = 372.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button22" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=643478960]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 296.0
+offset_right = 420.0
+offset_bottom = 332.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button23" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=411923739]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 296.0
+offset_right = 468.0
+offset_bottom = 332.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button24" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=670915148]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 297.0
+offset_right = 515.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button25" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=285871452]
+layout_mode = 0
+offset_left = 521.0
+offset_top = 297.0
+offset_right = 563.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button26" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1988183559]
+layout_mode = 0
+offset_left = 567.0
+offset_top = 298.0
+offset_right = 609.0
+offset_bottom = 334.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button27" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=281239775]
+layout_mode = 0
+offset_left = 615.0
+offset_top = 299.0
+offset_right = 717.0
+offset_bottom = 335.0
+theme_override_font_sizes/font_size = 8
+text = "Enter/Return"
+
+[node name="Button28" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=206311340]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 337.0
+offset_right = 53.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Shift"
+
+[node name="Button29" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=53296096]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 337.0
+offset_right = 161.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button30" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1860851995]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 337.0
+offset_right = 208.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button31" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1860316726]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 338.0
+offset_right = 256.0
+offset_bottom = 374.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button32" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=972119961]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 337.0
+offset_right = 303.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button33" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=197263453]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 337.0
+offset_right = 349.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button34" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=334526187]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 338.0
+offset_right = 396.0
+offset_bottom = 374.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button35" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=596027068]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 337.0
+offset_right = 443.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button36" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=398211998]
+layout_mode = 0
+offset_left = 449.0
+offset_top = 337.0
+offset_right = 491.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button37" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=854532734]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 337.0
+offset_right = 538.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button38" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=916835534]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 337.0
+offset_right = 586.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button39" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1408960487]
+layout_mode = 0
+offset_left = 590.0
+offset_top = 337.0
+offset_right = 632.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Shift"
+
+[node name="Button40" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=338504556]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 378.0
+offset_right = 53.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "CTRL"
+
+[node name="Button41" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=2027753967]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 378.0
+offset_right = 113.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "SUPER"
+
+[node name="Button42" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=1540977278]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 378.0
+offset_right = 171.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "ALT"
+
+[node name="Button43" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=553238960]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 378.0
+offset_right = 232.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "Space"
+
+[node name="Button44" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=841889786]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 378.0
+offset_right = 527.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "Alt"
+
+[node name="Button45" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=471257791]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 378.0
+offset_right = 586.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "Super"
+
+[node name="Button46" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=894590315]
+layout_mode = 0
+offset_left = 604.0
+offset_top = 378.0
+offset_right = 646.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "Meta"
+
+[node name="Button47" type="Button" parent="ControlUnordered/AlphabetButtons" unique_id=366264492]
+layout_mode = 0
+offset_left = 662.0
+offset_top = 378.0
+offset_right = 704.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "Control"
+
+[node name="Control" type="Control" parent="ControlUnordered" unique_id=1622570065]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="ControlUnordered/Control" unique_id=1859535614]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 168.0
+offset_right = 775.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+text = "PRT
+SYS"
+
+[node name="Button2" type="Button" parent="ControlUnordered/Control" unique_id=1711168815]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 168.0
+offset_right = 822.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+text = "SCROLL"
+
+[node name="Button3" type="Button" parent="ControlUnordered/Control" unique_id=1696682974]
+layout_mode = 0
+offset_left = 827.0
+offset_top = 168.0
+offset_right = 869.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+text = "Pause"
+
+[node name="Button4" type="Button" parent="ControlUnordered/Control" unique_id=1973921525]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 217.0
+offset_right = 775.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+text = "Insert"
+
+[node name="Button5" type="Button" parent="ControlUnordered/Control" unique_id=840350445]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 217.0
+offset_right = 822.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+text = "Home"
+
+[node name="Button6" type="Button" parent="ControlUnordered/Control" unique_id=1111298972]
+layout_mode = 0
+offset_left = 827.0
+offset_top = 218.0
+offset_right = 869.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "Page
+up"
+
+[node name="Button7" type="Button" parent="ControlUnordered/Control" unique_id=1696187311]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 258.0
+offset_right = 775.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+text = "Delete"
+
+[node name="Button8" type="Button" parent="ControlUnordered/Control" unique_id=1412991837]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 258.0
+offset_right = 822.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+text = "End"
+
+[node name="Button9" type="Button" parent="ControlUnordered/Control" unique_id=911440815]
+layout_mode = 0
+offset_left = 828.0
+offset_top = 257.0
+offset_right = 870.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Page
+Down"
+
+[node name="Button10" type="Button" parent="ControlUnordered/Control" unique_id=1538573712]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 339.0
+offset_right = 822.0
+offset_bottom = 375.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button11" type="Button" parent="ControlUnordered/Control" unique_id=2093588654]
+layout_mode = 0
+offset_left = 734.0
+offset_top = 378.0
+offset_right = 776.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button12" type="Button" parent="ControlUnordered/Control" unique_id=8762042]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 378.0
+offset_right = 822.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Button13" type="Button" parent="ControlUnordered/Control" unique_id=690852238]
+layout_mode = 0
+offset_left = 827.0
+offset_top = 377.0
+offset_right = 869.0
+offset_bottom = 413.0
+theme_override_font_sizes/font_size = 8
+text = "Ü"
+
+[node name="Control2" type="Control" parent="ControlUnordered" unique_id=806138615]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="ControlUnordered/Control2" unique_id=1041073013]
+layout_mode = 0
+offset_left = 886.0
+offset_top = 218.0
+offset_right = 928.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "Num"
+
+[node name="Button2" type="Button" parent="ControlUnordered/Control2" unique_id=1852549160]
+layout_mode = 0
+offset_left = 934.0
+offset_top = 217.0
+offset_right = 976.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+text = "/"
+
+[node name="Button3" type="Button" parent="ControlUnordered/Control2" unique_id=1354148582]
+layout_mode = 0
+offset_left = 981.0
+offset_top = 217.0
+offset_right = 1023.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+text = "*"
+
+[node name="Button4" type="Button" parent="ControlUnordered/Control2" unique_id=1453550171]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 218.0
+offset_right = 1071.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "-"
+
+[node name="Button5" type="Button" parent="ControlUnordered/Control2" unique_id=1280060051]
+layout_mode = 0
+offset_left = 887.0
+offset_top = 257.0
+offset_right = 929.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "7"
+
+[node name="Button6" type="Button" parent="ControlUnordered/Control2" unique_id=1791775393]
+layout_mode = 0
+offset_left = 934.0
+offset_top = 257.0
+offset_right = 976.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "8"
+
+[node name="Button7" type="Button" parent="ControlUnordered/Control2" unique_id=790157550]
+layout_mode = 0
+offset_left = 981.0
+offset_top = 257.0
+offset_right = 1023.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "9"
+
+[node name="Button8" type="Button" parent="ControlUnordered/Control2" unique_id=337636759]
+layout_mode = 0
+offset_left = 887.0
+offset_top = 297.0
+offset_right = 929.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+text = "4"
+
+[node name="Button9" type="Button" parent="ControlUnordered/Control2" unique_id=1945784]
+layout_mode = 0
+offset_left = 935.0
+offset_top = 297.0
+offset_right = 977.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+text = "5"
+
+[node name="Button10" type="Button" parent="ControlUnordered/Control2" unique_id=1493258464]
+layout_mode = 0
+offset_left = 982.0
+offset_top = 297.0
+offset_right = 1024.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+text = "6"
+
+[node name="Button11" type="Button" parent="ControlUnordered/Control2" unique_id=1217738766]
+layout_mode = 0
+offset_left = 887.0
+offset_top = 337.0
+offset_right = 929.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "1"
+
+[node name="Button12" type="Button" parent="ControlUnordered/Control2" unique_id=1345628123]
+layout_mode = 0
+offset_left = 934.0
+offset_top = 337.0
+offset_right = 976.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "2"
+
+[node name="Button13" type="Button" parent="ControlUnordered/Control2" unique_id=899306091]
+layout_mode = 0
+offset_left = 981.0
+offset_top = 336.0
+offset_right = 1023.0
+offset_bottom = 372.0
+theme_override_font_sizes/font_size = 8
+text = "3"
+
+[node name="Button14" type="Button" parent="ControlUnordered/Control2" unique_id=894722484]
+layout_mode = 0
+offset_left = 888.0
+offset_top = 378.0
+offset_right = 930.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "0"
+
+[node name="Button15" type="Button" parent="ControlUnordered/Control2" unique_id=1368531661]
+layout_mode = 0
+offset_left = 980.0
+offset_top = 377.0
+offset_right = 1022.0
+offset_bottom = 413.0
+theme_override_font_sizes/font_size = 8
+text = ".
+Del"
+
+[node name="Button16" type="Button" parent="ControlUnordered/Control2" unique_id=1574952708]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 257.0
+offset_right = 1071.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "+"
+
+[node name="Button17" type="Button" parent="ControlUnordered/Control2" unique_id=7070932]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 337.0
+offset_right = 1071.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Enter"
+
+[node name="Control" type="Control" parent="." unique_id=1320302707]
+visible = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -166.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control" unique_id=883831071]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/HBoxContainer" unique_id=1403870337]
+custom_minimum_size = Vector2(727, 0)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/HBoxContainer/VBoxContainer" unique_id=1564758113]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Control/HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1996820871]
+layout_mode = 2
+text = "A"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/HBoxContainer" unique_id=1522924788]
+custom_minimum_size = Vector2(152, 0)
+layout_mode = 2
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Control/HBoxContainer" unique_id=487610667]
+custom_minimum_size = Vector2(198, 0)
+layout_mode = 2
+
+[node name="Control3" type="Control" parent="." unique_id=352920288]
+visible = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -166.0
+offset_right = -425.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control4" type="Control" parent="." unique_id=582420470]
+visible = false
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -423.0
+offset_top = -166.0
+offset_right = -271.0
+offset_bottom = 166.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Control5" type="Control" parent="." unique_id=1036999326]
+visible = false
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -270.0
+offset_top = -166.0
+offset_right = -72.0
+offset_bottom = 166.0
+grow_horizontal = 0
+grow_vertical = 2

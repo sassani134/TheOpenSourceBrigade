@@ -61,7 +61,7 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1546074158]
 layout_mode = 2
-text = "SCORE"
+text = "DATA"
 
 [node name="Button2" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1072405503]
 layout_mode = 2

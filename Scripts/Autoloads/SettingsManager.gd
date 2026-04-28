@@ -182,9 +182,10 @@ func apply_video_settings() -> void:
 	return
 
 func apply_audio_settings() -> void:
-	var master_db = linear_to_db(clamp(audio_settings["master_volume"], 0.0, 1.0))
-	var music_db = linear_to_db(clamp(audio_settings["music_volume"], 0.0, 1.0))
-	var sfx_db = linear_to_db(clamp(audio_settings["sfx_volume"], 0.0, 1.0))
+	var master_db = linear_to_db(clamp(audio_settings["volume_master"], 0.0, 1.0))
+	var music_db = linear_to_db(clamp(audio_settings["volume_music"], 0.0, 1.0))
+	var sfx_db = linear_to_db(clamp(audio_settings["volume_sfx"], 0.0, 1.0))
+	var voice_db = linear_to_db(clamp(audio_settings["volume_voice"], 0.0, 1.0))
 
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), master_db)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), music_db)

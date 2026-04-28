@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bre4us7kjmndb"]
+
+[ext_resource type="Texture2D" uid="uid://vqf6ubmijcny" path="res://Assets/screenshotDolphin.jpg" id="1_0wdpo"]
+[ext_resource type="Texture2D" uid="uid://cyuad0ub0yeue" path="res://Assets/kenney_input-prompt/Generic/Vector/generic_button_circle_fill.svg" id="2_gxcsm"]
+[ext_resource type="Texture2D" uid="uid://c3p5jq5gsdmk2" path="res://Assets/kenney_input-prompt/Generic/Vector/generic_button_circle.svg" id="3_qfjdq"]
+
+[node name="OptionMobile" type="Control" unique_id=1278278720]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=170136118]
+modulate = Color(1, 1, 1, 0.28235295)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_0wdpo")
+expand_mode = 3
+
+[node name="GenericButtonCircleFill" type="Sprite2D" parent="." unique_id=174977480]
+position = Vector2(109.00001, 489)
+scale = Vector2(3, 3)
+texture = ExtResource("2_gxcsm")
+
+[node name="GenericButtonCircleFill2" type="Sprite2D" parent="." unique_id=368520624]
+position = Vector2(879, 526)
+scale = Vector2(3, 3)
+texture = ExtResource("2_gxcsm")
+
+[node name="GenericButtonCircle" type="Sprite2D" parent="." unique_id=1174779677]
+position = Vector2(1067, 490.00003)
+scale = Vector2(3, 3)
+texture = ExtResource("3_qfjdq")
+
+[node name="GenericButtonCircle2" type="Sprite2D" parent="." unique_id=1878241663]
+position = Vector2(935, 375)
+scale = Vector2(2, 2)
+texture = ExtResource("3_qfjdq")
+
+[node name="GenericButtonCircle3" type="Sprite2D" parent="." unique_id=850662905]
+position = Vector2(1084, 310)
+scale = Vector2(2, 2)
+texture = ExtResource("3_qfjdq")

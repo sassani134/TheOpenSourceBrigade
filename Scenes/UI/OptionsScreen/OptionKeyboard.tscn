@@ -1,0 +1,1721 @@
+[gd_scene format=3 uid="uid://3gb3n2dwtgnt"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_mhk4r"]
+device = -1
+keycode = 4194305
+
+[sub_resource type="Shortcut" id="Shortcut_nkvi2"]
+events = [SubResource("InputEventKey_mhk4r")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_dr7xc"]
+device = -1
+keycode = 4194332
+
+[sub_resource type="Shortcut" id="Shortcut_b7io0"]
+events = [SubResource("InputEventKey_dr7xc")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_vc4od"]
+device = -1
+keycode = 4194333
+
+[sub_resource type="Shortcut" id="Shortcut_moptn"]
+events = [SubResource("InputEventKey_vc4od")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_1yyvg"]
+device = -1
+keycode = 4194334
+
+[sub_resource type="Shortcut" id="Shortcut_m1war"]
+events = [SubResource("InputEventKey_1yyvg")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_6ri00"]
+device = -1
+keycode = 4194335
+
+[sub_resource type="Shortcut" id="Shortcut_jdjen"]
+events = [SubResource("InputEventKey_6ri00")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_1tdas"]
+device = -1
+keycode = 4194336
+
+[sub_resource type="Shortcut" id="Shortcut_atcdf"]
+events = [SubResource("InputEventKey_1tdas")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_281bf"]
+device = -1
+keycode = 4194337
+
+[sub_resource type="Shortcut" id="Shortcut_x418k"]
+events = [SubResource("InputEventKey_281bf")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_1fi7q"]
+device = -1
+keycode = 4194338
+
+[sub_resource type="Shortcut" id="Shortcut_1fi7q"]
+events = [SubResource("InputEventKey_1fi7q")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_5dm2e"]
+device = -1
+keycode = 4194339
+
+[sub_resource type="Shortcut" id="Shortcut_r4iog"]
+events = [SubResource("InputEventKey_5dm2e")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_4gkv4"]
+device = -1
+keycode = 4194340
+
+[sub_resource type="Shortcut" id="Shortcut_my1er"]
+events = [SubResource("InputEventKey_4gkv4")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_n6mf6"]
+device = -1
+keycode = 4194341
+
+[sub_resource type="Shortcut" id="Shortcut_6fcrh"]
+events = [SubResource("InputEventKey_n6mf6")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_r4iog"]
+device = -1
+keycode = 4194342
+
+[sub_resource type="Shortcut" id="Shortcut_4gkv4"]
+events = [SubResource("InputEventKey_r4iog")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_my1er"]
+device = -1
+keycode = 4194343
+
+[sub_resource type="Shortcut" id="Shortcut_n6mf6"]
+events = [SubResource("InputEventKey_my1er")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_6fcrh"]
+device = -1
+keycode = 96
+unicode = 339
+
+[sub_resource type="Shortcut" id="Shortcut_v2nxu"]
+events = [SubResource("InputEventKey_6fcrh")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_v2nxu"]
+device = -1
+keycode = 38
+unicode = 38
+
+[sub_resource type="Shortcut" id="Shortcut_a2sme"]
+events = [SubResource("InputEventKey_v2nxu")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_76p27"]
+
+[sub_resource type="Shortcut" id="Shortcut_nnydu"]
+events = [SubResource("InputEventKey_76p27")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_a2sme"]
+device = -1
+keycode = 34
+unicode = 34
+
+[sub_resource type="Shortcut" id="Shortcut_76p27"]
+events = [SubResource("InputEventKey_a2sme")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_nnydu"]
+device = -1
+keycode = 39
+unicode = 39
+
+[sub_resource type="Shortcut" id="Shortcut_0206q"]
+events = [SubResource("InputEventKey_nnydu")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_0206q"]
+device = -1
+keycode = 40
+unicode = 40
+
+[sub_resource type="Shortcut" id="Shortcut_evv7h"]
+events = [SubResource("InputEventKey_0206q")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ko0x7"]
+device = -1
+keycode = 45
+unicode = 45
+
+[sub_resource type="Shortcut" id="Shortcut_2fxf7"]
+events = [SubResource("InputEventKey_ko0x7")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_evv7h"]
+device = -1
+keycode = 95
+unicode = 95
+
+[sub_resource type="Shortcut" id="Shortcut_ko0x7"]
+events = [SubResource("InputEventKey_evv7h")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_2fxf7"]
+
+[sub_resource type="Shortcut" id="Shortcut_dvydn"]
+events = [SubResource("InputEventKey_2fxf7")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_gp0su"]
+
+[sub_resource type="Shortcut" id="Shortcut_sf7cb"]
+events = [SubResource("InputEventKey_gp0su")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_dvydn"]
+device = -1
+keycode = 41
+unicode = 41
+
+[sub_resource type="Shortcut" id="Shortcut_gp0su"]
+events = [SubResource("InputEventKey_dvydn")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_sf7cb"]
+device = -1
+keycode = 61
+unicode = 61
+
+[sub_resource type="Shortcut" id="Shortcut_2fglm"]
+events = [SubResource("InputEventKey_sf7cb")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_2fglm"]
+device = -1
+keycode = 4194308
+
+[sub_resource type="Shortcut" id="Shortcut_t2xtl"]
+events = [SubResource("InputEventKey_2fglm")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_gfcws"]
+device = -1
+keycode = 4194306
+
+[sub_resource type="Shortcut" id="Shortcut_mt5e2"]
+events = [SubResource("InputEventKey_gfcws")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_t2xtl"]
+device = -1
+keycode = 65
+unicode = 97
+
+[sub_resource type="Shortcut" id="Shortcut_gfcws"]
+events = [SubResource("InputEventKey_t2xtl")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_mt5e2"]
+device = -1
+keycode = 90
+unicode = 122
+
+[sub_resource type="Shortcut" id="Shortcut_ukbov"]
+events = [SubResource("InputEventKey_mt5e2")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_jmg40"]
+device = -1
+keycode = 69
+unicode = 101
+
+[sub_resource type="Shortcut" id="Shortcut_hcud6"]
+events = [SubResource("InputEventKey_jmg40")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_1tn8c"]
+device = -1
+keycode = 82
+unicode = 114
+
+[sub_resource type="Shortcut" id="Shortcut_5diiv"]
+events = [SubResource("InputEventKey_1tn8c")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_jmq4x"]
+device = -1
+keycode = 84
+unicode = 116
+
+[sub_resource type="Shortcut" id="Shortcut_vov7x"]
+events = [SubResource("InputEventKey_jmq4x")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_q40q3"]
+device = -1
+keycode = 89
+unicode = 121
+
+[sub_resource type="Shortcut" id="Shortcut_vgmw7"]
+events = [SubResource("InputEventKey_q40q3")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_dg8rj"]
+device = -1
+keycode = 85
+unicode = 117
+
+[sub_resource type="Shortcut" id="Shortcut_l0wga"]
+events = [SubResource("InputEventKey_dg8rj")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_4hgxq"]
+device = -1
+keycode = 73
+unicode = 105
+
+[sub_resource type="Shortcut" id="Shortcut_fw7hb"]
+events = [SubResource("InputEventKey_4hgxq")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ekwkk"]
+device = -1
+keycode = 79
+unicode = 111
+
+[sub_resource type="Shortcut" id="Shortcut_ws3pn"]
+events = [SubResource("InputEventKey_ekwkk")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_7uas8"]
+device = -1
+keycode = 80
+unicode = 112
+
+[sub_resource type="Shortcut" id="Shortcut_61ktp"]
+events = [SubResource("InputEventKey_7uas8")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ukbov"]
+
+[sub_resource type="Shortcut" id="Shortcut_jmg40"]
+events = [SubResource("InputEventKey_ukbov")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_hcud6"]
+device = -1
+keycode = 36
+unicode = 36
+
+[sub_resource type="Shortcut" id="Shortcut_1tn8c"]
+events = [SubResource("InputEventKey_hcud6")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_5diiv"]
+device = -1
+keycode = 81
+unicode = 113
+
+[sub_resource type="Shortcut" id="Shortcut_jmq4x"]
+events = [SubResource("InputEventKey_5diiv")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_vov7x"]
+device = -1
+keycode = 83
+unicode = 115
+
+[sub_resource type="Shortcut" id="Shortcut_q40q3"]
+events = [SubResource("InputEventKey_vov7x")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_vgmw7"]
+device = -1
+keycode = 68
+unicode = 100
+
+[sub_resource type="Shortcut" id="Shortcut_dg8rj"]
+events = [SubResource("InputEventKey_vgmw7")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_l0wga"]
+device = -1
+keycode = 70
+unicode = 102
+
+[sub_resource type="Shortcut" id="Shortcut_4hgxq"]
+events = [SubResource("InputEventKey_l0wga")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_fw7hb"]
+device = -1
+keycode = 71
+unicode = 103
+
+[sub_resource type="Shortcut" id="Shortcut_ekwkk"]
+events = [SubResource("InputEventKey_fw7hb")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ws3pn"]
+device = -1
+keycode = 72
+unicode = 104
+
+[sub_resource type="Shortcut" id="Shortcut_7uas8"]
+events = [SubResource("InputEventKey_ws3pn")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_61ktp"]
+device = -1
+keycode = 74
+unicode = 106
+
+[sub_resource type="Shortcut" id="Shortcut_pjo2s"]
+events = [SubResource("InputEventKey_61ktp")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_dalt6"]
+device = -1
+keycode = 75
+unicode = 107
+
+[sub_resource type="Shortcut" id="Shortcut_v4pdw"]
+events = [SubResource("InputEventKey_dalt6")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_o7x2x"]
+device = -1
+keycode = 76
+unicode = 108
+
+[sub_resource type="Shortcut" id="Shortcut_4lnxr"]
+events = [SubResource("InputEventKey_o7x2x")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_pjo2s"]
+device = -1
+keycode = 77
+unicode = 109
+
+[sub_resource type="Shortcut" id="Shortcut_dalt6"]
+events = [SubResource("InputEventKey_pjo2s")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_v4pdw"]
+device = -1
+keycode = 42
+unicode = 42
+
+[sub_resource type="Shortcut" id="Shortcut_o7x2x"]
+events = [SubResource("InputEventKey_v4pdw")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_4lnxr"]
+device = -1
+keycode = 87
+unicode = 119
+
+[sub_resource type="Shortcut" id="Shortcut_tpt1a"]
+events = [SubResource("InputEventKey_4lnxr")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_hd75i"]
+device = -1
+keycode = 88
+unicode = 120
+
+[sub_resource type="Shortcut" id="Shortcut_ur5jg"]
+events = [SubResource("InputEventKey_hd75i")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_57qb0"]
+device = -1
+keycode = 67
+unicode = 99
+
+[sub_resource type="Shortcut" id="Shortcut_ogid5"]
+events = [SubResource("InputEventKey_57qb0")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_gq7w3"]
+device = -1
+keycode = 86
+unicode = 118
+
+[sub_resource type="Shortcut" id="Shortcut_gflem"]
+events = [SubResource("InputEventKey_gq7w3")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_sw2ry"]
+device = -1
+keycode = 66
+unicode = 98
+
+[sub_resource type="Shortcut" id="Shortcut_xxhm2"]
+events = [SubResource("InputEventKey_sw2ry")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_h4daj"]
+device = -1
+keycode = 78
+unicode = 110
+
+[sub_resource type="Shortcut" id="Shortcut_isbi1"]
+events = [SubResource("InputEventKey_h4daj")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_j5e8v"]
+device = -1
+keycode = 44
+unicode = 44
+
+[sub_resource type="Shortcut" id="Shortcut_hai00"]
+events = [SubResource("InputEventKey_j5e8v")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_hhsrn"]
+device = -1
+keycode = 59
+unicode = 59
+
+[sub_resource type="Shortcut" id="Shortcut_oiu0j"]
+events = [SubResource("InputEventKey_hhsrn")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_mojw2"]
+device = -1
+keycode = 58
+unicode = 58
+
+[sub_resource type="Shortcut" id="Shortcut_w811g"]
+events = [SubResource("InputEventKey_mojw2")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_11c04"]
+device = -1
+keycode = 33
+unicode = 33
+
+[sub_resource type="Shortcut" id="Shortcut_ou70u"]
+events = [SubResource("InputEventKey_11c04")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_m16hq"]
+device = -1
+keycode = 4194325
+
+[sub_resource type="Shortcut" id="Shortcut_xv37e"]
+events = [SubResource("InputEventKey_m16hq")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_vhcqe"]
+device = -1
+keycode = 4194326
+
+[sub_resource type="Shortcut" id="Shortcut_apm3e"]
+events = [SubResource("InputEventKey_vhcqe")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_2xylu"]
+
+[sub_resource type="Shortcut" id="Shortcut_dqui5"]
+events = [SubResource("InputEventKey_2xylu")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_tpt1a"]
+
+[sub_resource type="Shortcut" id="Shortcut_hd75i"]
+events = [SubResource("InputEventKey_tpt1a")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ur5jg"]
+device = -1
+keycode = 4194328
+
+[sub_resource type="Shortcut" id="Shortcut_57qb0"]
+events = [SubResource("InputEventKey_ur5jg")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ogid5"]
+device = -1
+keycode = 4194326
+
+[sub_resource type="Shortcut" id="Shortcut_gq7w3"]
+events = [SubResource("InputEventKey_ogid5")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_isbi1"]
+device = -1
+keycode = 4194320
+
+[sub_resource type="Shortcut" id="Shortcut_j5e8v"]
+events = [SubResource("InputEventKey_isbi1")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_gflem"]
+device = -1
+keycode = 4194319
+
+[sub_resource type="Shortcut" id="Shortcut_sw2ry"]
+events = [SubResource("InputEventKey_gflem")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_xxhm2"]
+device = -1
+keycode = 4194322
+
+[sub_resource type="Shortcut" id="Shortcut_h4daj"]
+events = [SubResource("InputEventKey_xxhm2")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_hai00"]
+device = -1
+keycode = 4194321
+
+[sub_resource type="Shortcut" id="Shortcut_hhsrn"]
+events = [SubResource("InputEventKey_hai00")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_oiu0j"]
+device = -1
+keycode = 4194330
+
+[sub_resource type="Shortcut" id="Shortcut_mojw2"]
+events = [SubResource("InputEventKey_oiu0j")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_w811g"]
+device = -1
+keycode = 4194434
+unicode = 47
+
+[sub_resource type="Shortcut" id="Shortcut_11c04"]
+events = [SubResource("InputEventKey_w811g")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ou70u"]
+device = -1
+keycode = 4194433
+unicode = 42
+
+[sub_resource type="Shortcut" id="Shortcut_m16hq"]
+events = [SubResource("InputEventKey_ou70u")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_xv37e"]
+device = -1
+keycode = 4194435
+unicode = 45
+
+[sub_resource type="Shortcut" id="Shortcut_vhcqe"]
+events = [SubResource("InputEventKey_xv37e")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_apm3e"]
+device = -1
+keycode = 4194445
+unicode = 55
+
+[sub_resource type="Shortcut" id="Shortcut_2xylu"]
+events = [SubResource("InputEventKey_apm3e")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_dqui5"]
+device = -1
+keycode = 4194446
+unicode = 56
+
+[sub_resource type="Shortcut" id="Shortcut_o5f8t"]
+events = [SubResource("InputEventKey_dqui5")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_8felm"]
+device = -1
+keycode = 4194447
+unicode = 57
+
+[sub_resource type="Shortcut" id="Shortcut_ighqe"]
+events = [SubResource("InputEventKey_8felm")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_46koh"]
+device = -1
+keycode = 4194442
+unicode = 52
+
+[sub_resource type="Shortcut" id="Shortcut_yihc5"]
+events = [SubResource("InputEventKey_46koh")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ucmks"]
+device = -1
+keycode = 4194443
+unicode = 53
+
+[sub_resource type="Shortcut" id="Shortcut_wam3n"]
+events = [SubResource("InputEventKey_ucmks")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_68oao"]
+device = -1
+keycode = 4194444
+unicode = 54
+
+[sub_resource type="Shortcut" id="Shortcut_6rae7"]
+events = [SubResource("InputEventKey_68oao")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_785ny"]
+device = -1
+keycode = 4194439
+unicode = 49
+
+[sub_resource type="Shortcut" id="Shortcut_838rt"]
+events = [SubResource("InputEventKey_785ny")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_vom67"]
+device = -1
+keycode = 4194440
+unicode = 50
+
+[sub_resource type="Shortcut" id="Shortcut_4o5ca"]
+events = [SubResource("InputEventKey_vom67")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_5dh3h"]
+device = -1
+keycode = 4194441
+unicode = 51
+
+[sub_resource type="Shortcut" id="Shortcut_khnbr"]
+events = [SubResource("InputEventKey_5dh3h")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_twfuy"]
+device = -1
+keycode = 4194438
+unicode = 48
+
+[sub_resource type="Shortcut" id="Shortcut_74mk2"]
+events = [SubResource("InputEventKey_twfuy")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_gawuo"]
+device = -1
+keycode = 4194436
+unicode = 46
+
+[sub_resource type="Shortcut" id="Shortcut_bp4g2"]
+events = [SubResource("InputEventKey_gawuo")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ehxin"]
+device = -1
+keycode = 4194437
+unicode = 43
+
+[sub_resource type="Shortcut" id="Shortcut_lelac"]
+events = [SubResource("InputEventKey_ehxin")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_20bdq"]
+device = -1
+keycode = 4194310
+
+[sub_resource type="Shortcut" id="Shortcut_n3lgk"]
+events = [SubResource("InputEventKey_20bdq")]
+
+[node name="OptionKeyboard" type="Control" unique_id=643241834]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FButtons" type="Control" parent="." unique_id=1298391916]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ButtonESC" type="Button" parent="FButtons" unique_id=746704298]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 168.0
+offset_right = 54.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_nkvi2")
+text = "ESC"
+
+[node name="ButtonF1" type="Button" parent="FButtons" unique_id=287275690]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 168.0
+offset_right = 148.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_b7io0")
+text = "F1"
+
+[node name="ButtonF2" type="Button" parent="FButtons" unique_id=327736318]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 168.0
+offset_right = 196.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_moptn")
+text = "F2"
+
+[node name="ButtonF3" type="Button" parent="FButtons" unique_id=363810095]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 167.0
+offset_right = 244.0
+offset_bottom = 203.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_m1war")
+text = "F3"
+
+[node name="ButtonF4" type="Button" parent="FButtons" unique_id=926865427]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 167.0
+offset_right = 290.0
+offset_bottom = 203.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_jdjen")
+text = "F4"
+
+[node name="ButtonF5" type="Button" parent="FButtons" unique_id=383360249]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 167.0
+offset_right = 363.0
+offset_bottom = 203.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_atcdf")
+text = "F5"
+
+[node name="ButtonF6" type="Button" parent="FButtons" unique_id=226686517]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 168.0
+offset_right = 408.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_x418k")
+text = "F6"
+
+[node name="ButtonF7" type="Button" parent="FButtons" unique_id=1000087512]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 169.0
+offset_right = 457.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_1fi7q")
+text = "F7"
+
+[node name="ButtonF8" type="Button" parent="FButtons" unique_id=1412624375]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 168.0
+offset_right = 503.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_r4iog")
+text = "F8"
+
+[node name="ButtonF9" type="Button" parent="FButtons" unique_id=1544357669]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 167.0
+offset_right = 573.0
+offset_bottom = 203.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_my1er")
+text = "F9"
+
+[node name="ButtonF10" type="Button" parent="FButtons" unique_id=1032540149]
+layout_mode = 0
+offset_left = 579.0
+offset_top = 168.0
+offset_right = 621.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_6fcrh")
+text = "F10"
+
+[node name="ButtonF11" type="Button" parent="FButtons" unique_id=630691536]
+layout_mode = 0
+offset_left = 626.0
+offset_top = 169.0
+offset_right = 668.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_4gkv4")
+text = "F11"
+
+[node name="ButtonF12" type="Button" parent="FButtons" unique_id=1497221631]
+layout_mode = 0
+offset_left = 674.0
+offset_top = 169.0
+offset_right = 716.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_n6mf6")
+text = "F12"
+
+[node name="NumberButtons" type="Control" parent="." unique_id=74201611]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="NumberButtons" unique_id=795995349]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 217.0
+offset_right = 54.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_v2nxu")
+text = "Ü"
+
+[node name="Button2" type="Button" parent="NumberButtons" unique_id=585560285]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 217.0
+offset_right = 101.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_a2sme")
+text = "1"
+
+[node name="Button3" type="Button" parent="NumberButtons" unique_id=1942232933]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 218.0
+offset_right = 148.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+disabled = true
+shortcut = SubResource("Shortcut_nnydu")
+text = "é"
+flat = true
+
+[node name="Button4" type="Button" parent="NumberButtons" unique_id=1883476166]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 218.0
+offset_right = 196.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_76p27")
+text = "3"
+
+[node name="Button5" type="Button" parent="NumberButtons" unique_id=1122461947]
+layout_mode = 0
+offset_left = 201.0
+offset_top = 218.0
+offset_right = 243.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_0206q")
+text = "4"
+
+[node name="Button6" type="Button" parent="NumberButtons" unique_id=1334061085]
+layout_mode = 0
+offset_left = 249.0
+offset_top = 218.0
+offset_right = 291.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_evv7h")
+text = "5"
+
+[node name="Button7" type="Button" parent="NumberButtons" unique_id=492724152]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 217.0
+offset_right = 337.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_2fxf7")
+text = "6"
+
+[node name="Button8" type="Button" parent="NumberButtons" unique_id=1974130303]
+layout_mode = 0
+offset_left = 343.0
+offset_top = 218.0
+offset_right = 385.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+disabled = true
+text = "è"
+
+[node name="Button9" type="Button" parent="NumberButtons" unique_id=1873752831]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 218.0
+offset_right = 433.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_ko0x7")
+text = "8"
+
+[node name="Button10" type="Button" parent="NumberButtons" unique_id=794729100]
+layout_mode = 0
+offset_left = 437.0
+offset_top = 218.0
+offset_right = 479.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_dvydn")
+text = "9"
+
+[node name="Button11" type="Button" parent="NumberButtons" unique_id=2143110377]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 218.0
+offset_right = 527.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_sf7cb")
+text = "0"
+
+[node name="Button12" type="Button" parent="NumberButtons" unique_id=718134331]
+layout_mode = 0
+offset_left = 533.0
+offset_top = 217.0
+offset_right = 575.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_gp0su")
+text = "Ü"
+
+[node name="Button13" type="Button" parent="NumberButtons" unique_id=1762380574]
+layout_mode = 0
+offset_left = 579.0
+offset_top = 218.0
+offset_right = 621.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_2fglm")
+text = "Ü"
+
+[node name="Button14" type="Button" parent="NumberButtons" unique_id=1009758632]
+layout_mode = 0
+offset_left = 626.0
+offset_top = 218.0
+offset_right = 715.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_t2xtl")
+text = "Backspace"
+
+[node name="AlphabetButtons" type="Control" parent="." unique_id=535219694]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="AlphabetButtons" unique_id=1742436917]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 257.0
+offset_right = 53.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_mt5e2")
+text = "Tab"
+
+[node name="Button2" type="Button" parent="AlphabetButtons" unique_id=1916629404]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 258.0
+offset_right = 124.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_gfcws")
+text = "Ü"
+
+[node name="Button3" type="Button" parent="AlphabetButtons" unique_id=1534276337]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 257.0
+offset_right = 171.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_ukbov")
+text = "Ü"
+
+[node name="Button4" type="Button" parent="AlphabetButtons" unique_id=1107060366]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 257.0
+offset_right = 220.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_hcud6")
+text = "Ü"
+
+[node name="Button5" type="Button" parent="AlphabetButtons" unique_id=2146109172]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 258.0
+offset_right = 266.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_5diiv")
+text = "Ü"
+
+[node name="Button6" type="Button" parent="AlphabetButtons" unique_id=1848534985]
+layout_mode = 0
+offset_left = 271.0
+offset_top = 257.0
+offset_right = 313.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_vov7x")
+text = "Ü"
+
+[node name="Button7" type="Button" parent="AlphabetButtons" unique_id=1860688240]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 258.0
+offset_right = 362.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_vgmw7")
+text = "Ü"
+
+[node name="Button8" type="Button" parent="AlphabetButtons" unique_id=550702371]
+layout_mode = 0
+offset_left = 367.0
+offset_top = 257.0
+offset_right = 409.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_l0wga")
+text = "Ü"
+
+[node name="Button9" type="Button" parent="AlphabetButtons" unique_id=1066561181]
+layout_mode = 0
+offset_left = 414.0
+offset_top = 257.0
+offset_right = 456.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_fw7hb")
+text = "Ü"
+
+[node name="Button10" type="Button" parent="AlphabetButtons" unique_id=304575723]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 257.0
+offset_right = 504.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_ws3pn")
+text = "Ü"
+
+[node name="Button11" type="Button" parent="AlphabetButtons" unique_id=984699726]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 258.0
+offset_right = 551.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_61ktp")
+text = "Ü"
+
+[node name="Button12" type="Button" parent="AlphabetButtons" unique_id=57263031]
+layout_mode = 0
+offset_left = 556.0
+offset_top = 257.0
+offset_right = 598.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+disabled = true
+shortcut = SubResource("Shortcut_jmg40")
+text = "Ü"
+
+[node name="Button13" type="Button" parent="AlphabetButtons" unique_id=247960226]
+layout_mode = 0
+offset_left = 604.0
+offset_top = 257.0
+offset_right = 646.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_1tn8c")
+text = "Ü"
+
+[node name="Button14" type="Button" parent="AlphabetButtons" unique_id=2147385580]
+layout_mode = 0
+offset_left = 652.0
+offset_top = 258.0
+offset_right = 717.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+disabled = true
+text = "Ü"
+
+[node name="Button15" type="Button" parent="AlphabetButtons" unique_id=1175693560]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 298.0
+offset_right = 53.0
+offset_bottom = 334.0
+theme_override_font_sizes/font_size = 8
+text = "Cap"
+
+[node name="Button16" type="Button" parent="AlphabetButtons" unique_id=1678343695]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 298.0
+offset_right = 135.0
+offset_bottom = 334.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_jmq4x")
+text = "Ü"
+
+[node name="Button17" type="Button" parent="AlphabetButtons" unique_id=1242453501]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 297.0
+offset_right = 185.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_q40q3")
+text = "Ü"
+
+[node name="Button18" type="Button" parent="AlphabetButtons" unique_id=376588762]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 297.0
+offset_right = 231.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_dg8rj")
+text = "Ü"
+
+[node name="Button19" type="Button" parent="AlphabetButtons" unique_id=654645760]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 297.0
+offset_right = 278.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_4hgxq")
+text = "Ü"
+
+[node name="Button20" type="Button" parent="AlphabetButtons" unique_id=348876787]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 297.0
+offset_right = 325.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_ekwkk")
+text = "Ü"
+
+[node name="Button21" type="Button" parent="AlphabetButtons" unique_id=1713197425]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 297.0
+offset_right = 372.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_7uas8")
+text = "Ü"
+
+[node name="Button22" type="Button" parent="AlphabetButtons" unique_id=1761502407]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 296.0
+offset_right = 420.0
+offset_bottom = 332.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_pjo2s")
+text = "Ü"
+
+[node name="Button23" type="Button" parent="AlphabetButtons" unique_id=432273515]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 296.0
+offset_right = 468.0
+offset_bottom = 332.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_v4pdw")
+text = "Ü"
+
+[node name="Button24" type="Button" parent="AlphabetButtons" unique_id=1806526587]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 297.0
+offset_right = 515.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_4lnxr")
+text = "Ü"
+
+[node name="Button25" type="Button" parent="AlphabetButtons" unique_id=1515547509]
+layout_mode = 0
+offset_left = 521.0
+offset_top = 297.0
+offset_right = 563.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_dalt6")
+text = "Ü"
+
+[node name="Button26" type="Button" parent="AlphabetButtons" unique_id=1344603386]
+layout_mode = 0
+offset_left = 567.0
+offset_top = 298.0
+offset_right = 609.0
+offset_bottom = 334.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_o7x2x")
+text = "%"
+
+[node name="Button27" type="Button" parent="AlphabetButtons" unique_id=743227470]
+layout_mode = 0
+offset_left = 615.0
+offset_top = 299.0
+offset_right = 717.0
+offset_bottom = 335.0
+theme_override_font_sizes/font_size = 8
+text = "Enter/Return"
+
+[node name="Button28" type="Button" parent="AlphabetButtons" unique_id=1883110510]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 337.0
+offset_right = 53.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+text = "Shift"
+
+[node name="Button29" type="Button" parent="AlphabetButtons" unique_id=1309380285]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 337.0
+offset_right = 161.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_tpt1a")
+text = "Ü"
+
+[node name="Button30" type="Button" parent="AlphabetButtons" unique_id=427154390]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 337.0
+offset_right = 208.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_ur5jg")
+text = "Ü"
+
+[node name="Button31" type="Button" parent="AlphabetButtons" unique_id=409269923]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 338.0
+offset_right = 256.0
+offset_bottom = 374.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_ogid5")
+text = "Ü"
+
+[node name="Button32" type="Button" parent="AlphabetButtons" unique_id=233006178]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 337.0
+offset_right = 303.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_gflem")
+text = "Ü"
+
+[node name="Button33" type="Button" parent="AlphabetButtons" unique_id=142865382]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 337.0
+offset_right = 349.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_xxhm2")
+text = "Ü"
+
+[node name="Button34" type="Button" parent="AlphabetButtons" unique_id=1276778433]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 338.0
+offset_right = 396.0
+offset_bottom = 374.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_isbi1")
+text = "Ü"
+
+[node name="Button35" type="Button" parent="AlphabetButtons" unique_id=1897731675]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 337.0
+offset_right = 443.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_hai00")
+text = "Ü"
+
+[node name="Button36" type="Button" parent="AlphabetButtons" unique_id=102081805]
+layout_mode = 0
+offset_left = 449.0
+offset_top = 337.0
+offset_right = 491.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_oiu0j")
+text = "Ü"
+
+[node name="Button37" type="Button" parent="AlphabetButtons" unique_id=1242743705]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 337.0
+offset_right = 538.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_w811g")
+text = "Ü"
+
+[node name="Button38" type="Button" parent="AlphabetButtons" unique_id=540709797]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 337.0
+offset_right = 586.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_ou70u")
+text = "Ü"
+
+[node name="Button39" type="Button" parent="AlphabetButtons" unique_id=341320317]
+layout_mode = 0
+offset_left = 590.0
+offset_top = 337.0
+offset_right = 632.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_xv37e")
+text = "Shift"
+
+[node name="Button40" type="Button" parent="AlphabetButtons" unique_id=1918233653]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 378.0
+offset_right = 53.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_apm3e")
+text = "CTRL"
+
+[node name="Button41" type="Button" parent="AlphabetButtons" unique_id=1232899485]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 378.0
+offset_right = 113.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+disabled = true
+shortcut = SubResource("Shortcut_dqui5")
+text = "SUPER"
+
+[node name="Button42" type="Button" parent="AlphabetButtons" unique_id=80112076]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 378.0
+offset_right = 171.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+disabled = true
+shortcut = SubResource("Shortcut_hd75i")
+text = "ALT"
+
+[node name="Button43" type="Button" parent="AlphabetButtons" unique_id=975499124]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 378.0
+offset_right = 232.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "Space"
+
+[node name="Button44" type="Button" parent="AlphabetButtons" unique_id=475208450]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 378.0
+offset_right = 527.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_57qb0")
+text = "Alt"
+
+[node name="Button45" type="Button" parent="AlphabetButtons" unique_id=537396712]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 378.0
+offset_right = 586.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "Super"
+
+[node name="Button46" type="Button" parent="AlphabetButtons" unique_id=332580363]
+layout_mode = 0
+offset_left = 604.0
+offset_top = 378.0
+offset_right = 646.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+text = "Meta"
+
+[node name="Button47" type="Button" parent="AlphabetButtons" unique_id=876034520]
+layout_mode = 0
+offset_left = 662.0
+offset_top = 378.0
+offset_right = 704.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_gq7w3")
+text = "Control"
+
+[node name="Control" type="Control" parent="." unique_id=1086799619]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control" unique_id=1224644781]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 168.0
+offset_right = 775.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+disabled = true
+text = "PRT
+SYS"
+
+[node name="Button2" type="Button" parent="Control" unique_id=1343102430]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 168.0
+offset_right = 822.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+disabled = true
+text = "SCROLL"
+
+[node name="Button3" type="Button" parent="Control" unique_id=798384188]
+layout_mode = 0
+offset_left = 827.0
+offset_top = 168.0
+offset_right = 869.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 8
+text = "Pause"
+
+[node name="Button4" type="Button" parent="Control" unique_id=158326644]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 217.0
+offset_right = 775.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+text = "Insert"
+
+[node name="Button5" type="Button" parent="Control" unique_id=247807187]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 217.0
+offset_right = 822.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+text = "Home"
+
+[node name="Button6" type="Button" parent="Control" unique_id=1182701293]
+layout_mode = 0
+offset_left = 827.0
+offset_top = 218.0
+offset_right = 869.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+text = "Page
+up"
+
+[node name="Button7" type="Button" parent="Control" unique_id=1029433163]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 258.0
+offset_right = 775.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+text = "Delete"
+
+[node name="Button8" type="Button" parent="Control" unique_id=1814414679]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 258.0
+offset_right = 822.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 8
+text = "End"
+
+[node name="Button9" type="Button" parent="Control" unique_id=560463899]
+layout_mode = 0
+offset_left = 828.0
+offset_top = 257.0
+offset_right = 870.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+text = "Page
+Down"
+
+[node name="Button10" type="Button" parent="Control" unique_id=442658976]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 339.0
+offset_right = 822.0
+offset_bottom = 375.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_j5e8v")
+text = "Ü"
+
+[node name="Button11" type="Button" parent="Control" unique_id=1250436184]
+layout_mode = 0
+offset_left = 734.0
+offset_top = 378.0
+offset_right = 776.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_sw2ry")
+text = "Ü"
+
+[node name="Button12" type="Button" parent="Control" unique_id=1206498392]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 378.0
+offset_right = 822.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_h4daj")
+text = "Ü"
+
+[node name="Button13" type="Button" parent="Control" unique_id=12292370]
+layout_mode = 0
+offset_left = 827.0
+offset_top = 377.0
+offset_right = 869.0
+offset_bottom = 413.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_hhsrn")
+text = "Ü"
+
+[node name="Control2" type="Control" parent="." unique_id=1210693911]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control2" unique_id=741260033]
+layout_mode = 0
+offset_left = 886.0
+offset_top = 218.0
+offset_right = 928.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_mojw2")
+text = "Num"
+
+[node name="Button2" type="Button" parent="Control2" unique_id=1892616950]
+layout_mode = 0
+offset_left = 934.0
+offset_top = 217.0
+offset_right = 976.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_11c04")
+text = "/"
+
+[node name="Button3" type="Button" parent="Control2" unique_id=62325708]
+layout_mode = 0
+offset_left = 981.0
+offset_top = 217.0
+offset_right = 1023.0
+offset_bottom = 253.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_m16hq")
+text = "*"
+
+[node name="Button4" type="Button" parent="Control2" unique_id=905293182]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 218.0
+offset_right = 1071.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_vhcqe")
+text = "-"
+
+[node name="Button5" type="Button" parent="Control2" unique_id=1498621169]
+layout_mode = 0
+offset_left = 887.0
+offset_top = 257.0
+offset_right = 929.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_2xylu")
+text = "7"
+
+[node name="Button6" type="Button" parent="Control2" unique_id=766246052]
+layout_mode = 0
+offset_left = 934.0
+offset_top = 257.0
+offset_right = 976.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_o5f8t")
+text = "8"
+
+[node name="Button7" type="Button" parent="Control2" unique_id=231754410]
+layout_mode = 0
+offset_left = 981.0
+offset_top = 257.0
+offset_right = 1023.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_ighqe")
+text = "9"
+
+[node name="Button8" type="Button" parent="Control2" unique_id=207346202]
+layout_mode = 0
+offset_left = 887.0
+offset_top = 297.0
+offset_right = 929.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_yihc5")
+text = "4"
+
+[node name="Button9" type="Button" parent="Control2" unique_id=1508762551]
+layout_mode = 0
+offset_left = 935.0
+offset_top = 297.0
+offset_right = 977.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_wam3n")
+text = "5"
+
+[node name="Button10" type="Button" parent="Control2" unique_id=924981699]
+layout_mode = 0
+offset_left = 982.0
+offset_top = 297.0
+offset_right = 1024.0
+offset_bottom = 333.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_6rae7")
+text = "6"
+
+[node name="Button11" type="Button" parent="Control2" unique_id=1973584055]
+layout_mode = 0
+offset_left = 887.0
+offset_top = 337.0
+offset_right = 929.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_838rt")
+text = "1"
+
+[node name="Button12" type="Button" parent="Control2" unique_id=676190120]
+layout_mode = 0
+offset_left = 934.0
+offset_top = 337.0
+offset_right = 976.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_4o5ca")
+text = "2"
+
+[node name="Button13" type="Button" parent="Control2" unique_id=1408013895]
+layout_mode = 0
+offset_left = 981.0
+offset_top = 336.0
+offset_right = 1023.0
+offset_bottom = 372.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_khnbr")
+text = "3"
+
+[node name="Button14" type="Button" parent="Control2" unique_id=677719954]
+layout_mode = 0
+offset_left = 888.0
+offset_top = 378.0
+offset_right = 930.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_74mk2")
+text = "0"
+
+[node name="Button15" type="Button" parent="Control2" unique_id=879712940]
+layout_mode = 0
+offset_left = 980.0
+offset_top = 377.0
+offset_right = 1022.0
+offset_bottom = 413.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_bp4g2")
+text = ".
+Del"
+
+[node name="Button16" type="Button" parent="Control2" unique_id=2121920795]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 257.0
+offset_right = 1071.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_lelac")
+text = "+"
+
+[node name="Button17" type="Button" parent="Control2" unique_id=2129257829]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 337.0
+offset_right = 1071.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 8
+shortcut = SubResource("Shortcut_n3lgk")
+text = "Enter"
