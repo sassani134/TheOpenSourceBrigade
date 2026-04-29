@@ -30,9 +30,11 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="SplashScreenContainer" unique_id=412740264]
 layout_mode = 2
+tooltip_text = "Espace Chantourne"
 
 [node name="TextureRect2" type="TextureRect" parent="SplashScreenContainer" unique_id=1973346822]
 layout_mode = 2
+tooltip_text = "Proudly done w/ godot"
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="SplashScreenContainer" unique_id=1867423924]
 layout_mode = 2

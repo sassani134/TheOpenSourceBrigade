@@ -664,14 +664,16 @@ grow_vertical = 2
 script = ExtResource("1_5dm2e")
 
 [node name="GridContainer" type="GridContainer" parent="." unique_id=928963441]
+unique_name_in_owner = true
 layout_mode = 2
-columns = 2
+size_flags_vertical = 0
+columns = 4
 
 [node name="Label" type="Label" parent="GridContainer" unique_id=844049480]
 layout_mode = 2
 text = "Forward: "
 
-[node name="Label2" type="Button" parent="GridContainer" unique_id=875147207]
+[node name="ActionButton" type="Button" parent="GridContainer" unique_id=875147207]
 layout_mode = 2
 text = "..."
 
@@ -679,7 +681,7 @@ text = "..."
 layout_mode = 2
 text = "Back: "
 
-[node name="Label4" type="Button" parent="GridContainer" unique_id=680126149]
+[node name="ActionButton2" type="Button" parent="GridContainer" unique_id=680126149]
 layout_mode = 2
 text = "..."
 
@@ -687,7 +689,7 @@ text = "..."
 layout_mode = 2
 text = "Left: "
 
-[node name="Label6" type="Button" parent="GridContainer" unique_id=1799588611]
+[node name="ActionButton3" type="Button" parent="GridContainer" unique_id=1799588611]
 layout_mode = 2
 text = "..."
 
@@ -695,7 +697,7 @@ text = "..."
 layout_mode = 2
 text = "Right: "
 
-[node name="Label8" type="Button" parent="GridContainer" unique_id=708505421]
+[node name="ActionButton4" type="Button" parent="GridContainer" unique_id=708505421]
 layout_mode = 2
 text = "..."
 
@@ -703,7 +705,7 @@ text = "..."
 layout_mode = 2
 text = "Jump: "
 
-[node name="Label10" type="Button" parent="GridContainer" unique_id=560891643]
+[node name="ActionButton5" type="Button" parent="GridContainer" unique_id=560891643]
 layout_mode = 2
 text = "..."
 
@@ -711,7 +713,7 @@ text = "..."
 layout_mode = 2
 text = "Crouch: "
 
-[node name="Label12" type="Button" parent="GridContainer" unique_id=630179799]
+[node name="ActionButton6" type="Button" parent="GridContainer" unique_id=630179799]
 layout_mode = 2
 text = "..."
 
@@ -719,7 +721,7 @@ text = "..."
 layout_mode = 2
 text = "Action: "
 
-[node name="Label14" type="Button" parent="GridContainer" unique_id=1096643932]
+[node name="ActionButton7" type="Button" parent="GridContainer" unique_id=1096643932]
 layout_mode = 2
 text = "..."
 
@@ -727,8 +729,10 @@ text = "..."
 clip_contents = true
 layout_mode = 2
 size_flags_vertical = 3
+metadata/_edit_group_ = true
 
 [node name="FButtons" type="Control" parent="Control" unique_id=1298391916]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -867,6 +871,7 @@ shortcut = SubResource("Shortcut_n6mf6")
 text = "F12"
 
 [node name="NumberButtons" type="Control" parent="Control" unique_id=74201611]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1017,6 +1022,7 @@ shortcut = SubResource("Shortcut_t2xtl")
 text = "Backspace"
 
 [node name="AlphabetButtons" type="Control" parent="Control" unique_id=535219694]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1492,6 +1498,7 @@ shortcut = SubResource("Shortcut_gq7w3")
 text = "Control"
 
 [node name="InsertButtons" type="Control" parent="Control" unique_id=1086799619]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1626,6 +1633,7 @@ shortcut = SubResource("Shortcut_hhsrn")
 text = "→"
 
 [node name="kpButtons" type="Control" parent="Control" unique_id=1210693911]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
