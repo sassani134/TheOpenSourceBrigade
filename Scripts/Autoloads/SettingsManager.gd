@@ -52,6 +52,17 @@ const DEFAULT_AUDIO_SETTINGS: Dictionary = {
 # ]
 # }
 
+# const ACTIONS = {
+# 	"forward": "",
+# 	"down": "",
+# 	"left": "",
+# 	"right": "",
+# 	"jump": "",
+# 	"crounch": "",
+# 	"action_a": "",
+# 	"start": "",
+# }
+
 const DEFAULT_CONTROLS_SETTINGS: Dictionary = {
 	"cam_stick_left": "",
 	"cam_stick_right": "",

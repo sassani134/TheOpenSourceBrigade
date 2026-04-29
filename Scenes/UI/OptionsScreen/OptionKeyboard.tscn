@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://3gb3n2dwtgnt"]
 
+[ext_resource type="Script" uid="uid://c40lmvbkxu7rg" path="res://Scripts/OptionKeyboard.gd" id="1_5dm2e"]
+
 [sub_resource type="InputEventKey" id="InputEventKey_mhk4r"]
 device = -1
 keycode = 4194305
@@ -653,18 +655,88 @@ keycode = 4194310
 [sub_resource type="Shortcut" id="Shortcut_n3lgk"]
 events = [SubResource("InputEventKey_20bdq")]
 
-[node name="OptionKeyboard" type="Control" unique_id=643241834]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="OptionKeyboard" type="VBoxContainer" unique_id=1198794326]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5dm2e")
 
-[node name="FButtons" type="Control" parent="." unique_id=1298391916]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="GridContainer" type="GridContainer" parent="." unique_id=928963441]
+layout_mode = 2
+columns = 2
 
-[node name="ButtonESC" type="Button" parent="FButtons" unique_id=746704298]
+[node name="Label" type="Label" parent="GridContainer" unique_id=844049480]
+layout_mode = 2
+text = "Forward: "
+
+[node name="Label2" type="Button" parent="GridContainer" unique_id=875147207]
+layout_mode = 2
+text = "..."
+
+[node name="Label3" type="Label" parent="GridContainer" unique_id=1408569565]
+layout_mode = 2
+text = "Back: "
+
+[node name="Label4" type="Button" parent="GridContainer" unique_id=680126149]
+layout_mode = 2
+text = "..."
+
+[node name="Label5" type="Label" parent="GridContainer" unique_id=1574937346]
+layout_mode = 2
+text = "Left: "
+
+[node name="Label6" type="Button" parent="GridContainer" unique_id=1799588611]
+layout_mode = 2
+text = "..."
+
+[node name="Label7" type="Label" parent="GridContainer" unique_id=1210485449]
+layout_mode = 2
+text = "Right: "
+
+[node name="Label8" type="Button" parent="GridContainer" unique_id=708505421]
+layout_mode = 2
+text = "..."
+
+[node name="Label9" type="Label" parent="GridContainer" unique_id=1082979797]
+layout_mode = 2
+text = "Jump: "
+
+[node name="Label10" type="Button" parent="GridContainer" unique_id=560891643]
+layout_mode = 2
+text = "..."
+
+[node name="Label11" type="Label" parent="GridContainer" unique_id=695977966]
+layout_mode = 2
+text = "Crouch: "
+
+[node name="Label12" type="Button" parent="GridContainer" unique_id=630179799]
+layout_mode = 2
+text = "..."
+
+[node name="Label13" type="Label" parent="GridContainer" unique_id=452700068]
+layout_mode = 2
+text = "Action: "
+
+[node name="Label14" type="Button" parent="GridContainer" unique_id=1096643932]
+layout_mode = 2
+text = "..."
+
+[node name="Control" type="Control" parent="." unique_id=1376250193]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FButtons" type="Control" parent="Control" unique_id=1298391916]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonESC" type="Button" parent="Control/FButtons" unique_id=746704298]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 168.0
@@ -674,7 +746,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_nkvi2")
 text = "ESC"
 
-[node name="ButtonF1" type="Button" parent="FButtons" unique_id=287275690]
+[node name="ButtonF1" type="Button" parent="Control/FButtons" unique_id=287275690]
 layout_mode = 0
 offset_left = 106.0
 offset_top = 168.0
@@ -684,7 +756,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_b7io0")
 text = "F1"
 
-[node name="ButtonF2" type="Button" parent="FButtons" unique_id=327736318]
+[node name="ButtonF2" type="Button" parent="Control/FButtons" unique_id=327736318]
 layout_mode = 0
 offset_left = 154.0
 offset_top = 168.0
@@ -694,7 +766,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_moptn")
 text = "F2"
 
-[node name="ButtonF3" type="Button" parent="FButtons" unique_id=363810095]
+[node name="ButtonF3" type="Button" parent="Control/FButtons" unique_id=363810095]
 layout_mode = 0
 offset_left = 202.0
 offset_top = 167.0
@@ -704,7 +776,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_m1war")
 text = "F3"
 
-[node name="ButtonF4" type="Button" parent="FButtons" unique_id=926865427]
+[node name="ButtonF4" type="Button" parent="Control/FButtons" unique_id=926865427]
 layout_mode = 0
 offset_left = 248.0
 offset_top = 167.0
@@ -714,7 +786,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_jdjen")
 text = "F4"
 
-[node name="ButtonF5" type="Button" parent="FButtons" unique_id=383360249]
+[node name="ButtonF5" type="Button" parent="Control/FButtons" unique_id=383360249]
 layout_mode = 0
 offset_left = 321.0
 offset_top = 167.0
@@ -724,7 +796,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_atcdf")
 text = "F5"
 
-[node name="ButtonF6" type="Button" parent="FButtons" unique_id=226686517]
+[node name="ButtonF6" type="Button" parent="Control/FButtons" unique_id=226686517]
 layout_mode = 0
 offset_left = 366.0
 offset_top = 168.0
@@ -734,7 +806,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_x418k")
 text = "F6"
 
-[node name="ButtonF7" type="Button" parent="FButtons" unique_id=1000087512]
+[node name="ButtonF7" type="Button" parent="Control/FButtons" unique_id=1000087512]
 layout_mode = 0
 offset_left = 415.0
 offset_top = 169.0
@@ -744,7 +816,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_1fi7q")
 text = "F7"
 
-[node name="ButtonF8" type="Button" parent="FButtons" unique_id=1412624375]
+[node name="ButtonF8" type="Button" parent="Control/FButtons" unique_id=1412624375]
 layout_mode = 0
 offset_left = 461.0
 offset_top = 168.0
@@ -754,7 +826,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_r4iog")
 text = "F8"
 
-[node name="ButtonF9" type="Button" parent="FButtons" unique_id=1544357669]
+[node name="ButtonF9" type="Button" parent="Control/FButtons" unique_id=1544357669]
 layout_mode = 0
 offset_left = 531.0
 offset_top = 167.0
@@ -764,7 +836,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_my1er")
 text = "F9"
 
-[node name="ButtonF10" type="Button" parent="FButtons" unique_id=1032540149]
+[node name="ButtonF10" type="Button" parent="Control/FButtons" unique_id=1032540149]
 layout_mode = 0
 offset_left = 579.0
 offset_top = 168.0
@@ -774,7 +846,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_6fcrh")
 text = "F10"
 
-[node name="ButtonF11" type="Button" parent="FButtons" unique_id=630691536]
+[node name="ButtonF11" type="Button" parent="Control/FButtons" unique_id=630691536]
 layout_mode = 0
 offset_left = 626.0
 offset_top = 169.0
@@ -784,7 +856,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_4gkv4")
 text = "F11"
 
-[node name="ButtonF12" type="Button" parent="FButtons" unique_id=1497221631]
+[node name="ButtonF12" type="Button" parent="Control/FButtons" unique_id=1497221631]
 layout_mode = 0
 offset_left = 674.0
 offset_top = 169.0
@@ -794,12 +866,15 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_n6mf6")
 text = "F12"
 
-[node name="NumberButtons" type="Control" parent="." unique_id=74201611]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="NumberButtons" type="Control" parent="Control" unique_id=74201611]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Button" type="Button" parent="NumberButtons" unique_id=795995349]
+[node name="Button" type="Button" parent="Control/NumberButtons" unique_id=795995349]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 217.0
@@ -809,7 +884,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_v2nxu")
 text = "Ü"
 
-[node name="Button2" type="Button" parent="NumberButtons" unique_id=585560285]
+[node name="Button2" type="Button" parent="Control/NumberButtons" unique_id=585560285]
 layout_mode = 0
 offset_left = 59.0
 offset_top = 217.0
@@ -819,7 +894,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_a2sme")
 text = "1"
 
-[node name="Button3" type="Button" parent="NumberButtons" unique_id=1942232933]
+[node name="Button3" type="Button" parent="Control/NumberButtons" unique_id=1942232933]
 layout_mode = 0
 offset_left = 106.0
 offset_top = 218.0
@@ -831,7 +906,7 @@ shortcut = SubResource("Shortcut_nnydu")
 text = "é"
 flat = true
 
-[node name="Button4" type="Button" parent="NumberButtons" unique_id=1883476166]
+[node name="Button4" type="Button" parent="Control/NumberButtons" unique_id=1883476166]
 layout_mode = 0
 offset_left = 154.0
 offset_top = 218.0
@@ -841,7 +916,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_76p27")
 text = "3"
 
-[node name="Button5" type="Button" parent="NumberButtons" unique_id=1122461947]
+[node name="Button5" type="Button" parent="Control/NumberButtons" unique_id=1122461947]
 layout_mode = 0
 offset_left = 201.0
 offset_top = 218.0
@@ -851,7 +926,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_0206q")
 text = "4"
 
-[node name="Button6" type="Button" parent="NumberButtons" unique_id=1334061085]
+[node name="Button6" type="Button" parent="Control/NumberButtons" unique_id=1334061085]
 layout_mode = 0
 offset_left = 249.0
 offset_top = 218.0
@@ -861,7 +936,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_evv7h")
 text = "5"
 
-[node name="Button7" type="Button" parent="NumberButtons" unique_id=492724152]
+[node name="Button7" type="Button" parent="Control/NumberButtons" unique_id=492724152]
 layout_mode = 0
 offset_left = 295.0
 offset_top = 217.0
@@ -871,7 +946,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_2fxf7")
 text = "6"
 
-[node name="Button8" type="Button" parent="NumberButtons" unique_id=1974130303]
+[node name="Button8" type="Button" parent="Control/NumberButtons" unique_id=1974130303]
 layout_mode = 0
 offset_left = 343.0
 offset_top = 218.0
@@ -881,7 +956,7 @@ theme_override_font_sizes/font_size = 8
 disabled = true
 text = "è"
 
-[node name="Button9" type="Button" parent="NumberButtons" unique_id=1873752831]
+[node name="Button9" type="Button" parent="Control/NumberButtons" unique_id=1873752831]
 layout_mode = 0
 offset_left = 391.0
 offset_top = 218.0
@@ -891,7 +966,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_ko0x7")
 text = "8"
 
-[node name="Button10" type="Button" parent="NumberButtons" unique_id=794729100]
+[node name="Button10" type="Button" parent="Control/NumberButtons" unique_id=794729100]
 layout_mode = 0
 offset_left = 437.0
 offset_top = 218.0
@@ -901,7 +976,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_dvydn")
 text = "9"
 
-[node name="Button11" type="Button" parent="NumberButtons" unique_id=2143110377]
+[node name="Button11" type="Button" parent="Control/NumberButtons" unique_id=2143110377]
 layout_mode = 0
 offset_left = 485.0
 offset_top = 218.0
@@ -911,7 +986,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_sf7cb")
 text = "0"
 
-[node name="Button12" type="Button" parent="NumberButtons" unique_id=718134331]
+[node name="Button12" type="Button" parent="Control/NumberButtons" unique_id=718134331]
 layout_mode = 0
 offset_left = 533.0
 offset_top = 217.0
@@ -921,7 +996,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_gp0su")
 text = "Ü"
 
-[node name="Button13" type="Button" parent="NumberButtons" unique_id=1762380574]
+[node name="Button13" type="Button" parent="Control/NumberButtons" unique_id=1762380574]
 layout_mode = 0
 offset_left = 579.0
 offset_top = 218.0
@@ -931,7 +1006,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_2fglm")
 text = "Ü"
 
-[node name="Button14" type="Button" parent="NumberButtons" unique_id=1009758632]
+[node name="Button14" type="Button" parent="Control/NumberButtons" unique_id=1009758632]
 layout_mode = 0
 offset_left = 626.0
 offset_top = 218.0
@@ -941,12 +1016,15 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_t2xtl")
 text = "Backspace"
 
-[node name="AlphabetButtons" type="Control" parent="." unique_id=535219694]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="AlphabetButtons" type="Control" parent="Control" unique_id=535219694]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Button" type="Button" parent="AlphabetButtons" unique_id=1742436917]
+[node name="Button" type="Button" parent="Control/AlphabetButtons" unique_id=1742436917]
 layout_mode = 0
 offset_left = 11.0
 offset_top = 257.0
@@ -956,7 +1034,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_mt5e2")
 text = "Tab"
 
-[node name="Button2" type="Button" parent="AlphabetButtons" unique_id=1916629404]
+[node name="Button2" type="Button" parent="Control/AlphabetButtons" unique_id=1916629404]
 layout_mode = 0
 offset_left = 82.0
 offset_top = 258.0
@@ -966,7 +1044,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_gfcws")
 text = "Ü"
 
-[node name="Button3" type="Button" parent="AlphabetButtons" unique_id=1534276337]
+[node name="Button3" type="Button" parent="Control/AlphabetButtons" unique_id=1534276337]
 layout_mode = 0
 offset_left = 129.0
 offset_top = 257.0
@@ -976,7 +1054,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_ukbov")
 text = "Ü"
 
-[node name="Button4" type="Button" parent="AlphabetButtons" unique_id=1107060366]
+[node name="Button4" type="Button" parent="Control/AlphabetButtons" unique_id=1107060366]
 layout_mode = 0
 offset_left = 178.0
 offset_top = 257.0
@@ -986,7 +1064,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_hcud6")
 text = "Ü"
 
-[node name="Button5" type="Button" parent="AlphabetButtons" unique_id=2146109172]
+[node name="Button5" type="Button" parent="Control/AlphabetButtons" unique_id=2146109172]
 layout_mode = 0
 offset_left = 224.0
 offset_top = 258.0
@@ -996,7 +1074,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_5diiv")
 text = "Ü"
 
-[node name="Button6" type="Button" parent="AlphabetButtons" unique_id=1848534985]
+[node name="Button6" type="Button" parent="Control/AlphabetButtons" unique_id=1848534985]
 layout_mode = 0
 offset_left = 271.0
 offset_top = 257.0
@@ -1006,7 +1084,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_vov7x")
 text = "Ü"
 
-[node name="Button7" type="Button" parent="AlphabetButtons" unique_id=1860688240]
+[node name="Button7" type="Button" parent="Control/AlphabetButtons" unique_id=1860688240]
 layout_mode = 0
 offset_left = 320.0
 offset_top = 258.0
@@ -1016,7 +1094,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_vgmw7")
 text = "Ü"
 
-[node name="Button8" type="Button" parent="AlphabetButtons" unique_id=550702371]
+[node name="Button8" type="Button" parent="Control/AlphabetButtons" unique_id=550702371]
 layout_mode = 0
 offset_left = 367.0
 offset_top = 257.0
@@ -1026,7 +1104,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_l0wga")
 text = "Ü"
 
-[node name="Button9" type="Button" parent="AlphabetButtons" unique_id=1066561181]
+[node name="Button9" type="Button" parent="Control/AlphabetButtons" unique_id=1066561181]
 layout_mode = 0
 offset_left = 414.0
 offset_top = 257.0
@@ -1036,7 +1114,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_fw7hb")
 text = "Ü"
 
-[node name="Button10" type="Button" parent="AlphabetButtons" unique_id=304575723]
+[node name="Button10" type="Button" parent="Control/AlphabetButtons" unique_id=304575723]
 layout_mode = 0
 offset_left = 461.0
 offset_top = 257.0
@@ -1046,7 +1124,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_ws3pn")
 text = "Ü"
 
-[node name="Button11" type="Button" parent="AlphabetButtons" unique_id=984699726]
+[node name="Button11" type="Button" parent="Control/AlphabetButtons" unique_id=984699726]
 layout_mode = 0
 offset_left = 509.0
 offset_top = 258.0
@@ -1056,7 +1134,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_61ktp")
 text = "Ü"
 
-[node name="Button12" type="Button" parent="AlphabetButtons" unique_id=57263031]
+[node name="Button12" type="Button" parent="Control/AlphabetButtons" unique_id=57263031]
 layout_mode = 0
 offset_left = 556.0
 offset_top = 257.0
@@ -1067,7 +1145,7 @@ disabled = true
 shortcut = SubResource("Shortcut_jmg40")
 text = "Ü"
 
-[node name="Button13" type="Button" parent="AlphabetButtons" unique_id=247960226]
+[node name="Button13" type="Button" parent="Control/AlphabetButtons" unique_id=247960226]
 layout_mode = 0
 offset_left = 604.0
 offset_top = 257.0
@@ -1077,7 +1155,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_1tn8c")
 text = "Ü"
 
-[node name="Button14" type="Button" parent="AlphabetButtons" unique_id=2147385580]
+[node name="Button14" type="Button" parent="Control/AlphabetButtons" unique_id=2147385580]
 layout_mode = 0
 offset_left = 652.0
 offset_top = 258.0
@@ -1087,7 +1165,7 @@ theme_override_font_sizes/font_size = 8
 disabled = true
 text = "Ü"
 
-[node name="Button15" type="Button" parent="AlphabetButtons" unique_id=1175693560]
+[node name="Button15" type="Button" parent="Control/AlphabetButtons" unique_id=1175693560]
 layout_mode = 0
 offset_left = 11.0
 offset_top = 298.0
@@ -1096,7 +1174,7 @@ offset_bottom = 334.0
 theme_override_font_sizes/font_size = 8
 text = "Cap"
 
-[node name="Button16" type="Button" parent="AlphabetButtons" unique_id=1678343695]
+[node name="Button16" type="Button" parent="Control/AlphabetButtons" unique_id=1678343695]
 layout_mode = 0
 offset_left = 93.0
 offset_top = 298.0
@@ -1106,7 +1184,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_jmq4x")
 text = "Ü"
 
-[node name="Button17" type="Button" parent="AlphabetButtons" unique_id=1242453501]
+[node name="Button17" type="Button" parent="Control/AlphabetButtons" unique_id=1242453501]
 layout_mode = 0
 offset_left = 143.0
 offset_top = 297.0
@@ -1116,7 +1194,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_q40q3")
 text = "Ü"
 
-[node name="Button18" type="Button" parent="AlphabetButtons" unique_id=376588762]
+[node name="Button18" type="Button" parent="Control/AlphabetButtons" unique_id=376588762]
 layout_mode = 0
 offset_left = 189.0
 offset_top = 297.0
@@ -1126,7 +1204,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_dg8rj")
 text = "Ü"
 
-[node name="Button19" type="Button" parent="AlphabetButtons" unique_id=654645760]
+[node name="Button19" type="Button" parent="Control/AlphabetButtons" unique_id=654645760]
 layout_mode = 0
 offset_left = 236.0
 offset_top = 297.0
@@ -1136,7 +1214,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_4hgxq")
 text = "Ü"
 
-[node name="Button20" type="Button" parent="AlphabetButtons" unique_id=348876787]
+[node name="Button20" type="Button" parent="Control/AlphabetButtons" unique_id=348876787]
 layout_mode = 0
 offset_left = 283.0
 offset_top = 297.0
@@ -1146,7 +1224,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_ekwkk")
 text = "Ü"
 
-[node name="Button21" type="Button" parent="AlphabetButtons" unique_id=1713197425]
+[node name="Button21" type="Button" parent="Control/AlphabetButtons" unique_id=1713197425]
 layout_mode = 0
 offset_left = 330.0
 offset_top = 297.0
@@ -1156,7 +1234,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_7uas8")
 text = "Ü"
 
-[node name="Button22" type="Button" parent="AlphabetButtons" unique_id=1761502407]
+[node name="Button22" type="Button" parent="Control/AlphabetButtons" unique_id=1761502407]
 layout_mode = 0
 offset_left = 378.0
 offset_top = 296.0
@@ -1166,7 +1244,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_pjo2s")
 text = "Ü"
 
-[node name="Button23" type="Button" parent="AlphabetButtons" unique_id=432273515]
+[node name="Button23" type="Button" parent="Control/AlphabetButtons" unique_id=432273515]
 layout_mode = 0
 offset_left = 426.0
 offset_top = 296.0
@@ -1176,7 +1254,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_v4pdw")
 text = "Ü"
 
-[node name="Button24" type="Button" parent="AlphabetButtons" unique_id=1806526587]
+[node name="Button24" type="Button" parent="Control/AlphabetButtons" unique_id=1806526587]
 layout_mode = 0
 offset_left = 473.0
 offset_top = 297.0
@@ -1186,7 +1264,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_4lnxr")
 text = "Ü"
 
-[node name="Button25" type="Button" parent="AlphabetButtons" unique_id=1515547509]
+[node name="Button25" type="Button" parent="Control/AlphabetButtons" unique_id=1515547509]
 layout_mode = 0
 offset_left = 521.0
 offset_top = 297.0
@@ -1196,7 +1274,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_dalt6")
 text = "Ü"
 
-[node name="Button26" type="Button" parent="AlphabetButtons" unique_id=1344603386]
+[node name="Button26" type="Button" parent="Control/AlphabetButtons" unique_id=1344603386]
 layout_mode = 0
 offset_left = 567.0
 offset_top = 298.0
@@ -1206,7 +1284,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_o7x2x")
 text = "%"
 
-[node name="Button27" type="Button" parent="AlphabetButtons" unique_id=743227470]
+[node name="Button27" type="Button" parent="Control/AlphabetButtons" unique_id=743227470]
 layout_mode = 0
 offset_left = 615.0
 offset_top = 299.0
@@ -1215,7 +1293,7 @@ offset_bottom = 335.0
 theme_override_font_sizes/font_size = 8
 text = "Enter/Return"
 
-[node name="Button28" type="Button" parent="AlphabetButtons" unique_id=1883110510]
+[node name="Button28" type="Button" parent="Control/AlphabetButtons" unique_id=1883110510]
 layout_mode = 0
 offset_left = 11.0
 offset_top = 337.0
@@ -1224,7 +1302,7 @@ offset_bottom = 373.0
 theme_override_font_sizes/font_size = 8
 text = "Shift"
 
-[node name="Button29" type="Button" parent="AlphabetButtons" unique_id=1309380285]
+[node name="Button29" type="Button" parent="Control/AlphabetButtons" unique_id=1309380285]
 layout_mode = 0
 offset_left = 119.0
 offset_top = 337.0
@@ -1234,7 +1312,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_tpt1a")
 text = "Ü"
 
-[node name="Button30" type="Button" parent="AlphabetButtons" unique_id=427154390]
+[node name="Button30" type="Button" parent="Control/AlphabetButtons" unique_id=427154390]
 layout_mode = 0
 offset_left = 166.0
 offset_top = 337.0
@@ -1244,7 +1322,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_ur5jg")
 text = "Ü"
 
-[node name="Button31" type="Button" parent="AlphabetButtons" unique_id=409269923]
+[node name="Button31" type="Button" parent="Control/AlphabetButtons" unique_id=409269923]
 layout_mode = 0
 offset_left = 214.0
 offset_top = 338.0
@@ -1254,7 +1332,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_ogid5")
 text = "Ü"
 
-[node name="Button32" type="Button" parent="AlphabetButtons" unique_id=233006178]
+[node name="Button32" type="Button" parent="Control/AlphabetButtons" unique_id=233006178]
 layout_mode = 0
 offset_left = 261.0
 offset_top = 337.0
@@ -1264,7 +1342,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_gflem")
 text = "Ü"
 
-[node name="Button33" type="Button" parent="AlphabetButtons" unique_id=142865382]
+[node name="Button33" type="Button" parent="Control/AlphabetButtons" unique_id=142865382]
 layout_mode = 0
 offset_left = 307.0
 offset_top = 337.0
@@ -1274,7 +1352,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_xxhm2")
 text = "Ü"
 
-[node name="Button34" type="Button" parent="AlphabetButtons" unique_id=1276778433]
+[node name="Button34" type="Button" parent="Control/AlphabetButtons" unique_id=1276778433]
 layout_mode = 0
 offset_left = 354.0
 offset_top = 338.0
@@ -1284,7 +1362,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_isbi1")
 text = "Ü"
 
-[node name="Button35" type="Button" parent="AlphabetButtons" unique_id=1897731675]
+[node name="Button35" type="Button" parent="Control/AlphabetButtons" unique_id=1897731675]
 layout_mode = 0
 offset_left = 401.0
 offset_top = 337.0
@@ -1294,7 +1372,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_hai00")
 text = "Ü"
 
-[node name="Button36" type="Button" parent="AlphabetButtons" unique_id=102081805]
+[node name="Button36" type="Button" parent="Control/AlphabetButtons" unique_id=102081805]
 layout_mode = 0
 offset_left = 449.0
 offset_top = 337.0
@@ -1304,7 +1382,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_oiu0j")
 text = "Ü"
 
-[node name="Button37" type="Button" parent="AlphabetButtons" unique_id=1242743705]
+[node name="Button37" type="Button" parent="Control/AlphabetButtons" unique_id=1242743705]
 layout_mode = 0
 offset_left = 496.0
 offset_top = 337.0
@@ -1314,7 +1392,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_w811g")
 text = "Ü"
 
-[node name="Button38" type="Button" parent="AlphabetButtons" unique_id=540709797]
+[node name="Button38" type="Button" parent="Control/AlphabetButtons" unique_id=540709797]
 layout_mode = 0
 offset_left = 544.0
 offset_top = 337.0
@@ -1324,7 +1402,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_ou70u")
 text = "Ü"
 
-[node name="Button39" type="Button" parent="AlphabetButtons" unique_id=341320317]
+[node name="Button39" type="Button" parent="Control/AlphabetButtons" unique_id=341320317]
 layout_mode = 0
 offset_left = 590.0
 offset_top = 337.0
@@ -1334,7 +1412,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_xv37e")
 text = "Shift"
 
-[node name="Button40" type="Button" parent="AlphabetButtons" unique_id=1918233653]
+[node name="Button40" type="Button" parent="Control/AlphabetButtons" unique_id=1918233653]
 layout_mode = 0
 offset_left = 11.0
 offset_top = 378.0
@@ -1344,7 +1422,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_apm3e")
 text = "CTRL"
 
-[node name="Button41" type="Button" parent="AlphabetButtons" unique_id=1232899485]
+[node name="Button41" type="Button" parent="Control/AlphabetButtons" unique_id=1232899485]
 layout_mode = 0
 offset_left = 71.0
 offset_top = 378.0
@@ -1355,7 +1433,7 @@ disabled = true
 shortcut = SubResource("Shortcut_dqui5")
 text = "SUPER"
 
-[node name="Button42" type="Button" parent="AlphabetButtons" unique_id=80112076]
+[node name="Button42" type="Button" parent="Control/AlphabetButtons" unique_id=80112076]
 layout_mode = 0
 offset_left = 129.0
 offset_top = 378.0
@@ -1366,7 +1444,7 @@ disabled = true
 shortcut = SubResource("Shortcut_hd75i")
 text = "ALT"
 
-[node name="Button43" type="Button" parent="AlphabetButtons" unique_id=975499124]
+[node name="Button43" type="Button" parent="Control/AlphabetButtons" unique_id=975499124]
 layout_mode = 0
 offset_left = 190.0
 offset_top = 378.0
@@ -1375,7 +1453,7 @@ offset_bottom = 414.0
 theme_override_font_sizes/font_size = 8
 text = "Space"
 
-[node name="Button44" type="Button" parent="AlphabetButtons" unique_id=475208450]
+[node name="Button44" type="Button" parent="Control/AlphabetButtons" unique_id=475208450]
 layout_mode = 0
 offset_left = 485.0
 offset_top = 378.0
@@ -1385,7 +1463,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_57qb0")
 text = "Alt"
 
-[node name="Button45" type="Button" parent="AlphabetButtons" unique_id=537396712]
+[node name="Button45" type="Button" parent="Control/AlphabetButtons" unique_id=537396712]
 layout_mode = 0
 offset_left = 544.0
 offset_top = 378.0
@@ -1394,7 +1472,7 @@ offset_bottom = 414.0
 theme_override_font_sizes/font_size = 8
 text = "Super"
 
-[node name="Button46" type="Button" parent="AlphabetButtons" unique_id=332580363]
+[node name="Button46" type="Button" parent="Control/AlphabetButtons" unique_id=332580363]
 layout_mode = 0
 offset_left = 604.0
 offset_top = 378.0
@@ -1403,7 +1481,7 @@ offset_bottom = 414.0
 theme_override_font_sizes/font_size = 8
 text = "Meta"
 
-[node name="Button47" type="Button" parent="AlphabetButtons" unique_id=876034520]
+[node name="Button47" type="Button" parent="Control/AlphabetButtons" unique_id=876034520]
 layout_mode = 0
 offset_left = 662.0
 offset_top = 378.0
@@ -1413,12 +1491,15 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_gq7w3")
 text = "Control"
 
-[node name="Control" type="Control" parent="." unique_id=1086799619]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="InsertButtons" type="Control" parent="Control" unique_id=1086799619]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Button" type="Button" parent="Control" unique_id=1224644781]
+[node name="Button" type="Button" parent="Control/InsertButtons" unique_id=1224644781]
 layout_mode = 0
 offset_left = 733.0
 offset_top = 168.0
@@ -1429,7 +1510,7 @@ disabled = true
 text = "PRT
 SYS"
 
-[node name="Button2" type="Button" parent="Control" unique_id=1343102430]
+[node name="Button2" type="Button" parent="Control/InsertButtons" unique_id=1343102430]
 layout_mode = 0
 offset_left = 780.0
 offset_top = 168.0
@@ -1439,7 +1520,7 @@ theme_override_font_sizes/font_size = 8
 disabled = true
 text = "SCROLL"
 
-[node name="Button3" type="Button" parent="Control" unique_id=798384188]
+[node name="Button3" type="Button" parent="Control/InsertButtons" unique_id=798384188]
 layout_mode = 0
 offset_left = 827.0
 offset_top = 168.0
@@ -1448,7 +1529,7 @@ offset_bottom = 204.0
 theme_override_font_sizes/font_size = 8
 text = "Pause"
 
-[node name="Button4" type="Button" parent="Control" unique_id=158326644]
+[node name="Button4" type="Button" parent="Control/InsertButtons" unique_id=158326644]
 layout_mode = 0
 offset_left = 733.0
 offset_top = 217.0
@@ -1457,7 +1538,7 @@ offset_bottom = 253.0
 theme_override_font_sizes/font_size = 8
 text = "Insert"
 
-[node name="Button5" type="Button" parent="Control" unique_id=247807187]
+[node name="Button5" type="Button" parent="Control/InsertButtons" unique_id=247807187]
 layout_mode = 0
 offset_left = 780.0
 offset_top = 217.0
@@ -1466,7 +1547,7 @@ offset_bottom = 253.0
 theme_override_font_sizes/font_size = 8
 text = "Home"
 
-[node name="Button6" type="Button" parent="Control" unique_id=1182701293]
+[node name="Button6" type="Button" parent="Control/InsertButtons" unique_id=1182701293]
 layout_mode = 0
 offset_left = 827.0
 offset_top = 218.0
@@ -1476,7 +1557,7 @@ theme_override_font_sizes/font_size = 8
 text = "Page
 up"
 
-[node name="Button7" type="Button" parent="Control" unique_id=1029433163]
+[node name="Button7" type="Button" parent="Control/InsertButtons" unique_id=1029433163]
 layout_mode = 0
 offset_left = 733.0
 offset_top = 258.0
@@ -1485,7 +1566,7 @@ offset_bottom = 294.0
 theme_override_font_sizes/font_size = 8
 text = "Delete"
 
-[node name="Button8" type="Button" parent="Control" unique_id=1814414679]
+[node name="Button8" type="Button" parent="Control/InsertButtons" unique_id=1814414679]
 layout_mode = 0
 offset_left = 780.0
 offset_top = 258.0
@@ -1494,7 +1575,7 @@ offset_bottom = 294.0
 theme_override_font_sizes/font_size = 8
 text = "End"
 
-[node name="Button9" type="Button" parent="Control" unique_id=560463899]
+[node name="Button9" type="Button" parent="Control/InsertButtons" unique_id=560463899]
 layout_mode = 0
 offset_left = 828.0
 offset_top = 257.0
@@ -1504,7 +1585,7 @@ theme_override_font_sizes/font_size = 8
 text = "Page
 Down"
 
-[node name="Button10" type="Button" parent="Control" unique_id=442658976]
+[node name="Button10" type="Button" parent="Control/InsertButtons" unique_id=442658976]
 layout_mode = 0
 offset_left = 780.0
 offset_top = 339.0
@@ -1512,9 +1593,9 @@ offset_right = 822.0
 offset_bottom = 375.0
 theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_j5e8v")
-text = "Ü"
+text = "↑"
 
-[node name="Button11" type="Button" parent="Control" unique_id=1250436184]
+[node name="Button11" type="Button" parent="Control/InsertButtons" unique_id=1250436184]
 layout_mode = 0
 offset_left = 734.0
 offset_top = 378.0
@@ -1522,9 +1603,9 @@ offset_right = 776.0
 offset_bottom = 414.0
 theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_sw2ry")
-text = "Ü"
+text = "←"
 
-[node name="Button12" type="Button" parent="Control" unique_id=1206498392]
+[node name="Button12" type="Button" parent="Control/InsertButtons" unique_id=1206498392]
 layout_mode = 0
 offset_left = 780.0
 offset_top = 378.0
@@ -1532,9 +1613,9 @@ offset_right = 822.0
 offset_bottom = 414.0
 theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_h4daj")
-text = "Ü"
+text = "↓"
 
-[node name="Button13" type="Button" parent="Control" unique_id=12292370]
+[node name="Button13" type="Button" parent="Control/InsertButtons" unique_id=12292370]
 layout_mode = 0
 offset_left = 827.0
 offset_top = 377.0
@@ -1542,14 +1623,17 @@ offset_right = 869.0
 offset_bottom = 413.0
 theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_hhsrn")
-text = "Ü"
+text = "→"
 
-[node name="Control2" type="Control" parent="." unique_id=1210693911]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="kpButtons" type="Control" parent="Control" unique_id=1210693911]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Button" type="Button" parent="Control2" unique_id=741260033]
+[node name="Button" type="Button" parent="Control/kpButtons" unique_id=741260033]
 layout_mode = 0
 offset_left = 886.0
 offset_top = 218.0
@@ -1559,7 +1643,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_mojw2")
 text = "Num"
 
-[node name="Button2" type="Button" parent="Control2" unique_id=1892616950]
+[node name="Button2" type="Button" parent="Control/kpButtons" unique_id=1892616950]
 layout_mode = 0
 offset_left = 934.0
 offset_top = 217.0
@@ -1569,7 +1653,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_11c04")
 text = "/"
 
-[node name="Button3" type="Button" parent="Control2" unique_id=62325708]
+[node name="Button3" type="Button" parent="Control/kpButtons" unique_id=62325708]
 layout_mode = 0
 offset_left = 981.0
 offset_top = 217.0
@@ -1579,7 +1663,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_m16hq")
 text = "*"
 
-[node name="Button4" type="Button" parent="Control2" unique_id=905293182]
+[node name="Button4" type="Button" parent="Control/kpButtons" unique_id=905293182]
 layout_mode = 0
 offset_left = 1029.0
 offset_top = 218.0
@@ -1589,7 +1673,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_vhcqe")
 text = "-"
 
-[node name="Button5" type="Button" parent="Control2" unique_id=1498621169]
+[node name="Button5" type="Button" parent="Control/kpButtons" unique_id=1498621169]
 layout_mode = 0
 offset_left = 887.0
 offset_top = 257.0
@@ -1599,7 +1683,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_2xylu")
 text = "7"
 
-[node name="Button6" type="Button" parent="Control2" unique_id=766246052]
+[node name="Button6" type="Button" parent="Control/kpButtons" unique_id=766246052]
 layout_mode = 0
 offset_left = 934.0
 offset_top = 257.0
@@ -1609,7 +1693,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_o5f8t")
 text = "8"
 
-[node name="Button7" type="Button" parent="Control2" unique_id=231754410]
+[node name="Button7" type="Button" parent="Control/kpButtons" unique_id=231754410]
 layout_mode = 0
 offset_left = 981.0
 offset_top = 257.0
@@ -1619,7 +1703,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_ighqe")
 text = "9"
 
-[node name="Button8" type="Button" parent="Control2" unique_id=207346202]
+[node name="Button8" type="Button" parent="Control/kpButtons" unique_id=207346202]
 layout_mode = 0
 offset_left = 887.0
 offset_top = 297.0
@@ -1629,7 +1713,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_yihc5")
 text = "4"
 
-[node name="Button9" type="Button" parent="Control2" unique_id=1508762551]
+[node name="Button9" type="Button" parent="Control/kpButtons" unique_id=1508762551]
 layout_mode = 0
 offset_left = 935.0
 offset_top = 297.0
@@ -1639,7 +1723,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_wam3n")
 text = "5"
 
-[node name="Button10" type="Button" parent="Control2" unique_id=924981699]
+[node name="Button10" type="Button" parent="Control/kpButtons" unique_id=924981699]
 layout_mode = 0
 offset_left = 982.0
 offset_top = 297.0
@@ -1649,7 +1733,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_6rae7")
 text = "6"
 
-[node name="Button11" type="Button" parent="Control2" unique_id=1973584055]
+[node name="Button11" type="Button" parent="Control/kpButtons" unique_id=1973584055]
 layout_mode = 0
 offset_left = 887.0
 offset_top = 337.0
@@ -1659,7 +1743,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_838rt")
 text = "1"
 
-[node name="Button12" type="Button" parent="Control2" unique_id=676190120]
+[node name="Button12" type="Button" parent="Control/kpButtons" unique_id=676190120]
 layout_mode = 0
 offset_left = 934.0
 offset_top = 337.0
@@ -1669,7 +1753,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_4o5ca")
 text = "2"
 
-[node name="Button13" type="Button" parent="Control2" unique_id=1408013895]
+[node name="Button13" type="Button" parent="Control/kpButtons" unique_id=1408013895]
 layout_mode = 0
 offset_left = 981.0
 offset_top = 336.0
@@ -1679,7 +1763,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_khnbr")
 text = "3"
 
-[node name="Button14" type="Button" parent="Control2" unique_id=677719954]
+[node name="Button14" type="Button" parent="Control/kpButtons" unique_id=677719954]
 layout_mode = 0
 offset_left = 888.0
 offset_top = 378.0
@@ -1689,7 +1773,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_74mk2")
 text = "0"
 
-[node name="Button15" type="Button" parent="Control2" unique_id=879712940]
+[node name="Button15" type="Button" parent="Control/kpButtons" unique_id=879712940]
 layout_mode = 0
 offset_left = 980.0
 offset_top = 377.0
@@ -1700,7 +1784,7 @@ shortcut = SubResource("Shortcut_bp4g2")
 text = ".
 Del"
 
-[node name="Button16" type="Button" parent="Control2" unique_id=2121920795]
+[node name="Button16" type="Button" parent="Control/kpButtons" unique_id=2121920795]
 layout_mode = 0
 offset_left = 1029.0
 offset_top = 257.0
@@ -1710,7 +1794,7 @@ theme_override_font_sizes/font_size = 8
 shortcut = SubResource("Shortcut_lelac")
 text = "+"
 
-[node name="Button17" type="Button" parent="Control2" unique_id=2129257829]
+[node name="Button17" type="Button" parent="Control/kpButtons" unique_id=2129257829]
 layout_mode = 0
 offset_left = 1029.0
 offset_top = 337.0

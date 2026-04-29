@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://trrvu02okt44"]
 
 [ext_resource type="Script" uid="uid://be25e4bhuif40" path="res://Scripts/SplashScene.gd" id="1_f6dde"]
+[ext_resource type="VideoStream" uid="uid://l68xqtqo2bdb" path="res://Assets/theOpenSourceBrigadeProm.ogv" id="2_glev2"]
 
 [node name="SplashScene" type="Control" unique_id=1198370969]
 layout_mode = 3
@@ -29,3 +30,10 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="SplashScreenContainer" unique_id=412740264]
 layout_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="SplashScreenContainer" unique_id=1973346822]
+layout_mode = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="SplashScreenContainer" unique_id=1867423924]
+layout_mode = 2
+stream = ExtResource("2_glev2")
