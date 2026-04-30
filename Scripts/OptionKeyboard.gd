@@ -24,12 +24,23 @@ const ACTIONS = {
 var waitting_for_input: String = ""
 
 func _ready() -> void:
-	#$AlphabetButtons/Button3.text = $AlphabetButtons/Button3.shortcut
-	print(str($AlphabetButtons/Button3.shortcut.events))
-	# [InputEventKey: keycode=90 (Z), mods=none, physical=false, location=unspecified, pressed=false, echo=false]
-	$AlphabetButtons/Button3.text = str($AlphabetButtons/Button3.shortcut.events.get(0).as_text_keycode())
-	pass
+	for child in f_buttons.get_children():
+		if child is Button:
+			child.text = str(child.shortcut.events.get(0).as_text_keycode())
+	for child in number_buttons.get_children():
+		if child is Button:
+			child.text = str(child.shortcut.events.get(0).as_text_keycode())
+	for child in alphabet_buttons.get_children():
+		if child is Button:
+			child.text = str(child.shortcut.events.get(0).as_text_keycode())
+	for child in insert_buttons.get_children():
+		if child is Button:
+			child.text = str(child.shortcut.events.get(0).as_text_keycode())
+	for child in kp_buttons.get_children():
+		if child is Button:
+			child.text = str(child.shortcut.events.get(0).as_text_keycode())
 
+	
 # click on "action button" = choose an input
 # click on "keyboard button" = choose an action
 
@@ -50,6 +61,9 @@ func _update_keyboard_buttons_label() -> void:
 func _update_waitting_for_input_keyboard_button_albedo() -> void:
 	pass
 
-# change albedo for button with action e.g forward = z to green
+func _update_on_click_keyboard_button_albedo() -> void:
+	pass
+
+# Change albedo for button with action e.g forward = z to green
 func _update_keyboard_button_albedo() -> void:
 	pass
