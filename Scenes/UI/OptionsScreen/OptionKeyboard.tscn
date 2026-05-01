@@ -759,13 +759,21 @@ keycode = 4194310
 [sub_resource type="Shortcut" id="Shortcut_n3lgk"]
 events = [SubResource("InputEventKey_20bdq")]
 
-[node name="OptionKeyboard" type="VBoxContainer" unique_id=1198794326]
+[node name="OptionKeyboard" type="VBoxContainer" unique_id=1198794326 node_paths=PackedStringArray("forward_button", "back_button", "left_button", "right_button", "jump_action_button", "crouch_button", "action_a_button", "start_button")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5dm2e")
+forward_button = NodePath("ActionButtonsGridContainer/ForwardButton")
+back_button = NodePath("ActionButtonsGridContainer/BackButton")
+left_button = NodePath("ActionButtonsGridContainer/LeftButton")
+right_button = NodePath("ActionButtonsGridContainer/RightButton")
+jump_action_button = NodePath("ActionButtonsGridContainer/JumpActionButton")
+crouch_button = NodePath("ActionButtonsGridContainer/CrouchButton")
+action_a_button = NodePath("ActionButtonsGridContainer/ActionAButton")
+start_button = NodePath("ActionButtonsGridContainer/StartButton")
 
 [node name="ActionButtonsGridContainer" type="GridContainer" parent="." unique_id=928963441]
 unique_name_in_owner = true
