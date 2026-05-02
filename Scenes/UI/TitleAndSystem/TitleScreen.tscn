@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d2oq6fjrfhukp"]
 
-[ext_resource type="Texture2D" uid="uid://mh0xh4lclgl2" path="res://icon.svg" id="1_8uuw6"]
+[ext_resource type="Texture2D" uid="uid://4afec50fmv4e" path="res://Assets/espaceChantourneLogo01.png" id="1_8uuw6"]
+[ext_resource type="Texture2D" uid="uid://u1au0cn38viw" path="res://Assets/kenney_input-prompt/Nintendo Gamecube/Vector/gamecube_button_start.svg" id="2_o0tm0"]
 
 [node name="TitleScreen" type="Control" unique_id=165171884]
 layout_mode = 3
@@ -26,7 +27,14 @@ layout_mode = 2
 texture = ExtResource("1_8uuw6")
 stretch_mode = 3
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=561862672]
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1721189779]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=383110721]
+layout_mode = 2
+texture = ExtResource("2_o0tm0")
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=561862672]
 layout_mode = 2
 text = "Press Start"
 horizontal_alignment = 1

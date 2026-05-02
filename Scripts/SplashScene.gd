@@ -24,9 +24,9 @@ func fade() -> void:
 			print("play video")
 			screen.play()
 		tween.tween_interval(in_time)
-		tween.property(screen, "modulate:a", 1.0, fade_in_time)
+		tween.tween_property(screen, "modulate:a", 1.0, fade_in_time)
 		tween.tween_interval(pause_time)
-		tween.property(screen, "modulate:a", 0.0, fade_out_time)
+		tween.tween_property(screen, "modulate:a", 0.0, fade_out_time)
 		tween.tween_interval(out_time)
 		await tween.finished
 	get_tree().change_scene_to_packed(load_scene) # i think i need to change this line for globals
