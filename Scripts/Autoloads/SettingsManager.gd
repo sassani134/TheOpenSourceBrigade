@@ -201,6 +201,7 @@ func apply_audio_settings() -> void:
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), master_db)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), music_db)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("SFX"), sfx_db)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Voice"), voice_db)
 	return
 
 

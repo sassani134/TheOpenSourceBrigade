@@ -1,16 +1,80 @@
 [gd_scene format=3 uid="uid://bfmughfoynd35"]
 
-[node name="TransitionController" type="Control" unique_id=1289942888]
+[ext_resource type="Script" uid="uid://dlcsa5ujpr33l" path="res://Scripts/TransitionController.gd" id="1_xivgv"]
+
+[sub_resource type="Animation" id="Animation_1gcrt"]
+resource_name = "Fade In"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mx0sk"]
+resource_name = "Fade Out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xivgv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mx0sk"]
+_data = {
+&"Fade In": SubResource("Animation_1gcrt"),
+&"Fade Out": SubResource("Animation_mx0sk"),
+&"RESET": SubResource("Animation_xivgv")
+}
+
+[node name="TransitionController" type="Control" unique_id=1289942888 node_paths=PackedStringArray("background", "animation_player")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_xivgv")
+background = NodePath("ColorRect")
+animation_player = NodePath("AnimationPlayer")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=271407142]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1808573460]
+libraries/ = SubResource("AnimationLibrary_mx0sk")

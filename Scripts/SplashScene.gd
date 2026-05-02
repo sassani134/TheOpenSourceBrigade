@@ -11,6 +11,9 @@ extends Control
 
 var splash_screens: Array
 
+# signal continue
+
+
 func get_screens() -> void:
 	splash_screens = splash_screen_container.get_children()
 	for screen in splash_screens:
@@ -29,7 +32,9 @@ func fade() -> void:
 		tween.tween_property(screen, "modulate:a", 0.0, fade_out_time)
 		tween.tween_interval(out_time)
 		await tween.finished
-	get_tree().change_scene_to_packed(load_scene) # i think i need to change this line for globals
+		 
+	#get_tree().change_scene_to_packed(load_scene) # i think i need to change this line for globals
+	Global.game_controller.change_gui_scene("res://Scenes/UI/TitleAndSystem/TitleScreen.tscn")
 
 func _ready() -> void:
 	get_screens()
@@ -38,5 +43,5 @@ func _ready() -> void:
 # Change it so it stop tween and change screen
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_pressed():
-		get_tree().change_scene_to_packed(load_scene)
-		#Global.game_controller.change_gui_scene("...")
+		# get_tree().change_scene_to_packed(load_scene)
+		Global.game_controller.change_gui_scene("res://Scenes/UI/TitleAndSystem/TitleScreen.tscn")

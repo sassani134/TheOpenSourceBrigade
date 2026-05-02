@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dqx7cmb4rygio" path="res://Scripts/GameController.gd" id="1_fyej0"]
 [ext_resource type="PackedScene" uid="uid://trrvu02okt44" path="res://Scenes/UI/TitleAndSystem/SplashScene.tscn" id="2_liseb"]
+[ext_resource type="PackedScene" uid="uid://bfmughfoynd35" path="res://Scenes/UI/TransitionController.tscn" id="3_occvc"]
 
 [node name="GameController" type="Node" unique_id=314243519]
 script = ExtResource("1_fyej0")
@@ -20,3 +21,5 @@ grow_vertical = 2
 
 [node name="SplashScene" parent="GUI" unique_id=1198370969 instance=ExtResource("2_liseb")]
 layout_mode = 1
+
+[node name="TransitionController" parent="." unique_id=1289942888 instance=ExtResource("3_occvc")]

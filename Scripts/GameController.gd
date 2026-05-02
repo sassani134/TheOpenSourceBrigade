@@ -1,5 +1,7 @@
 class_name GameController extends Node
 
+@onready var transition_controller: SceneTransitionController = $TransitionController
+
 @export var world_3d: Node3D
 @export var world_2d: Node2D
 @export var gui: Control
@@ -13,7 +15,18 @@ func _ready() -> void:
 	Global.game_controller = self
 	current_gui_scene = $GUI/SplashScene
 
-func change_3d_scene(new_scene: String, delete: bool = true, keep_running: bool = false) -> void:
+func change_3d_scene(
+	new_scene: String,
+	delete: bool = true,
+	keep_running: bool = false,
+	transition: bool = true,
+	transition_in: String = "Fade In",
+	transition_out: String = "Fade Out",
+	seconds: float = 1.0
+	) -> void:
+	if transition:
+		transition_controller.transition(transition_out, seconds) # Transition Out
+		await transition_controller.animation_player.animation_finished
 	if current_3d_scene != null:
 		if delete:
 			current_3d_scene.queue_free() # remove node entirely
@@ -24,9 +37,21 @@ func change_3d_scene(new_scene: String, delete: bool = true, keep_running: bool 
 		var new = load(new_scene).instantiate()
 		gui.add_child(new) # load new scene
 		current_3d_scene = new
+		transition_controller.transition(transition_in, seconds) # Transition In
 		
 		
-func change_2d_scene(new_scene: String, delete: bool = true, keep_running: bool = false) -> void:
+func change_2d_scene(
+	new_scene: String,
+	delete: bool = true,
+	keep_running: bool = false,
+	transition: bool = true,
+	transition_in: String = "Fade In",
+	transition_out: String = "Fade Out",
+	seconds: float = 1.0
+	) -> void:
+	if transition:
+		transition_controller.transition(transition_out, seconds) # Transition Out
+		await transition_controller.animation_player.animation_finished
 	if current_2d_scene != null:
 		if delete:
 			current_2d_scene.queue_free() # remove node entirely
@@ -37,8 +62,20 @@ func change_2d_scene(new_scene: String, delete: bool = true, keep_running: bool 
 		var new = load(new_scene).instantiate()
 		gui.add_child(new) # load new scene
 		current_2d_scene = new
+		transition_controller.transition(transition_in, seconds) # Transition In
 
-func change_gui_scene(new_scene: String, delete: bool = true, keep_running: bool = false) -> void:
+func change_gui_scene(
+	new_scene: String,
+	delete: bool = true,
+	keep_running: bool = false,
+	transition: bool = true,
+	transition_in: String = "Fade In",
+	transition_out: String = "Fade Out",
+	seconds: float = 1.0
+	) -> void:
+	if transition:
+		transition_controller.transition(transition_out, seconds) # Transition Out
+		await transition_controller.animation_player.animation_finished
 	if current_gui_scene != null:
 		if delete:
 			current_gui_scene.queue_free() # remove node entirely
@@ -46,6 +83,8 @@ func change_gui_scene(new_scene: String, delete: bool = true, keep_running: bool
 			current_gui_scene.visible = false # keeps in memory and running
 		else:
 			gui.remove_child(current_3d_scene) # Keeps in memory does not run
+		print("new_scene: ", new_scene)
 		var new = load(new_scene).instantiate()
 		gui.add_child(new) # load new scene
-		current_3d_scene = new
+		current_gui_scene = new
+		transition_controller.transition(transition_in, seconds) # Transition In
