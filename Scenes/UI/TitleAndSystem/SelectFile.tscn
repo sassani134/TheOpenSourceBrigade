@@ -58,19 +58,24 @@ icon = ExtResource("1_ow6ir")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1334824892]
 layout_mode = 2
+alignment = 1
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1546074158]
 layout_mode = 2
-text = "DATA"
+tooltip_text = "SCORE_TOOLTIP"
+text = "SCORE"
 
 [node name="Button2" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1072405503]
 layout_mode = 2
+tooltip_text = "COPY_TOOLTIP"
 text = "COPY"
 
 [node name="Button3" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=354861311]
 layout_mode = 2
+tooltip_text = "ERASE_TOOLTIP"
 text = "ERASE"
 
 [node name="Button4" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1381735825]
 layout_mode = 2
+tooltip_text = "OPTION_TOOLTIP"
 text = "OPTION"
