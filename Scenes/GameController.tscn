@@ -4,8 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://trrvu02okt44" path="res://Scenes/UI/TitleAndSystem/SplashScene.tscn" id="2_liseb"]
 [ext_resource type="PackedScene" uid="uid://bfmughfoynd35" path="res://Scenes/UI/TransitionController.tscn" id="3_occvc"]
 
-[node name="GameController" type="Node" unique_id=314243519]
+[node name="GameController" type="Node" unique_id=314243519 node_paths=PackedStringArray("world_3d", "world_2d", "gui")]
 script = ExtResource("1_fyej0")
+world_3d = NodePath("World3D")
+world_2d = NodePath("World2D")
+gui = NodePath("GUI")
 
 [node name="World3D" type="Node3D" parent="." unique_id=1179575774]
 

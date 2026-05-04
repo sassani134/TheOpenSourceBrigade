@@ -33,7 +33,7 @@ func fade() -> void:
 		tween.tween_interval(out_time)
 		await tween.finished
 		 
-	#get_tree().change_scene_to_packed(load_scene) # i think i need to change this line for globals
+	#get_tree().change_scene_to_packed("res://Scenes/UI/TitleAndSystem/TitleScreen.tscn") # i think i need to change this line for globals
 	Global.game_controller.change_gui_scene("res://Scenes/UI/TitleAndSystem/TitleScreen.tscn")
 
 func _ready() -> void:

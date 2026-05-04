@@ -82,9 +82,11 @@ func change_gui_scene(
 		elif keep_running:
 			current_gui_scene.visible = false # keeps in memory and running
 		else:
-			gui.remove_child(current_3d_scene) # Keeps in memory does not run
-		print("new_scene: ", new_scene)
+			gui.remove_child(current_gui_scene) # Keeps in memory does not run
+		print("new_scene: ", new_scene) # new_scene: res://Scenes/UI/TitleAndSystem/TitleScreen.tscn
 		var new = load(new_scene).instantiate()
+		print("new : ", new) # new : TitleScreen:<Control#41741715061>
+		print(new.get_class()) # Control
 		gui.add_child(new) # load new scene
 		current_gui_scene = new
 		transition_controller.transition(transition_in, seconds) # Transition In
