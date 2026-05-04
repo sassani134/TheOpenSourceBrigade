@@ -24,26 +24,26 @@ texture = ExtResource("1_0wdpo")
 expand_mode = 3
 
 [node name="GenericButtonCircleFill" type="Sprite2D" parent="." unique_id=174977480]
-position = Vector2(109.00001, 489)
+position = Vector2(169, 820)
 scale = Vector2(3, 3)
 texture = ExtResource("2_gxcsm")
 
 [node name="GenericButtonCircleFill2" type="Sprite2D" parent="." unique_id=368520624]
-position = Vector2(879, 526)
+position = Vector2(1464, 870)
 scale = Vector2(3, 3)
 texture = ExtResource("2_gxcsm")
 
 [node name="GenericButtonCircle" type="Sprite2D" parent="." unique_id=1174779677]
-position = Vector2(1067, 490.00003)
+position = Vector2(1783.0001, 816.00006)
 scale = Vector2(3, 3)
 texture = ExtResource("3_qfjdq")
 
 [node name="GenericButtonCircle2" type="Sprite2D" parent="." unique_id=1878241663]
-position = Vector2(935, 375)
+position = Vector2(1659, 673)
 scale = Vector2(2, 2)
 texture = ExtResource("3_qfjdq")
 
 [node name="GenericButtonCircle3" type="Sprite2D" parent="." unique_id=850662905]
-position = Vector2(1084, 310)
+position = Vector2(1823, 601)
 scale = Vector2(2, 2)
 texture = ExtResource("3_qfjdq")
