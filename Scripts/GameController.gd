@@ -80,13 +80,14 @@ func change_gui_scene(
 		if delete:
 			current_gui_scene.queue_free() # remove node entirely
 		elif keep_running:
+			#those it toggle if i need to comeback ??
 			current_gui_scene.visible = false # keeps in memory and running
 		else:
+			# if i add the child back what happen
 			gui.remove_child(current_gui_scene) # Keeps in memory does not run
-		print("new_scene: ", new_scene) # new_scene: res://Scenes/UI/TitleAndSystem/TitleScreen.tscn
 		var new = load(new_scene).instantiate()
-		print("new : ", new) # new : TitleScreen:<Control#41741715061>
-		print(new.get_class()) # Control
 		gui.add_child(new) # load new scene
 		current_gui_scene = new
 		transition_controller.transition(transition_in, seconds) # Transition In
+
+# i think change_ function need improvement further test to do
