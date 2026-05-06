@@ -1,5 +1,6 @@
 # Source.md
 ## Assets
+- [joypad input](https://docs.godotengine.org/en/latest/tutorials/inputs/controllers_gamepads_joysticks.html)
 ### Generic
 - [Godot](https://godotengine.org/)
 - [Godot Asset Library](https://godotengine.org/asset-library/asset)
@@ -27,4 +28,4 @@
 
 ## Tuts
 - [Using KayKit Characters In Godot (Quick version)](https://youtu.be/sp_1WnJUDXM)
--[Make a Smooth 3D Character Controller in Godot 4](https://youtu.be/JlgZtOFMdfc)
+- [Make a Smooth 3D Character Controller in Godot 4](https://youtu.be/JlgZtOFMdfc)
