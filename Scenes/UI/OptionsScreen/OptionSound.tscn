@@ -19,16 +19,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GridContainer" type="GridContainer" parent="CenterContainer" unique_id=1634398203]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1724434489]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer/VBoxContainer" unique_id=1634398203]
 layout_mode = 2
 theme_override_constants/h_separation = 16
 columns = 4
 
-[node name="Label" type="Label" parent="CenterContainer/GridContainer" unique_id=1748206453]
+[node name="LabelMaster" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1748206453]
 layout_mode = 2
 text = "MASTER"
 
-[node name="HSlider" type="HSlider" parent="CenterContainer/GridContainer" unique_id=814150872]
+[node name="HSliderMaster" type="HSlider" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=814150872]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -37,19 +40,19 @@ value = 100.0
 tick_count = 1
 ticks_position = 3
 
-[node name="Label2" type="Label" parent="CenterContainer/GridContainer" unique_id=574389989]
+[node name="LabelMasterValue" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=574389989]
 layout_mode = 2
 text = "100%"
 
-[node name="Button" type="Button" parent="CenterContainer/GridContainer" unique_id=1540579188]
+[node name="ButtonTestMaster" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1540579188]
 layout_mode = 2
-text = "Test "
+text = "TEST_MASTER"
 
-[node name="Label3" type="Label" parent="CenterContainer/GridContainer" unique_id=1484588475]
+[node name="LabelMusic" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1484588475]
 layout_mode = 2
 text = "MUSIC"
 
-[node name="HSlider2" type="HSlider" parent="CenterContainer/GridContainer" unique_id=1179906513]
+[node name="HSliderMusic" type="HSlider" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1179906513]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -58,19 +61,19 @@ value = 75.0
 tick_count = 1
 ticks_position = 3
 
-[node name="Label4" type="Label" parent="CenterContainer/GridContainer" unique_id=1489866133]
+[node name="LabelMusicValue" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1489866133]
 layout_mode = 2
 text = "75%"
 
-[node name="Button2" type="Button" parent="CenterContainer/GridContainer" unique_id=1315624188]
+[node name="ButtonTestMusic" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1315624188]
 layout_mode = 2
-text = "Test "
+text = "TEST_MUSIC"
 
-[node name="Label5" type="Label" parent="CenterContainer/GridContainer" unique_id=922451052]
+[node name="LabelSFX" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=922451052]
 layout_mode = 2
 text = "SFX"
 
-[node name="HSlider3" type="HSlider" parent="CenterContainer/GridContainer" unique_id=1420970336]
+[node name="HSliderSFX" type="HSlider" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1420970336]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -79,19 +82,19 @@ value = 50.0
 tick_count = 1
 ticks_position = 3
 
-[node name="Label6" type="Label" parent="CenterContainer/GridContainer" unique_id=1595506118]
+[node name="LabelSFXValue" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1595506118]
 layout_mode = 2
 text = "50%"
 
-[node name="Button3" type="Button" parent="CenterContainer/GridContainer" unique_id=956049035]
+[node name="ButtonTestSFX" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=956049035]
 layout_mode = 2
-text = "Test "
+text = "TEST_SFX"
 
-[node name="Label7" type="Label" parent="CenterContainer/GridContainer" unique_id=872955168]
+[node name="LabelVoice" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=872955168]
 layout_mode = 2
 text = "VOICE"
 
-[node name="HSlider4" type="HSlider" parent="CenterContainer/GridContainer" unique_id=97787178]
+[node name="HSliderVoiceValue" type="HSlider" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=97787178]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -100,10 +103,10 @@ value = 25.0
 tick_count = 1
 ticks_position = 3
 
-[node name="Label8" type="Label" parent="CenterContainer/GridContainer" unique_id=490301207]
+[node name="LabelVoiceValue" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=490301207]
 layout_mode = 2
 text = "25%"
 
-[node name="Button4" type="Button" parent="CenterContainer/GridContainer" unique_id=1006433711]
+[node name="ButtonTestVoice" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1006433711]
 layout_mode = 2
-text = "Test "
+text = "TEST_VOICE"

@@ -24,7 +24,7 @@ alignment = 1
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="VBoxContainer/CenterContainer" unique_id=25564162]
+[node name="LabelVideo" type="Label" parent="VBoxContainer/CenterContainer" unique_id=25564162]
 layout_mode = 2
 text = "Video"
 
@@ -34,33 +34,30 @@ size_flags_horizontal = 4
 size_flags_vertical = 2
 columns = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/GridContainer" unique_id=1674106065]
+[node name="LabelResolution" type="Label" parent="VBoxContainer/GridContainer" unique_id=1674106065]
 layout_mode = 2
 text = "RESOLUTION"
 
-[node name="OptionButton" type="OptionButton" parent="VBoxContainer/GridContainer" unique_id=530852594]
+[node name="OptionButtonResolution" type="OptionButton" parent="VBoxContainer/GridContainer" unique_id=530852594]
 layout_mode = 2
 
-[node name="Label2" type="Label" parent="VBoxContainer/GridContainer" unique_id=291822431]
+[node name="LabelFullscreen" type="Label" parent="VBoxContainer/GridContainer" unique_id=291822431]
 layout_mode = 2
 text = "FULLSCREEN"
 
-[node name="Button" type="Button" parent="VBoxContainer/GridContainer" unique_id=1359209140]
+[node name="CheckBoxFullscreen" type="CheckBox" parent="VBoxContainer/GridContainer" unique_id=2101946971]
 layout_mode = 2
-toggle_mode = true
 
-[node name="Label3" type="Label" parent="VBoxContainer/GridContainer" unique_id=1566997036]
+[node name="LabelBorderless" type="Label" parent="VBoxContainer/GridContainer" unique_id=1566997036]
 layout_mode = 2
 text = "BORDERLESS"
 
-[node name="Button2" type="Button" parent="VBoxContainer/GridContainer" unique_id=1474324075]
+[node name="CheckBoxBorderless" type="CheckBox" parent="VBoxContainer/GridContainer" unique_id=78952788]
 layout_mode = 2
-toggle_mode = true
 
-[node name="Label4" type="Label" parent="VBoxContainer/GridContainer" unique_id=997769835]
+[node name="LabelVsync" type="Label" parent="VBoxContainer/GridContainer" unique_id=997769835]
 layout_mode = 2
 text = "VSYNC"
 
-[node name="Button3" type="Button" parent="VBoxContainer/GridContainer" unique_id=1510071684]
+[node name="CheckBoxVsync" type="CheckBox" parent="VBoxContainer/GridContainer" unique_id=1383420271]
 layout_mode = 2
-toggle_mode = true

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bw1ow0e2ydxvs"]
 
+[ext_resource type="Script" uid="uid://4bviw4fpbf1h" path="res://Scripts/SelectFile.gd" id="1_0u23o"]
 [ext_resource type="Texture2D" uid="uid://mh0xh4lclgl2" path="res://icon.svg" id="1_ow6ir"]
 
 [node name="SelectFile" type="Control" unique_id=1328124698]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_0u23o")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=1766267668]
 layout_mode = 1
@@ -21,36 +23,36 @@ grow_vertical = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1038490612]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=397204949]
+[node name="LabelSelectFile" type="Label" parent="CenterContainer/VBoxContainer" unique_id=397204949]
 layout_mode = 2
 text = "SELECT_FILE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="GridContainer" type="GridContainer" parent="CenterContainer/VBoxContainer" unique_id=2049237073]
+[node name="GridContainerSelectFile" type="GridContainer" parent="CenterContainer/VBoxContainer" unique_id=2049237073]
 layout_mode = 2
 size_flags_vertical = 3
 columns = 2
 
-[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=455509581]
+[node name="ButtonFile1" type="Button" parent="CenterContainer/VBoxContainer/GridContainerSelectFile" unique_id=455509581]
 layout_mode = 2
 text = "FILE_A
 NEW"
 icon = ExtResource("1_ow6ir")
 
-[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=2123947410]
+[node name="ButtonFile2" type="Button" parent="CenterContainer/VBoxContainer/GridContainerSelectFile" unique_id=2123947410]
 layout_mode = 2
 text = "FILE_B
 NEW"
 icon = ExtResource("1_ow6ir")
 
-[node name="Button3" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=875995978]
+[node name="ButtonFile3" type="Button" parent="CenterContainer/VBoxContainer/GridContainerSelectFile" unique_id=875995978]
 layout_mode = 2
 text = "FILE_C
 NEW"
 icon = ExtResource("1_ow6ir")
 
-[node name="Button4" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1940834125]
+[node name="ButtonFile4" type="Button" parent="CenterContainer/VBoxContainer/GridContainerSelectFile" unique_id=1940834125]
 layout_mode = 2
 text = "FILE_D
 NEW"
@@ -60,22 +62,24 @@ icon = ExtResource("1_ow6ir")
 layout_mode = 2
 alignment = 1
 
-[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1546074158]
+[node name="ButtonScore" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1546074158]
 layout_mode = 2
 tooltip_text = "SCORE_TOOLTIP"
 text = "SCORE"
 
-[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1072405503]
+[node name="ButtonCopy" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1072405503]
 layout_mode = 2
 tooltip_text = "COPY_TOOLTIP"
+toggle_mode = true
 text = "COPY"
 
-[node name="Button3" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=354861311]
+[node name="ButtonErase" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=354861311]
 layout_mode = 2
 tooltip_text = "ERASE_TOOLTIP"
+toggle_mode = true
 text = "ERASE"
 
-[node name="Button4" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1381735825]
+[node name="ButtonOption" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1381735825]
 layout_mode = 2
 tooltip_text = "OPTION_TOOLTIP"
 text = "OPTION"

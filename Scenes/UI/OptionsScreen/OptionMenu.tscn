@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://cqskgvuaaiesj"]
+
+[ext_resource type="PackedScene" uid="uid://tfcmbreuwmns" path="res://Scenes/UI/OptionsScreen/OptionSound.tscn" id="1_j0cn8"]
+[ext_resource type="Script" uid="uid://dq3a8gahkmk3c" path="res://Scripts/OptionMenu.gd" id="1_pwj4b"]
+[ext_resource type="PackedScene" uid="uid://bre4us7kjmndb" path="res://Scenes/UI/OptionsScreen/OptionMobile.tscn" id="2_2f62i"]
+[ext_resource type="PackedScene" uid="uid://b2dl5qw1jss2w" path="res://joypadGamepadDemo/joypads.tscn" id="3_mpqy6"]
+[ext_resource type="PackedScene" uid="uid://c0b1dc8aqqkem" path="res://Scenes/UI/OptionsScreen/OptionVideo.tscn" id="4_pwj4b"]
+[ext_resource type="PackedScene" uid="uid://3gb3n2dwtgnt" path="res://Scenes/UI/OptionsScreen/OptionKeyboard.tscn" id="5_2f62i"]
+[ext_resource type="PackedScene" uid="uid://uwuiaa6sy4pc" path="res://Scenes/UI/OptionsScreen/OptionLanguage.tscn" id="6_mpqy6"]
+
+[node name="OptionMenu" type="Control" unique_id=703876528]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pwj4b")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=102881186]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="VBoxContainer" unique_id=2113129902]
+layout_mode = 2
+size_flags_vertical = 3
+tab_alignment = 1
+current_tab = 5
+
+[node name="OptionSound" parent="VBoxContainer/TabContainer" unique_id=389073825 instance=ExtResource("1_j0cn8")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="OptionMobile" parent="VBoxContainer/TabContainer" unique_id=1278278720 instance=ExtResource("2_2f62i")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="joypads" parent="VBoxContainer/TabContainer" unique_id=505214756 instance=ExtResource("3_mpqy6")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="OptionVideo" parent="VBoxContainer/TabContainer" unique_id=551279919 instance=ExtResource("4_pwj4b")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="OptionKeyboard" parent="VBoxContainer/TabContainer" unique_id=1198794326 instance=ExtResource("5_2f62i")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="OptionLanguage" parent="VBoxContainer/TabContainer" unique_id=636137504 instance=ExtResource("6_mpqy6")]
+layout_mode = 2
+metadata/_tab_index = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1752118440]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=2078634747]
+layout_mode = 2
+text = "Retour"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]

@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://uwuiaa6sy4pc"]
 
-[node name="OptionLanguage" type="Control" unique_id=636137504]
+[ext_resource type="Script" uid="uid://60x437s88rna" path="res://Scenes/UI/OptionsScreen/OptionLanguage.gd" id="1_6noj2"]
+
+[node name="OptionLanguage" type="Control" unique_id=636137504 node_paths=PackedStringArray("language_option")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_6noj2")
+language_option = NodePath("CenterContainer/VBoxContainer/OptionButton")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=1106932468]
 layout_mode = 1
@@ -16,14 +20,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GridContainer" type="GridContainer" parent="CenterContainer" unique_id=262558185]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=476445109]
 layout_mode = 2
-columns = 2
 
-[node name="Button" type="Button" parent="CenterContainer/GridContainer" unique_id=638112829]
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=693425716]
 layout_mode = 2
-text = "ENGLISH"
+text = "LANGUAGE"
 
-[node name="Button2" type="Button" parent="CenterContainer/GridContainer" unique_id=459703065]
+[node name="OptionButton" type="OptionButton" parent="CenterContainer/VBoxContainer" unique_id=204700896]
 layout_mode = 2
-text = "FRANCAIS"

@@ -47,3 +47,7 @@ texture = ExtResource("3_qfjdq")
 position = Vector2(1823, 601)
 scale = Vector2(2, 2)
 texture = ExtResource("3_qfjdq")
+
+[node name="GenericButtonCircle4" type="Sprite2D" parent="." unique_id=1104952876]
+position = Vector2(1024, 941)
+texture = ExtResource("3_qfjdq")
