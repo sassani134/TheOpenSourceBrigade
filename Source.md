@@ -22,6 +22,7 @@
 - [Keyboard sizes](https://commons.wikimedia.org/wiki/File:Keyboard_sizes.svg?uselang=en#Licensing)
 
 ### 3D
+- [La ferme des animaux](https://fr.wikipedia.org/wiki/La_Ferme_des_animaux)
 ### 2D
 ### Sounds
 - [victory](https://opengameart.org/content/victory)
@@ -29,3 +30,6 @@
 ## Tuts
 - [Using KayKit Characters In Godot (Quick version)](https://youtu.be/sp_1WnJUDXM)
 - [Make a Smooth 3D Character Controller in Godot 4](https://youtu.be/JlgZtOFMdfc)
+- [ The SMART Way to Manage Scenes in Godot](https://youtu.be/32h8BR0FqdI)
+- [The Easy Scene Transition Setup for Godot](https://youtu.be/2nv49zosKIY)
+- [Save and Load System with Update Support | Godot 4.6](https://youtu.be/Dw45NlwIORY)
