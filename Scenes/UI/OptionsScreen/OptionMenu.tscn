@@ -29,10 +29,9 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_vertical = 3
 tab_alignment = 1
-current_tab = 5
+current_tab = 0
 
 [node name="OptionSound" parent="VBoxContainer/TabContainer" unique_id=389073825 instance=ExtResource("1_j0cn8")]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -57,6 +56,7 @@ layout_mode = 2
 metadata/_tab_index = 4
 
 [node name="OptionLanguage" parent="VBoxContainer/TabContainer" unique_id=636137504 instance=ExtResource("6_mpqy6")]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 5
 

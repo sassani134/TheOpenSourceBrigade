@@ -14,6 +14,12 @@ var current_gui_scene: Control # main menu, HUD, etc
 func _ready() -> void:
 	Global.game_controller = self
 	current_gui_scene = $GUI/SplashScene
+	# print(current_2d_scene)
+	# print(current_3d_scene)
+	# current_3d_scene = $World3D
+	# current_2d_scene = $World2D
+	# print(current_2d_scene)
+	# print(current_3d_scene)
 
 func change_3d_scene(
 	new_scene: String,
@@ -24,22 +30,27 @@ func change_3d_scene(
 	transition_out: String = "Fade Out",
 	seconds: float = 1.0
 	) -> void:
+	print("start change_3d_scene")
 	if transition:
 		transition_controller.transition(transition_out, seconds) # Transition Out
 		await transition_controller.animation_player.animation_finished
+		print("ayo")
 	if current_3d_scene != null:
 		if delete:
 			current_3d_scene.queue_free() # remove node entirely
 		elif keep_running:
 			current_3d_scene.visible = false # keeps in memory and running
 		else:
-			gui.remove_child(current_3d_scene) # Keeps in memory does not run
-		var new = load(new_scene).instantiate()
-		gui.add_child(new) # load new scene
-		current_3d_scene = new
-		transition_controller.transition(transition_in, seconds) # Transition In
-		
-		
+			world_3d.remove_child(current_3d_scene) # Keeps in memory does not run
+	var new = load(new_scene).instantiate()
+	world_3d.add_child(new) # load new scene
+	current_3d_scene = new
+	transition_controller.transition(transition_in, seconds) # Transition In
+	print("end change_3d_scene")
+	# GUI scene is still here
+	# It never goes at the end of this func
+
+
 func change_2d_scene(
 	new_scene: String,
 	delete: bool = true,
@@ -58,11 +69,11 @@ func change_2d_scene(
 		elif keep_running:
 			current_2d_scene.visible = false # keeps in memory and running
 		else:
-			gui.remove_child(current_2d_scene) # Keeps in memory does not run
-		var new = load(new_scene).instantiate()
-		gui.add_child(new) # load new scene
-		current_2d_scene = new
-		transition_controller.transition(transition_in, seconds) # Transition In
+			world_2d.remove_child(current_2d_scene) # Keeps in memory does not run
+	var new = load(new_scene).instantiate()
+	world_2d.add_child(new) # load new scene
+	current_2d_scene = new
+	transition_controller.transition(transition_in, seconds) # Transition In
 
 func change_gui_scene(
 	new_scene: String,
@@ -85,9 +96,9 @@ func change_gui_scene(
 		else:
 			# if i add the child back what happen
 			gui.remove_child(current_gui_scene) # Keeps in memory does not run
-		var new = load(new_scene).instantiate()
-		gui.add_child(new) # load new scene
-		current_gui_scene = new
-		transition_controller.transition(transition_in, seconds) # Transition In
+	var new = load(new_scene).instantiate()
+	gui.add_child(new) # load new scene
+	current_gui_scene = new
+	transition_controller.transition(transition_in, seconds) # Transition In
 
 # i think change_ function need improvement further test to do

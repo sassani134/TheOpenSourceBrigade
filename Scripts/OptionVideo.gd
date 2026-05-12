@@ -2,17 +2,17 @@ extends Control
 
 @export_category("Video")
 @export var resolution_option: OptionButton
-@export var fullscreen_option: CheckBox
-@export var borderless_option: CheckBox
-@export var vsync_option: CheckBox
+@export var fullscreen_check: CheckBox
+@export var borderless_check: CheckBox
+@export var vsync_check: CheckBox
 
 func _ready() -> void:
-	var resolutions : Array[Vector2i] = [
-		Vector2i(1920,1080),
-		Vector2i(1600,900),
-		Vector2i(1280,720),
-		Vector2i(640,360),
-		Vector2i(320,180)
+	var resolutions: Array[Vector2i] = [
+		Vector2i(1920, 1080),
+		Vector2i(1600, 900),
+		Vector2i(1280, 720),
+		Vector2i(640, 360),
+		Vector2i(320, 180)
 	]
 	
 	for res in resolutions:
@@ -21,19 +21,50 @@ func _ready() -> void:
 	load_current_settings()
 	
 	resolution_option.item_selected.connect(_on_resolution_selected)
+	fullscreen_check.toggled.connect(_on_fullscreen_toggled)
+	borderless_check.toggled.connect(_on_borderless_toggled)
+	vsync_check.toggled.connect(_on_vsync_toggled)
+	return
 
 
 func load_current_settings() -> void:
-	pass
+	var mode := DisplayServer.window_get_mode()
+	fullscreen_check.button_pressed = mode == DisplayServer.WINDOW_MODE_FULLSCREEN
+	borderless_check.button_pressed = DisplayServer.window_get_flag(DisplayServer.WINDOW_FLAG_BORDERLESS)
+	vsync_check.button_pressed = DisplayServer.window_get_vsync_mode() == DisplayServer.VSYNC_ENABLED
+
+	var window_size = DisplayServer.window_get_size()
+	for i in range(resolution_option.item_count):
+		var res_text: String = resolution_option.get_item_text(i)
+		var parts := res_text.split("x")
+		if parts.size() == 2 and int(parts[0]) == window_size.x and int(parts[1]) == window_size.y:
+			resolution_option.select(i)
+			break
+	return
 
 func _on_resolution_selected(index: int) -> void:
-	pass
+	var text: String = resolution_option.get_item_text(index)
+	var parts := text.split("x")
+	if parts.size() == 2:
+		DisplayServer.window_set_size(Vector2i(int(parts[0]), int(parts[1])))
+	SettingsManager.video_settings["resolution"] = Vector2i(int(parts[0]), int(parts[1]))
+	return
 
 func _on_fullscreen_toggled(enabled: bool) -> void:
-	pass
+	if enabled:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	else:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+	SettingsManager.video_settings["fullscreen"] = enabled
+	return
 	
 func _on_borderless_toggled(enabled: bool) -> void:
-	pass
+	DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS, enabled)
+	SettingsManager.video_settings["borderless"] = enabled
+	return
 
 func _on_vsync_toggled(enabled: bool) -> void:
-	pass
+	var mode = DisplayServer.VSYNC_ENABLED if enabled else DisplayServer.VSYNC_DISABLED
+	DisplayServer.window_set_vsync_mode(mode)
+	SettingsManager.video_settings["vsync"] = enabled
+	return

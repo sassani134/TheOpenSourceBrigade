@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://tfcmbreuwmns"]
 
 [ext_resource type="Script" uid="uid://csy8pqx0jjckr" path="res://Scripts/OptionSound.gd" id="1_7gg3d"]
+[ext_resource type="AudioStream" uid="uid://cvajirfb8pf70" path="res://Assets/Sounds/sb_racethesun.mp3" id="2_hx3pj"]
+[ext_resource type="AudioStream" uid="uid://cp5wb0drix6nv" path="res://Assets/Sounds/alex-morgan-bebop-coffee-shop-517090.mp3" id="3_e4c4a"]
+[ext_resource type="AudioStream" uid="uid://c0ho03feexei7" path="res://Assets/Sounds/1.ogg" id="3_gr1c2"]
+[ext_resource type="AudioStream" uid="uid://b5w64m346q3vw" path="res://Assets/Sounds/Victory.mp3" id="4_e4c4a"]
 
-[node name="OptionSound" type="Control" unique_id=389073825]
+[node name="OptionSound" type="Control" unique_id=389073825 node_paths=PackedStringArray("master_slider", "music_slider", "sfx_slider", "voice_slider", "master_button", "music_button", "sfx_button", "voice_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,6 +14,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7gg3d")
+master_slider = NodePath("CenterContainer/VBoxContainer/GridContainer/HSliderMaster")
+music_slider = NodePath("CenterContainer/VBoxContainer/GridContainer/HSliderMusic")
+sfx_slider = NodePath("CenterContainer/VBoxContainer/GridContainer/HSliderSFX")
+voice_slider = NodePath("CenterContainer/VBoxContainer/GridContainer/HSliderVoice")
+master_button = NodePath("CenterContainer/VBoxContainer/GridContainer/ButtonTestMaster")
+music_button = NodePath("CenterContainer/VBoxContainer/GridContainer/ButtonTestMusic")
+sfx_button = NodePath("CenterContainer/VBoxContainer/GridContainer/ButtonTestSFX")
+voice_button = NodePath("CenterContainer/VBoxContainer/GridContainer/ButtonTestVoice")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=1832232624]
 layout_mode = 1
@@ -46,7 +58,11 @@ text = "100%"
 
 [node name="ButtonTestMaster" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1540579188]
 layout_mode = 2
+toggle_mode = true
 text = "TEST_MASTER"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/GridContainer/ButtonTestMaster" unique_id=200026876]
+stream = ExtResource("2_hx3pj")
 
 [node name="LabelMusic" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1484588475]
 layout_mode = 2
@@ -67,7 +83,12 @@ text = "75%"
 
 [node name="ButtonTestMusic" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1315624188]
 layout_mode = 2
+toggle_mode = true
 text = "TEST_MUSIC"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/GridContainer/ButtonTestMusic" unique_id=1088893058]
+stream = ExtResource("3_e4c4a")
+bus = &"Music"
 
 [node name="LabelSFX" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=922451052]
 layout_mode = 2
@@ -88,13 +109,18 @@ text = "50%"
 
 [node name="ButtonTestSFX" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=956049035]
 layout_mode = 2
+toggle_mode = true
 text = "TEST_SFX"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/GridContainer/ButtonTestSFX" unique_id=916210102]
+stream = ExtResource("4_e4c4a")
+bus = &"SFX"
 
 [node name="LabelVoice" type="Label" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=872955168]
 layout_mode = 2
 text = "VOICE"
 
-[node name="HSliderVoiceValue" type="HSlider" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=97787178]
+[node name="HSliderVoice" type="HSlider" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=97787178]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -109,4 +135,9 @@ text = "25%"
 
 [node name="ButtonTestVoice" type="Button" parent="CenterContainer/VBoxContainer/GridContainer" unique_id=1006433711]
 layout_mode = 2
+toggle_mode = true
 text = "TEST_VOICE"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/GridContainer/ButtonTestVoice" unique_id=964693933]
+stream = ExtResource("3_gr1c2")
+bus = &"Voice"

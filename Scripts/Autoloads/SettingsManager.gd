@@ -64,10 +64,10 @@ var video_settings: Dictionary = {
 }
 
 var audio_settings: Dictionary = {
-	"volume_master": 100,
-	"volume_music": 100,
-	"volume_sfx": 100,
-	"volume_voice": 100
+	"volume_master": 50,
+	"volume_music": 50,
+	"volume_sfx": 50,
+	"volume_voice": 50
 }
 
 # var gamepad_controls_settings: Dictionary = {

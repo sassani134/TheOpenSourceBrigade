@@ -1,5 +1,6 @@
 extends Control
 
+# there is more to do [keyboard remap]
 
 # ISO ANSI 
 # https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Physical_keyboard_layouts_comparison_ANSI_ISO_%28fr%29.png/960px-Physical_keyboard_layouts_comparison_ANSI_ISO_%28fr%29.png

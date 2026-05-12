@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bre4us7kjmndb"]
 
 [ext_resource type="Texture2D" uid="uid://vqf6ubmijcny" path="res://Assets/screenshotDolphin.jpg" id="1_0wdpo"]
+[ext_resource type="Script" uid="uid://o4v3g6xkh222" path="res://Scripts/OptionMobile.gd" id="1_itn6b"]
 [ext_resource type="Texture2D" uid="uid://cyuad0ub0yeue" path="res://Assets/kenney_input-prompt/Generic/Vector/generic_button_circle_fill.svg" id="2_gxcsm"]
 [ext_resource type="Texture2D" uid="uid://c3p5jq5gsdmk2" path="res://Assets/kenney_input-prompt/Generic/Vector/generic_button_circle.svg" id="3_qfjdq"]
 
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_itn6b")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=170136118]
 modulate = Color(1, 1, 1, 0.28235295)

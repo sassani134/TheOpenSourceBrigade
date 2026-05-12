@@ -13,6 +13,7 @@ var score_selection_active: bool = false
 var copy_mode: bool = false
 var erase_mode: bool = false
 
+
 func _ready() -> void:
 	button_file_1.pressed.connect(_on_button_file_1_pressed)
 	button_file_2.pressed.connect(_on_button_file_2_pressed)
@@ -25,12 +26,16 @@ func _ready() -> void:
 
 func _on_button_file_1_pressed() -> void:
 	#change 3d i guess and load or create save file 1 i guess
-	# Global.game_controller.change_3d_scene("")
+	# SaveLoadManager._load(0)
+	Global.game_controller.change_3d_scene("res://Scenes/Worlds/hub_world.tscn")
+	# Global.game_controller.current_gui_scene.queue_free()
 	print("_on_button_file_1_pressed")
+	
+	
 	pass
 
 func _on_button_file_2_pressed() -> void:
-	# Global.game_controller.change_3d_scene("")
+	Global.game_controller.change_3d_scene("res://Debug/MapDebug.tscn")
 	print("_on_button_file_2_pressed")
 	pass
 
