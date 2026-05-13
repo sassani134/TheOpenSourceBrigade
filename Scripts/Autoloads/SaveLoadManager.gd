@@ -5,13 +5,14 @@ const FILE_PATH: String = "user://SaveFileName.json"
 const SECURITY_KEY: String = "1230AZERTY"
 const FILE_NAME: Array[String] = ["file_a", "file_b", "file_c", "file_d"]
 
-
+# Old MacDonald Had a Farm
+# Animal Farm
 var levels: Dictionary[String, Variant] = {
 	"level1": {
-		"name": "Animal Farm",
+		"name": "Old MacDonald's farm",
 		"discovered": false,
 		"stars": 0,
-		"starNamed": ["pig attck", "the quick brown fox", "the lazy dog"],
+		"starNamed": ["pig attck", "the quick brown fox", "the lazy dog", "Mary had a little lamb", "8 red coins"],
 		"starsCatched": [false, false, false],
 		"coinsScore": 0,
 	},
