@@ -23,7 +23,6 @@
 
 ### 3D
 - [La ferme des animaux](https://fr.wikipedia.org/wiki/La_Ferme_des_animaux)
-- [Old MacDonald Had a Farm](https://en.wikipedia.org/wiki/Old_MacDonald_Had_a_Farm)
 ### 2D
 ### Sounds
 - [victory](https://opengameart.org/content/victory)
