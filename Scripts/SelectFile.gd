@@ -28,7 +28,7 @@ func _on_button_file_1_pressed() -> void:
 	#change 3d i guess and load or create save file 1 i guess
 	# SaveLoadManager._load(0)
 	Global.game_controller.change_3d_scene("res://Scenes/Worlds/hub_world.tscn")
-	# Global.game_controller.current_gui_scene.queue_free()
+	Global.game_controller.current_gui_scene.queue_free()
 	print("_on_button_file_1_pressed")
 	
 	
@@ -36,6 +36,7 @@ func _on_button_file_1_pressed() -> void:
 
 func _on_button_file_2_pressed() -> void:
 	Global.game_controller.change_3d_scene("res://Debug/MapDebug.tscn")
+	Global.game_controller.current_gui_scene.queue_free()
 	print("_on_button_file_2_pressed")
 	pass
 
