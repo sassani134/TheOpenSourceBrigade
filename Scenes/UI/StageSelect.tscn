@@ -37,10 +37,10 @@ layout_mode = 2
 layout_mode = 2
 text = "LEVEL_TITLE"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1163555537]
+[node name="HBoxContainerStars" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1163555537]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=216254500]
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainerStars" unique_id=216254500]
 layout_mode = 2
 texture = ExtResource("1_jchwu")
 
@@ -51,13 +51,6 @@ text = "STAGE_NUMBER"
 [node name="LabelStageName" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1191381589]
 layout_mode = 2
 text = "STAGE_NAME"
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1038481564]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=1418479323]
-layout_mode = 2
-texture = ExtResource("1_jchwu")
 
 [node name="LabelStageScore" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1306542304]
 layout_mode = 2

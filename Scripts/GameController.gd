@@ -104,11 +104,18 @@ func change_gui_scene(
 # i think change_ function need improvement further test to do
 #"res://Scenes/UI/StageSelect.tscn"
 
-func change_to_stage_select_scene() -> void:
-	current_3d_scene.visible = false
-	change_gui_scene("res://Scenes/UI/StageSelect.tscn")
+func load_stage_select_scene(stage: String) -> void:
 
 	pass
 
-func change_to_stage_scene(stage: String) -> void:
+func change_to_stage_select_scene(stage: String) -> void:
+
+	SaveLoadManager.save_data["levels"][stage]["starNamed"]
+	current_3d_scene.visible = false
+	change_gui_scene("res://Scenes/UI/StageSelect.tscn")
+
+
+	pass
+
+func change_to_stage_scene() -> void:
 	pass
