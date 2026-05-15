@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://dpmnpx1u23lrr"]
+
+[ext_resource type="Script" uid="uid://ja7f477y225h" path="res://Scripts/StageSelect.gd" id="1_8ekox"]
+[ext_resource type="Texture2D" uid="uid://mh0xh4lclgl2" path="res://icon.svg" id="1_jchwu"]
+
+[node name="StageSelect" type="Control" unique_id=1925479746]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ekox")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1758955559]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7607843, 1, 0.54901963, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=359944276]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1352762979]
+layout_mode = 2
+
+[node name="LabelLevelTitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1951448309]
+layout_mode = 2
+text = "LEVEL_TITLE"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1163555537]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=216254500]
+layout_mode = 2
+texture = ExtResource("1_jchwu")
+
+[node name="LabelStageNumber" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1904577633]
+layout_mode = 2
+text = "STAGE_NUMBER"
+
+[node name="LabelStageName" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1191381589]
+layout_mode = 2
+text = "STAGE_NAME"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1038481564]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=1418479323]
+layout_mode = 2
+texture = ExtResource("1_jchwu")
+
+[node name="LabelStageScore" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1306542304]
+layout_mode = 2
+text = "STAGE_SCORE"

@@ -102,3 +102,13 @@ func change_gui_scene(
 	transition_controller.transition(transition_in, seconds) # Transition In
 
 # i think change_ function need improvement further test to do
+#"res://Scenes/UI/StageSelect.tscn"
+
+func change_to_stage_select_scene() -> void:
+	current_3d_scene.visible = false
+	change_gui_scene("res://Scenes/UI/StageSelect.tscn")
+
+	pass
+
+func change_to_stage_scene(stage: String) -> void:
+	pass
