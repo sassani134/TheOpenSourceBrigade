@@ -105,17 +105,18 @@ func change_gui_scene(
 #"res://Scenes/UI/StageSelect.tscn"
 
 func load_stage_select_scene(stage: String) -> void:
-
 	pass
 
-func change_to_stage_select_scene(stage: String) -> void:
-
-	SaveLoadManager.save_data["levels"][stage]["starNamed"]
+func change_to_stage_select_scene() -> void:
+	# SaveLoadManager.save_data["levels"][stage]["starNamed"]
 	current_3d_scene.visible = false
 	change_gui_scene("res://Scenes/UI/StageSelect.tscn")
 
 
 	pass
 
-func change_to_stage_scene() -> void:
+func change_to_stage_scene(stage: String = "level1", new_scene: String = "") -> void:
+	change_3d_scene(new_scene)
+	current_gui_scene.queue_free()
+
 	pass

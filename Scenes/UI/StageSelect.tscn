@@ -27,6 +27,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 3.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -36,6 +38,7 @@ layout_mode = 2
 [node name="LabelLevelTitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1951448309]
 layout_mode = 2
 text = "LEVEL_TITLE"
+horizontal_alignment = 1
 
 [node name="HBoxContainerStars" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1163555537]
 layout_mode = 2
@@ -47,11 +50,14 @@ texture = ExtResource("1_jchwu")
 [node name="LabelStageNumber" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1904577633]
 layout_mode = 2
 text = "STAGE_NUMBER"
+horizontal_alignment = 1
 
 [node name="LabelStageName" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1191381589]
 layout_mode = 2
 text = "STAGE_NAME"
+horizontal_alignment = 1
 
 [node name="LabelStageScore" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1306542304]
 layout_mode = 2
 text = "STAGE_SCORE"
+horizontal_alignment = 1

@@ -12,8 +12,8 @@ var levels: Dictionary[String, Variant] = {
 		"name": "Old MacDonald's farm",
 		"discovered": false,
 		"stars": 0,
-		"starNamed": ["pig attck", "the quick brown fox", "the lazy dog", "Mary had a little lamb", "8 red coins"],
-		"starsCatched": [false, false, false],
+		"stagesNamed": ["pig attck", "the quick brown fox", "the lazy dog", "Mary had a little lamb", "8 red coins"],
+		"stagesCompleted": [false, false, false, false, false],
 		"coinsScore": 0,
 	},
 }

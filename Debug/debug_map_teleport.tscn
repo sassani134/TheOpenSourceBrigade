@@ -10,8 +10,8 @@ radius = 1.0
 [node name="debugMapTeleport" type="CSGTorus3D" unique_id=647915302]
 transform = Transform3D(0.9999948, 0.00036979976, -0.0032057106, -0.003205929, 0.00059352914, -0.9999947, -0.00036790175, 0.99999976, 0.0005947075, 0, 0, 0)
 use_collision = true
-inner_radius = 1.0
-outer_radius = 2.0
+inner_radius = 2.0
+outer_radius = 3.0
 sides = 32
 ring_sides = 32
 smooth_faces = false
