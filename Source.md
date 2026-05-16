@@ -26,6 +26,9 @@
 ### 2D
 ### Sounds
 - [victory](https://opengameart.org/content/victory)
+- [jsfxr](https://sfxr.me/)
+- [pixabay](https://pixabay.com/fr/)
+- [audacity](https://audacity.fr/)
 
 ## Tuts
 - [Using KayKit Characters In Godot (Quick version)](https://youtu.be/sp_1WnJUDXM)
