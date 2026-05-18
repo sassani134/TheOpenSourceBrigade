@@ -40,3 +40,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4675062, 0)
 
 [node name="debugMapTeleport" parent="." unique_id=647915302 instance=ExtResource("3_84nl6")]
 transform = Transform3D(0.9999948, 0.00036979976, -0.0032057106, -0.003205929, 0.00059352914, -0.9999947, -0.00036790175, 0.99999976, 0.0005947075, 6.3286176, 1.9188344, -0.51712465)
+
+[node name="debugMapTeleport2" parent="." unique_id=983113177 instance=ExtResource("3_84nl6")]
+transform = Transform3D(0.9999948, 0.00036979976, -0.0032057106, -0.003205929, 0.00059352914, -0.9999947, -0.00036790175, 0.99999976, 0.0005947075, 13.993715, 1.9188344, -0.51712465)
+lvl = "level2"

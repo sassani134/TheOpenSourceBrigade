@@ -7,10 +7,10 @@ extends Control
 @onready var label_stage_name: Label = $CenterContainer/VBoxContainer/LabelStageName
 @onready var label_stage_score: Label = $CenterContainer/VBoxContainer/LabelStageScore
 
-var level_title: String = "level1"
+var level_title: String
+var scene_to_load: String
 
-
-func _init(init_level_title: String) -> void:
+func _init(init_level_title: String = "level2") -> void:
 	level_title = init_level_title
 
 
@@ -26,26 +26,29 @@ func _init(init_level_title: String) -> void:
 # }
 
 func _ready() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	print("ayo" + str(SaveLoadManager.save_data["levels"][level_title]))
 	if SaveLoadManager.save_data["levels"][level_title]:
 		label_level_title.text = SaveLoadManager.save_data["levels"][level_title]["name"]
 		# i will use the w/ carrousel later
-		# var count: int = 0
 		for i in SaveLoadManager.save_data["levels"][level_title]["stagesNamed"]:
+			print(i)
 			var button: Button = Button.new()
+			button.pressed.connect(_on_button_pressed.bind(button))
 			button.text = i
-			# SaveLoadManager.save_data["levels"]["level1"]["stagesNamed"][0]
-			# button.pressed.connect(GameController.change_to_stage_scene(i, "res://Scenes/Worlds/1st_world.tscn"))
-			button.pressed.connect(Callable(GameController, "change_to_stage_scene").bind(i, "res://Scenes/Worlds/1st_world.tscn"))
 			h_box_container_stars.add_child(button)
 		label_stage_name.text = SaveLoadManager.save_data["levels"][level_title]["name"] # to change
-		label_stage_score.text = SaveLoadManager.save_data["levels"][level_title]["coinsScore"]
-		# label_stage_number.text = "Stage " + level_title.substr(5, 1)
-		# label_stage_name.text = SaveLoadManager.save_data["levels"][level_title]["name"]
-		# label_stage_score.text = "Score: " + str(SaveLoadManager.save_data["levels"][level_title]["coinsScore"])
-		# for i in range(3):
-		# 	var star_texture_rect: TextureRect = h_box_container_stars.get_child(i) as TextureRect
-		# 	if SaveLoadManager.save_data["levels"][level_title]["stars"] > i:
-		# 		star_texture_rect.texture = load("res://Assets/Textures/star_full.png")
-		# 	else:
-		# 		star_texture_rect.texture = load("res://Assets/Textures/star_empty.png")
+		label_stage_score.text = str(SaveLoadManager.save_data["levels"][level_title]["coinsScore"])
+	
+	# match level_title:
+	# 	"level1":
+	# 		scene_to_load
+	# 	"level2":
+	# 		pass
+
+	pass
+
+
+func _on_button_pressed(stage_name: String) -> void:
+	GameController.change_to_stage_scene(stage_name, level_title)
 	pass

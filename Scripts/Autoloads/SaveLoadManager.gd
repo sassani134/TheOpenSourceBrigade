@@ -16,6 +16,14 @@ var levels: Dictionary[String, Variant] = {
 		"stagesCompleted": [false, false, false, false, false],
 		"coinsScore": 0,
 	},
+	"level2": {
+		"name": "The factory Runachier-Panner",
+		"discovered": false,
+		"stars": 0,
+		"stagesNamed": ["Modern Times"],
+		"stagesCompleted": [false],
+		"coinsScore": 0,
+	}
 }
 
 var misc: Dictionary[String, int] = {
