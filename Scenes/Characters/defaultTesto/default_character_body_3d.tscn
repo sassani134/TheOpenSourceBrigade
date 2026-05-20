@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bihqm06rmmw3o"]
 
-[ext_resource type="Script" uid="uid://8t80pdiqib0d" path="res://Scripts/defaultPlayer3D.gd" id="1_0ptk3"]
+[ext_resource type="Script" uid="uid://8t80pdiqib0d" path="res://Scripts/Characters/defaultPlayer3D.gd" id="1_0ptk3"]
 [ext_resource type="Texture2D" uid="uid://c7gp1sm8ds8e1" path="res://Assets/kenney_input-prompt/Nintendo Gamecube/Double/gamecube_button_color_a.png" id="3_h7f2l"]
 [ext_resource type="Texture2D" uid="uid://chai1vjdcg3ru" path="res://Assets/kenney_input-prompt/Nintendo Gamecube/Double/gamecube_button_color_a_outline.png" id="4_rl4fk"]
 [ext_resource type="Texture2D" uid="uid://b6gw2w3q06ait" path="res://Assets/kenney_input-prompt/Nintendo Gamecube/Double/gamecube_button_color_b.png" id="5_ichi1"]

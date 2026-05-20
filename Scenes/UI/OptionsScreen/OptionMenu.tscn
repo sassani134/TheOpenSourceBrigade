@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cqskgvuaaiesj"]
 
 [ext_resource type="PackedScene" uid="uid://tfcmbreuwmns" path="res://Scenes/UI/OptionsScreen/OptionSound.tscn" id="1_j0cn8"]
-[ext_resource type="Script" uid="uid://dq3a8gahkmk3c" path="res://Scripts/OptionMenu.gd" id="1_pwj4b"]
+[ext_resource type="Script" uid="uid://dq3a8gahkmk3c" path="res://Scripts/UI/OptionMenu.gd" id="1_pwj4b"]
 [ext_resource type="PackedScene" uid="uid://bre4us7kjmndb" path="res://Scenes/UI/OptionsScreen/OptionMobile.tscn" id="2_2f62i"]
 [ext_resource type="PackedScene" uid="uid://b2dl5qw1jss2w" path="res://joypadGamepadDemo/joypads.tscn" id="3_mpqy6"]
 [ext_resource type="PackedScene" uid="uid://c0b1dc8aqqkem" path="res://Scenes/UI/OptionsScreen/OptionVideo.tscn" id="4_pwj4b"]

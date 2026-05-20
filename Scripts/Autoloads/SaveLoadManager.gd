@@ -12,16 +12,16 @@ var levels: Dictionary[String, Variant] = {
 		"name": "Old MacDonald's farm",
 		"discovered": false,
 		"stars": 0,
-		"stagesNamed": ["pig attck", "the quick brown fox", "the lazy dog", "Mary had a little lamb", "8 red coins"],
-		"stagesCompleted": [false, false, false, false, false],
+		"stagesNamed": ["pig attck", "the quick brown fox", "the lazy dog", "Mary had a little lamb", "8 red coins", "placeholder"],
+		"stagesCompleted": [false, false, false, false, false, false],
 		"coinsScore": 0,
 	},
 	"level2": {
 		"name": "The factory Runachier-Panner",
 		"discovered": false,
 		"stars": 0,
-		"stagesNamed": ["Modern Times"],
-		"stagesCompleted": [false],
+		"stagesNamed": ["Modern Times", "placeholder", "placeholder", "placeholder", "placeholder", "placeholder"],
+		"stagesCompleted": [false, false, false, false, false, false],
 		"coinsScore": 0,
 	}
 }

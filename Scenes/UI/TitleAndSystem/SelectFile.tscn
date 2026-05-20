@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bw1ow0e2ydxvs"]
 
-[ext_resource type="Script" uid="uid://4bviw4fpbf1h" path="res://Scripts/SelectFile.gd" id="1_0u23o"]
+[ext_resource type="Script" uid="uid://4bviw4fpbf1h" path="res://Scripts/UI/SelectFile.gd" id="1_0u23o"]
 [ext_resource type="Texture2D" uid="uid://mh0xh4lclgl2" path="res://icon.svg" id="1_ow6ir"]
 
 [node name="SelectFile" type="Control" unique_id=1328124698]

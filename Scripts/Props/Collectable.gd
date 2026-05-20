@@ -1,0 +1,1 @@
+class_name Collectable extends Area3D

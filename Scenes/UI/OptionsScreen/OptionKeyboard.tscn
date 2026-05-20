@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://3gb3n2dwtgnt"]
 
-[ext_resource type="Script" uid="uid://c40lmvbkxu7rg" path="res://Scripts/OptionKeyboard.gd" id="1_5dm2e"]
+[ext_resource type="Script" uid="uid://c40lmvbkxu7rg" path="res://Scripts/UI/OptionKeyboard.gd" id="1_5dm2e"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_mhk4r"]
 device = -1

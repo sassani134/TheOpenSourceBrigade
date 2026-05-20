@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://tfcmbreuwmns"]
 
-[ext_resource type="Script" uid="uid://csy8pqx0jjckr" path="res://Scripts/OptionSound.gd" id="1_7gg3d"]
+[ext_resource type="Script" uid="uid://csy8pqx0jjckr" path="res://Scripts/UI/OptionSound.gd" id="1_7gg3d"]
 [ext_resource type="AudioStream" uid="uid://cvajirfb8pf70" path="res://Assets/Sounds/sb_racethesun.mp3" id="2_hx3pj"]
 [ext_resource type="AudioStream" uid="uid://cp5wb0drix6nv" path="res://Assets/Sounds/alex-morgan-bebop-coffee-shop-517090.mp3" id="3_e4c4a"]
 [ext_resource type="AudioStream" uid="uid://c0ho03feexei7" path="res://Assets/Sounds/1.ogg" id="3_gr1c2"]

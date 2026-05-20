@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://trrvu02okt44"]
 
-[ext_resource type="Script" uid="uid://be25e4bhuif40" path="res://Scripts/SplashScene.gd" id="1_f6dde"]
+[ext_resource type="Script" uid="uid://be25e4bhuif40" path="res://Scripts/UI/SplashScene.gd" id="1_f6dde"]
 [ext_resource type="VideoStream" uid="uid://l68xqtqo2bdb" path="res://Assets/theOpenSourceBrigadeProm.ogv" id="2_glev2"]
 [ext_resource type="Texture2D" uid="uid://cfdux6i28thye" path="res://Assets/KayKit_Prototype_Bits_1.1_FREE/sample.png" id="2_ia4ii"]
 [ext_resource type="Texture2D" uid="uid://bjmx6lr4maab7" path="res://Assets/Ultimate Platformer Pack - Dec 2021/Preview.jpg" id="3_yt81i"]

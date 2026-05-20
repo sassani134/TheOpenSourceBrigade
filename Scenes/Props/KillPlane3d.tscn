@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bplw4quwtn2nd"]
+
+[ext_resource type="Script" uid="uid://btsyfnasfwq76" path="res://Scripts/Props/KillPlane3d.gd" id="1_akmxg"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ptiti"]
+
+[node name="KillPlane3D" type="Area3D" unique_id=1303879251]
+script = ExtResource("1_akmxg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1774382184]
+shape = SubResource("WorldBoundaryShape3D_ptiti")
+debug_color = Color(0.8081372, 4.428029e-06, 7.70092e-07, 0.7882353)

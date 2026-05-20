@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://c1ssf8p0uca5x"]
-
-[ext_resource type="Script" uid="uid://ec2viox4fvjy" path="res://Scripts/StageSelectButton.gd" id="1_27vk2"]
-
-[node name="StageSelectButton" type="Button" unique_id=1838864425]
-offset_right = 8.0
-offset_bottom = 8.0
-script = ExtResource("1_27vk2")

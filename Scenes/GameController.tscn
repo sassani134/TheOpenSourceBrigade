@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bes1a63rvd6wg"]
 
-[ext_resource type="Script" uid="uid://dqx7cmb4rygio" path="res://Scripts/GameController.gd" id="1_fyej0"]
+[ext_resource type="Script" uid="uid://dqx7cmb4rygio" path="res://Scripts/Autoloads/GameController.gd" id="1_fyej0"]
 [ext_resource type="PackedScene" uid="uid://trrvu02okt44" path="res://Scenes/UI/TitleAndSystem/SplashScene.tscn" id="2_liseb"]
 [ext_resource type="PackedScene" uid="uid://bfmughfoynd35" path="res://Scenes/UI/TransitionController.tscn" id="3_occvc"]
 

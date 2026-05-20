@@ -1,17 +1,38 @@
 [gd_scene format=3 uid="uid://by5yw46tj1a7s"]
 
 [ext_resource type="Texture2D" uid="uid://5to841nc4sh6" path="res://Assets/kenney_prototype_textures/dark/texture_08.png" id="1_hkn01"]
+[ext_resource type="PackedScene" uid="uid://cv2i4rna6wlc" path="res://Scenes/Characters/defaultTesto/Player3DDefault02.tscn" id="2_dnh28"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dnh28"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_kn5mr"]
+sky_material = SubResource("ProceduralSkyMaterial_dnh28")
+
+[sub_resource type="Environment" id="Environment_wa66d"]
+background_mode = 2
+sky = SubResource("Sky_kn5mr")
+tonemap_mode = 2
+glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i5j3u"]
 albedo_texture = ExtResource("1_hkn01")
 
 [node name="1stWorld" type="Node3D" unique_id=512242856]
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=684893773]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1000161690]
+environment = SubResource("Environment_wa66d")
+
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=300381912]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -1, 0)
 material_override = SubResource("StandardMaterial3D_i5j3u")
 use_collision = true
-size = Vector3(10, 1, 10)
+size = Vector3(15, 1, 10)
 
 [node name="Label3D" type="Label3D" parent="." unique_id=1326212618]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -19,3 +40,6 @@ billboard = 1
 text = "World 1
 Star 1"
 font_size = 128
+
+[node name="Player3DDefault02" parent="." unique_id=462633578 instance=ExtResource("2_dnh28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83014536, 0)

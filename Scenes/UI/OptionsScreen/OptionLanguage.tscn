@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://uwuiaa6sy4pc"]
 
-[ext_resource type="Script" uid="uid://60x437s88rna" path="res://Scripts/OptionLanguage.gd" id="1_6noj2"]
+[ext_resource type="Script" uid="uid://60x437s88rna" path="res://Scripts/UI/OptionLanguage.gd" id="1_6noj2"]
 
 [node name="OptionLanguage" type="Control" unique_id=636137504 node_paths=PackedStringArray("language_option")]
 layout_mode = 3
