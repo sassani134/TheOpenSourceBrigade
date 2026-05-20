@@ -32,6 +32,15 @@ window/size/viewport_height=1080
 
 enabled=PackedStringArray("res://addons/gut/plugin.cfg", "res://addons/virtual_joystick/plugin.cfg")
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "pink",
+"res://Scenes/": "blue",
+"res://Scripts/": "orange",
+"res://Tests/": "green"
+}
+
 [input]
 
 cam_stick_left={
