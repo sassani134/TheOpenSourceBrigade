@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bplw4quwtn2nd"]
 
-[ext_resource type="Script" uid="uid://btsyfnasfwq76" path="res://Scripts/Props/KillPlane3d.gd" id="1_akmxg"]
+[ext_resource type="Script" uid="uid://btsyfnasfwq76" path="res://Scripts/Props/Triggers/KillPlane3d.gd" id="1_8gpvx"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ptiti"]
 
 [node name="KillPlane3D" type="Area3D" unique_id=1303879251]
-script = ExtResource("1_akmxg")
+script = ExtResource("1_8gpvx")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1774382184]
 shape = SubResource("WorldBoundaryShape3D_ptiti")
