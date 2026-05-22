@@ -22,6 +22,11 @@
 - [Keyboard sizes](https://commons.wikimedia.org/wiki/File:Keyboard_sizes.svg?uselang=en#Licensing)
 - [Maaack's Template](https://github.com/Maaack/Godot-Menus-Template)
 - [Takin's Template](https://github.com/TinyTakinTeller/TakinGodotTemplate)
+- [Export SCENES Between Godot Projects](https://youtu.be/9tIJBwGZAS4)
+- [mesh2motion](https://app.mesh2motion.org/)
+- [Free & OpenSource Animation Tool](https://youtu.be/sg3XCw-qDqM)
+- [OpenSource 3D Character Animation](https://youtu.be/a9t8Wg3UQ6U)
+
 
 ### 3D
 - [La ferme des animaux](https://fr.wikipedia.org/wiki/La_Ferme_des_animaux)
