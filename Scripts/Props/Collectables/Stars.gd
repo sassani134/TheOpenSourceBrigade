@@ -15,12 +15,15 @@ var star_enabled: bool = true
 func _ready() -> void:
     # SaveLoadManager notify if the star is collected
     # if the star is collected, then alter color to gray
-    # Level 
+    # Level
     pass
 
 func _on_body_entered(body: Node3D) -> void:
-    if body is CharacterBody3D:
+    # if body is CharacterBody3D:
         # Emit signal to level that the star is collected
         # change SaveLoadManager for this level and star name
         # pass it to true so it save the star
         # exit the level to the hub world
+    if body.has method("collect_star") :
+        body.collect_star(star_name)
+        queue_free()
