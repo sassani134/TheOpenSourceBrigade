@@ -141,7 +141,7 @@ func change_to_stage_scene(
 			world_3d.remove_child(current_3d_scene) # Keeps in memory does not run
 	var new = load(new_scene).instantiate()
 	# new.character_start_position = position
-	new.stage_name = stage
+	new.stage_selected = stage
 	gui.queue_free()
 	world_3d.add_child(new) # load new scene
 	current_3d_scene = new

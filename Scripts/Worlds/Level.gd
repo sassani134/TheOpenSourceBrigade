@@ -1,11 +1,23 @@
 class_name Level extends Node3D
 
+var level_name: String = "Old MacDonald's farm"
 var stage_selected: String
 var star_names: Array[String]
 var star_positions: Array[Vector3]
 var star_enabled: Array[bool]
-var max_coins: int
 var score: int
+
+
+@export var label3d: Label3D
+@export var labelCoins: Label
+
+func _ready() -> void:
+	label3d.text = stage_selected
+
+	
+	# For each Stars in star array 
+	# connect signals
+
 
 # Old MacDonald's farm
 # var levels: Dictionary[String, Variant] = {
@@ -17,6 +29,12 @@ var score: int
 # 		"stagesCompleted": [false, false, false, false, false, false],
 # 		"coinsScore": 0,
 # 	},
+
+# var save_data: Dictionary[String, Dictionary] = {
+# 	"levels": levels,
+# 	"misc": misc,
+# 	"cinematics": cinematics,
+# }
 
 
 # stage_selected coordinates the star_enable list for the stars in the level

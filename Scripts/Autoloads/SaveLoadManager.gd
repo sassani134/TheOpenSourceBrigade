@@ -50,6 +50,8 @@ var save_data: Dictionary[String, Dictionary] = {
 
 func _ready() -> void:
 	print(save_data["misc"]["time_played"])
+	print("the stage number is: ")
+	print( save_data["levels"]["level1"]["stagesNamed"].find("nfk"))
 	return
 
 func _save(slot: int) -> void:
