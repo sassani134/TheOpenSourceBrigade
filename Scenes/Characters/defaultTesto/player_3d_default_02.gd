@@ -23,6 +23,7 @@ var _camera_input_direction: Vector2 = Vector2.ZERO
 @onready var triple_jump_timer: Timer = $Timers/tripleJumpTimer
 @onready var flash_timer: Timer = $Timers/FlashTimer
 
+var life : int = 5
 var has_jumped: bool = false
 var was_on_air: bool = false
 var do_dash: bool
@@ -155,9 +156,9 @@ func _on_coyote_timer_timeout() -> void:
 	print("on_coyote_timer_timeout")
 
 func _on_triple_jump_timer_timeout() -> void:
-	print("on_triple_jump_timer_timeout")
+	#print("on_triple_jump_timer_timeout")
 	jump_count = 0
 
 func _on_hit_ground() -> void:
-	print("on_hit_ground")
+	#print("on_hit_ground")
 	triple_jump_timer.start()

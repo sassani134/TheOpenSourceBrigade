@@ -41,6 +41,10 @@ folder_colors={
 "res://Tests/": "green"
 }
 
+[global_group]
+
+Player=""
+
 [input]
 
 cam_stick_left={

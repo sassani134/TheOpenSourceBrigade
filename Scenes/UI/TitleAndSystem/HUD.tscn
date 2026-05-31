@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://cuukamf0rn83j"]
+
+[node name="HUD" type="Control" unique_id=820088251]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=696051844]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 338.0
+grow_horizontal = 2
+theme_override_constants/separation = 500
+alignment = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=977519213]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=1452280702]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "Life:"
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=1164399011]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "6/7"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1356165163]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=979751457]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1334187034]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "COINS"
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1244307724]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "00"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=608326312]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer2" unique_id=1515249887]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "REDCOINS"
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer2" unique_id=40867070]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "00"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=453540080]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer3" unique_id=180880187]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "STAR"
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer3" unique_id=1324785371]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_font_sizes/font_size = 80
+text = "00"

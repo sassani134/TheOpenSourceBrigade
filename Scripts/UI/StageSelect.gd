@@ -41,6 +41,7 @@ func _ready() -> void:
 		button_4.text = SaveLoadManager.save_data["levels"][level_title]["stagesNamed"][3]
 		button_5.text = SaveLoadManager.save_data["levels"][level_title]["stagesNamed"][4]
 		button_6.text = SaveLoadManager.save_data["levels"][level_title]["stagesNamed"][5]
+		
 		button.pressed.connect(_on_button_pressed.bind(SaveLoadManager.save_data["levels"][level_title]["stagesNamed"][0]))
 		button_2.pressed.connect(_on_button_pressed.bind(SaveLoadManager.save_data["levels"][level_title]["stagesNamed"][1]))
 		button_3.pressed.connect(_on_button_pressed.bind(SaveLoadManager.save_data["levels"][level_title]["stagesNamed"][2]))
