@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c4qxh0yyowhew" path="res://Scenes/Characters/defaultTesto/player_3d_default_02.gd" id="1_qbpii"]
 [ext_resource type="Texture2D" uid="uid://drqdljwfl5bma" path="res://Assets/kenney_prototype_textures/purple/texture_01.png" id="2_tue6n"]
+[ext_resource type="PackedScene" uid="uid://vx13dgxeuprm" path="res://Scenes/UI/PauseMenu.tscn" id="3_2wx1k"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cfu60"]
 
@@ -206,5 +207,9 @@ text = "....."
 [node name="MobileHUD" type="CanvasLayer" parent="." unique_id=1648827573]
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="MobileHUD" unique_id=1183986247]
+
+[node name="PauseMenu" parent="MobileHUD" unique_id=576529393 instance=ExtResource("3_2wx1k")]
+unique_name_in_owner = true
+visible = false
 
 [node name="Decal" type="Decal" parent="." unique_id=2135178013]

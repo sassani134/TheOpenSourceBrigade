@@ -63,4 +63,5 @@ func _ready() -> void:
 func _on_button_pressed(stage_name: String) -> void:
 	# stage select scene to level scene hidden/remove 
 	print(stage_name)
+	# change String with a var
 	Global.game_controller.change_to_stage_scene("res://Scenes/Worlds/1st_world.tscn", stage_name)

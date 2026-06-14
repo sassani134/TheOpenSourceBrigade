@@ -55,24 +55,30 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -10, 0)
 
 [node name="Star" parent="." unique_id=504124924 instance=ExtResource("4_wa66d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1.5, 0)
+lvl = "level1"
 star_name = "pig attck"
 
 [node name="Star2" parent="." unique_id=968721369 instance=ExtResource("4_wa66d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1.5, -8)
+lvl = "level1"
 star_name = "the quick brown fox"
 
 [node name="Star3" parent="." unique_id=1537930199 instance=ExtResource("4_wa66d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1.5, 0)
+lvl = "level1"
 star_name = "the lazy dog"
 
 [node name="Star4" parent="." unique_id=1755533129 instance=ExtResource("4_wa66d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1.5, -8)
+lvl = "level1"
 star_name = "Mary had a little lamb"
 
 [node name="Star5" parent="." unique_id=63355234 instance=ExtResource("4_wa66d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.668053, 1.5, -8)
+lvl = "level1"
 star_name = "8 red coins"
 
 [node name="Star6" parent="." unique_id=1653996662 instance=ExtResource("4_wa66d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.453758, 1.5, -0.05860424)
+lvl = "level1"
 star_name = "placeholder"

@@ -23,7 +23,7 @@ var _camera_input_direction: Vector2 = Vector2.ZERO
 @onready var triple_jump_timer: Timer = $Timers/tripleJumpTimer
 @onready var flash_timer: Timer = $Timers/FlashTimer
 
-var life : int = 5
+var life: int = 5
 var has_jumped: bool = false
 var was_on_air: bool = false
 var do_dash: bool
@@ -65,6 +65,11 @@ func _physics_process(delta: float) -> void:
 	camera_pivot.rotation.x += _camera_input_direction.y * delta
 	camera_pivot.rotation.x = clamp(camera_pivot.rotation.x, -PI / 2, PI / 2)
 	camera_pivot.rotation.y += _camera_input_direction.x * delta
+
+	if Input.is_action_just_pressed("start_button") or Input.is_action_just_pressed("start_key"):
+		%PauseMenu.visible = true
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		get_tree().paused = true
 
 	
 	_camera_input_direction = Vector2.ZERO

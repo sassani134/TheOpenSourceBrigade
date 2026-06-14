@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://j6byxcqnpgd3"]
 
+[ext_resource type="Script" uid="uid://6swtcpiaclx3" path="res://Scripts/UI/ResultsScreen.gd" id="1_tbxvs"]
+
 [node name="ResultScreen" type="Control" unique_id=827016923]
-process_mode = 2
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_tbxvs")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=261084959]
 layout_mode = 1
@@ -23,22 +25,32 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="VBoxContainer" unique_id=400606546]
+[node name="LabelLevelName" type="Label" parent="VBoxContainer" unique_id=400606546]
 layout_mode = 2
 text = "LEVEL"
+horizontal_alignment = 1
 
-[node name="Label2" type="Label" parent="VBoxContainer" unique_id=1190588392]
+[node name="LabelStageName" type="Label" parent="VBoxContainer" unique_id=1190588392]
+layout_mode = 2
+text = "STAGE"
+
+[node name="LabelCoinScores" type="Label" parent="VBoxContainer" unique_id=725905333]
 layout_mode = 2
 text = "COINS"
+
+[node name="LabelTimeCleared" type="Label" parent="VBoxContainer" unique_id=1638007971]
+visible = false
+layout_mode = 2
+text = "TIMES"
 
 [node name="ButtonSave" type="Button" parent="VBoxContainer" unique_id=1164645436]
 layout_mode = 2
 text = "SAVE_CONTINUE"
 
-[node name="ButtonQuit" type="Button" parent="VBoxContainer" unique_id=509698805]
-layout_mode = 2
-text = "SAVE_QUIT"
-
 [node name="ButtonContinue" type="Button" parent="VBoxContainer" unique_id=1013127759]
 layout_mode = 2
 text = "CONTINUE_NO_SAVE"
+
+[node name="ButtonQuit" type="Button" parent="VBoxContainer" unique_id=509698805]
+layout_mode = 2
+text = "SAVE_QUIT"

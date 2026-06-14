@@ -26,7 +26,7 @@ layout_mode = 0
 offset_left = 940.0
 offset_top = 520.0
 offset_right = 1054.0
-offset_bottom = 667.0
+offset_bottom = 693.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1120131608]
 layout_mode = 0
@@ -38,6 +38,7 @@ layout_mode = 2
 text = "RESUME"
 
 [node name="ButtonLeaveStage" type="Button" parent="Panel/VBoxContainer" unique_id=608072304]
+unique_name_in_owner = true
 layout_mode = 2
 text = "LEAVE_STAGE"
 
@@ -45,11 +46,21 @@ text = "LEAVE_STAGE"
 layout_mode = 2
 text = "SAVE"
 
+[node name="ButtonGoBackFileSelect" type="Button" parent="Panel/VBoxContainer" unique_id=655332070]
+layout_mode = 2
+text = "FILES_SELECT"
+
 [node name="ButtonQuitGame" type="Button" parent="Panel/VBoxContainer" unique_id=1679679065]
 layout_mode = 2
 text = "QUIT"
 
+[node name="ButtonPrintSave" type="Button" parent="Panel/VBoxContainer" unique_id=365786285]
+layout_mode = 2
+text = "Print Save"
+
 [connection signal="pressed" from="Panel/VBoxContainer/ButtonResume" to="." method="_on_button_resume_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/ButtonLeaveStage" to="." method="_on_button_leave_stage_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/ButtonSave" to="." method="_on_button_save_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/ButtonGoBackFileSelect" to="." method="_on_button_go_back_file_select_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/ButtonQuitGame" to="." method="_on_button_quit_game_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/ButtonPrintSave" to="." method="_on_button_print_save_pressed"]

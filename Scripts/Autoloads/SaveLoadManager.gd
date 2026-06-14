@@ -1,18 +1,24 @@
 extends Node
 
 
-const FILE_PATH: String = "user://SaveFileName.json"
+const FILE_PATH: String = "user://"
 const SECURITY_KEY: String = "1230AZERTY"
 const FILE_NAME: Array[String] = ["file_a", "file_b", "file_c", "file_d"]
 
-# Old MacDonald Had a Farm
-# Animal Farm
+# Old MacDonald Had a Farm Animal Farm
+# The factory Runachier-Panner
+# SpaceShip in the 2004 and one half centuries
+# VLC Town
+
+
+var current_slot: int
+
 var levels: Dictionary[String, Variant] = {
 	"level1": {
 		"name": "Old MacDonald's farm",
 		"discovered": false,
 		"stars": 0,
-		"stagesNamed": ["pig attck", "the quick brown fox", "the lazy dog", "Mary had a little lamb", "8 red coins", "placeholder"],
+		"stagesNamed": ["pig attck", "the quick brown fox", "the lazy dog", "Mary had a little lamb", "8 red coins", "Aliens!"],
 		"stagesCompleted": [false, false, false, false, false, false],
 		"coinsScore": 0,
 	},
@@ -28,8 +34,7 @@ var levels: Dictionary[String, Variant] = {
 
 var misc: Dictionary[String, int] = {
 	"collected_coins": 0,
-	"enemies_killed": 0,
-	"star_collected": 0,
+	"stars_collected": 0,
 	"died_count": 0,
 	"time_played": 0,
 }
@@ -51,24 +56,41 @@ var save_data: Dictionary[String, Dictionary] = {
 func _ready() -> void:
 	print(save_data["misc"]["time_played"])
 	print("the stage number is: ")
-	print( save_data["levels"]["level1"]["stagesNamed"].find("nfk"))
+	print(save_data["levels"]["level1"]["stagesNamed"].find("nfk"))
 	return
 
 func _save(slot: int) -> void:
 	var file: FileAccess = FileAccess.open_encrypted_with_pass(FILE_PATH + FILE_NAME[slot], FileAccess.WRITE, SECURITY_KEY)
 	file.store_var(save_data)
+	print(save_data)
 	file.close()
 	return
 
 func _load(slot: int) -> void:
+	var data: Dictionary
 	if FileAccess.file_exists(FILE_PATH + FILE_NAME[slot]):
 		var file: FileAccess = FileAccess.open_encrypted_with_pass(FILE_PATH + FILE_NAME[slot], FileAccess.READ, SECURITY_KEY)
-		var data: Dictionary = file.get_var()
+		data = file.get_var()
 		for i in data:
 			if save_data.has(i):
 				save_data[i] = data[i]
 		file.close()
 	return
+
+func _load_preview(slot: int) -> Array:
+	if FileAccess.file_exists(FILE_PATH + FILE_NAME[slot]):
+		var file: FileAccess = FileAccess.open_encrypted_with_pass(FILE_PATH + FILE_NAME[slot], FileAccess.READ, SECURITY_KEY)
+		var data_var = file.get_var()["misc"]
+		print(data_var)
+		var data: Array = []
+		data.append(data_var["star_collected"])
+		data.append(data_var["time_played"])
+		data.append(data_var["died_count"])
+		data.append(data_var["collected_coins"])
+		file.close()
+		return data
+	return []
+
 
 # To access project resources once exported, it is recommended to use ResourceLoader instead of FileAccess
 

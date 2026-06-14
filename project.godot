@@ -22,6 +22,7 @@ config/icon="uid://4afec50fmv4e"
 Global="*uid://eqcw3h3egnmc"
 SettingsManager="*uid://goib52vqjckx"
 SaveLoadManager="*uid://cd6ifkd6st8hs"
+Events="*uid://begiuphiiull5"
 
 [display]
 
