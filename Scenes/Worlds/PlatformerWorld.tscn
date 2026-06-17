@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://su08u540ij11"]
+
+[node name="PlatformerWorld" type="Node3D" unique_id=596541192]
+
+[node name="GridMap" type="GridMap" parent="." unique_id=1630335202]

@@ -49,3 +49,4 @@
 - [The SMART Way to Manage Scenes in Godot](https://youtu.be/32h8BR0FqdI)
 - [The Easy Scene Transition Setup for Godot](https://youtu.be/2nv49zosKIY)
 - [Save and Load System with Update Support | Godot 4.6](https://youtu.be/Dw45NlwIORY)
+- [Automatic Gltf with collider](https://dev.to/ramchale/godot-batch-generation-of-collision-meshes-from-gtlf-model-files-4noh)

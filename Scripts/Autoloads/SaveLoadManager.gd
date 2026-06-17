@@ -9,6 +9,7 @@ const FILE_NAME: Array[String] = ["file_a", "file_b", "file_c", "file_d"]
 # The factory Runachier-Panner
 # SpaceShip in the 2004 and one half centuries
 # VLC Town
+# Lowy Poly Wordlie
 
 
 var current_slot: int
@@ -83,7 +84,7 @@ func _load_preview(slot: int) -> Array:
 		var data_var = file.get_var()["misc"]
 		print(data_var)
 		var data: Array = []
-		data.append(data_var["star_collected"])
+		data.append(data_var["stars_collected"])
 		data.append(data_var["time_played"])
 		data.append(data_var["died_count"])
 		data.append(data_var["collected_coins"])
