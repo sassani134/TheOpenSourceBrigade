@@ -13,7 +13,7 @@ config_version=5
 config/name="TheOpenSourceBrigade"
 config/version="0.0.1"
 run/main_scene="uid://bes1a63rvd6wg"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 0)
 config/icon="uid://4afec50fmv4e"
 
