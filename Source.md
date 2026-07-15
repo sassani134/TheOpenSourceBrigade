@@ -26,6 +26,7 @@
 - [mesh2motion](https://app.mesh2motion.org/)
 - [Free & OpenSource Animation Tool](https://youtu.be/sg3XCw-qDqM)
 - [OpenSource 3D Character Animation](https://youtu.be/a9t8Wg3UQ6U)
+- [removeBg](https://www.remove.bg/)
 
 
 ### 3D
@@ -50,3 +51,4 @@
 - [The Easy Scene Transition Setup for Godot](https://youtu.be/2nv49zosKIY)
 - [Save and Load System with Update Support | Godot 4.6](https://youtu.be/Dw45NlwIORY)
 - [Automatic Gltf with collider](https://dev.to/ramchale/godot-batch-generation-of-collision-meshes-from-gtlf-model-files-4noh)
+- [@andman4444 How to make a simple low-poly terrain in Blender for Godot.](https://www.youtube.com/shorts/YrTZpryIunQ?feature=share)

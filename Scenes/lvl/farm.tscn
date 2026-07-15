@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cq34lciseqt0n"]
+
+[ext_resource type="PackedScene" uid="uid://do47eghycuv8f" path="res://Assets/lvl/farm.glb" id="1_xkgkh"]
+
+[node name="farm" unique_id=1021869677 instance=ExtResource("1_xkgkh")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)

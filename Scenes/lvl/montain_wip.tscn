@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bdod7vuw41qus"]
+
+[ext_resource type="PackedScene" uid="uid://bbqs8lr40q033" path="res://Assets/lvl/MontainWIP.glb" id="1_7f4tk"]
+[ext_resource type="Texture2D" uid="uid://db6b28a46tq3w" path="res://Assets/kenney_prototype_textures/dark/texture_04.png" id="2_lka1n"]
+[ext_resource type="PackedScene" uid="uid://cv2i4rna6wlc" path="res://Scenes/Characters/defaultTesto/Player3DDefault02.tscn" id="3_oyrb3"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4gj6y"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_iw30y"]
+sky_material = SubResource("ProceduralSkyMaterial_4gj6y")
+
+[sub_resource type="Environment" id="Environment_5m3r3"]
+background_mode = 2
+sky = SubResource("Sky_iw30y")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bwj75"]
+albedo_texture = ExtResource("2_lka1n")
+
+[node name="MontainWIP" unique_id=1128169810 instance=ExtResource("1_7f4tk")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0" unique_id=1690435495]
+environment = SubResource("Environment_5m3r3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="1" unique_id=2101197680]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Plane" parent="." index="2" unique_id=842725762]
+transform = Transform3D(40, 0, 0, 0, 2, 0, 0, 0, 40, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_bwj75")
+
+[node name="Player3DDefault02" parent="." index="3" unique_id=462633578 instance=ExtResource("3_oyrb3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3500001, 0)

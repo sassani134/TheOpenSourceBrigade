@@ -1,0 +1,1 @@
+class_name NeoPlayer extends CharacterBody3D

@@ -1,0 +1,172 @@
+[gd_scene format=3 uid="uid://ca516bhdimlj"]
+
+[ext_resource type="Script" uid="uid://cmt6n8wikw2q5" path="res://Scripts/Characters/NeoPlayer.gd" id="1_mjh7s"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_aifb1"]
+
+[node name="NeoPlayer" type="CharacterBody3D" unique_id=122198508]
+script = ExtResource("1_mjh7s")
+
+[node name="VisualRoot" type="Node3D" parent="." unique_id=199801038]
+unique_name_in_owner = true
+
+[node name="Skin" type="Node3D" parent="VisualRoot" unique_id=1132005639]
+
+[node name="ParticleManager" type="Node3D" parent="VisualRoot" unique_id=1479289342]
+unique_name_in_owner = true
+
+[node name="MouvmentDust" type="GPUParticles3D" parent="VisualRoot" unique_id=464776762]
+
+[node name="kenneyDecal" type="Decal" parent="VisualRoot" unique_id=939261279]
+
+[node name="AudioRoot" type="Node3D" parent="." unique_id=1317248403]
+
+[node name="FootStepAudio" type="AudioStreamPlayer3D" parent="AudioRoot" unique_id=820139105]
+unique_name_in_owner = true
+
+[node name="ImpactAudio" type="AudioStreamPlayer3D" parent="AudioRoot" unique_id=2039466564]
+unique_name_in_owner = true
+
+[node name="WaveAudio" type="AudioStreamPlayer3D" parent="AudioRoot" unique_id=1988661861]
+unique_name_in_owner = true
+
+[node name="KenneyAudioStreamPlayer" type="AudioStreamPlayer" parent="AudioRoot" unique_id=722067202]
+
+[node name="CameraHolder" type="Node3D" parent="." unique_id=1151107230]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1359424021]
+shape = SubResource("CapsuleShape3D_aifb1")
+
+[node name="StateMachine" type="Node" parent="." unique_id=1593244340]
+
+[node name="IdleState" type="Node" parent="StateMachine" unique_id=577363589]
+
+[node name="WalkState" type="Node" parent="StateMachine" unique_id=992563698]
+
+[node name="RunState" type="Node" parent="StateMachine" unique_id=1801019786]
+
+[node name="JumpState" type="Node" parent="StateMachine" unique_id=429862974]
+
+[node name="InairState" type="Node" parent="StateMachine" unique_id=761595712]
+
+[node name="WallslideState" type="Node" parent="StateMachine" unique_id=1600321761]
+
+[node name="SwimState" type="Node" parent="StateMachine" unique_id=167773014]
+
+[node name="Raycasts" type="Node3D" parent="." unique_id=1889311579]
+
+[node name="FloorRaycast" type="RayCast3D" parent="Raycasts" unique_id=1018510830]
+unique_name_in_owner = true
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1667282406]
+unique_name_in_owner = true
+
+[node name="MarginContainer" type="MarginContainer" parent="HUD" unique_id=1061927345]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PanelContainer" type="PanelContainer" parent="HUD/MarginContainer" unique_id=736360438]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD/MarginContainer/PanelContainer" unique_id=1068868568]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/MarginContainer/PanelContainer/HBoxContainer" unique_id=2137115762]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1554053424]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=117314593]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=778574162]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=295281043]
+layout_mode = 2
+
+[node name="Label5" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1220521814]
+layout_mode = 2
+
+[node name="Label6" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=691055734]
+layout_mode = 2
+
+[node name="Label7" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=438466383]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HUD/MarginContainer/PanelContainer/HBoxContainer" unique_id=748960145]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=821777729]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1110578196]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=174384199]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1570176165]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label5" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=468661129]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label6" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1312882576]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label7" type="Label" parent="HUD/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=299894057]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HUD/MarginContainer/PanelContainer" unique_id=1339534587]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="HUD/MarginContainer/PanelContainer/MarginContainer" unique_id=503108760]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer" unique_id=1403737176]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer/HBoxContainer" unique_id=1960956646]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1430883984]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=309741567]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1540304043]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer" unique_id=241556324]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer/HBoxContainer" unique_id=1669837245]
+layout_mode = 2
+
+[node name="Labelo" type="Label" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1348264114]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Labelo2" type="Label" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=877619687]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Labelo3" type="Label" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=990362274]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Labelo4" type="Label" parent="HUD/MarginContainer/PanelContainer/MarginContainer/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=33897656]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="InputManagementComponent" type="Node" parent="." unique_id=666459671]
